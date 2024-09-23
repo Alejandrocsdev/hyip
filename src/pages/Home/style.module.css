@@ -273,7 +273,7 @@
 }
 
 .advantages .container ul .wide .profit>img {
-  width: 500px;
+  width: 100%;
 }
 
 .advantages .container ul .wide .profit .greenBar {
@@ -285,7 +285,7 @@
   display: inline-flex;
   align-items: center;
   gap: .625rem;
-  width: 500px;
+  width: 100%;
   font-size: .6875rem;
   font-weight: 700;
   line-height: 1.5;
@@ -428,5 +428,62 @@
 
   .how .container ol li .text {
     font-size: 1rem;
+  }
+
+  .advantages {
+    margin-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .advantages .container {
+    padding: 0 1.25rem;
+  }
+
+  .advantages .container h2 {
+    font-size: 2rem;
+  }
+
+  .advantages .container ul {
+    grid-template-columns: 1fr;
+    column-gap: .5625rem;
+  }
+
+  .advantages .container ul li {
+    max-width: 25rem;
+    width: 100%;
+    min-height: 27.5rem;
+    margin: 0 auto;
+    border-radius: 1.25rem;
+    padding: 2rem;
+  }
+
+  .advantages .container ul li .info h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* (1)Profit */
+  .advantages .container ul .wide {
+    border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+    grid-column: auto;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .advantages .container ul .wide .info h3 {
+    margin-bottom: 1rem!important;
+    font-size: 1.5rem!important;
+    line-height: 2rem!important;
+  }
+
+  .advantages .container ul .wide .info p {
+    font-size: 1rem!important;
+    line-height: 1.5rem!important;
+    margin-bottom: 3.5rem!important;
+  }
+
+  .advantages .container ul .wide .profit .greenBar {
+    margin-top: 0;
   }
 }
