@@ -70,7 +70,7 @@ function Footer() {
               </div> */}
             </div>
           </div>
-          <div className={S.bottom}>
+          {/* <div className={S.bottom}>
             <p>© MONEY EXPRESS © All Rights Reserved</p>
             <div className={S.privacy}>
               <Link to="/privacy-policy">Terms and conditions</Link>
@@ -79,7 +79,7 @@ function Footer() {
               <span> | </span>
               <Link to="/complaints">Complaints resolution procedure</Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
