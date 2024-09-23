@@ -115,7 +115,7 @@ function Calculator() {
             <span>{activePlan === 'basic' ? '0.5%' : '1.0%'}</span>
           </p>
           <p>
-            <span>Total Profit (Up to 400 days):</span>
+            <span>Total Profit (USDT):</span>
             <span>{totalProfit()} USDT</span>
           </p>
         </div>
