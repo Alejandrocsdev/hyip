@@ -369,4 +369,13 @@
   .landing .container .content .title span {
     display: block;
   }
+
+  .landing .container .mobCoin,
+  .landing .container .mobCoin img {
+    height: 40px;
+  }
+
+  .landing .container .mobCoin span {
+    font-size: 22px;
+  }
 }
