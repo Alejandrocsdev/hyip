@@ -39,37 +39,36 @@ function Footer() {
               </div>
             </div>
             <div className={S.info}>
-            <div className={S.item}>
-              <h5 className={S.title}>About us</h5>
-              <ul>
-                <li>
-                  <Link to="/about-us">Money Express Crypto</Link>
-                </li>
-                <li>
-                  <Link to="/contacts">Contacts</Link>
-                </li>
-              </ul>
+              <div className={S.item}>
+                <h5 className={S.title}>About us</h5>
+                <ul>
+                  <li>
+                    <Link to="/about-us">Money Express Crypto</Link>
+                  </li>
+                  <li>
+                    <Link to="/contacts">Contacts</Link>
+                  </li>
+                </ul>
+              </div>
+              {/* <div className={S.item}>
+                <h5 className={S.title}>Contacts</h5>
+                <address>
+                  <div className={S.contacts}>
+                    <a href="tel:+3726609010">+372 6 609 010</a>
+                    <a href="mailto:info@moneyexpresscrypto.ee">info@moneyexpresscrypto.ee</a>
+                  </div>
+                  <p>
+                    MoneyExpress OÜ
+                    <br />
+                    Reg. number: 11557160
+                    <br />
+                    KMKR: EE101342285
+                    <br />
+                    Pirita tee 20/4-219, Tallinn, 12011, Estonia
+                  </p>
+                </address>
+              </div> */}
             </div>
-            <div className={S.item}>
-              <h5 className={S.title}>Contacts</h5>
-              <address>
-                <div className={S.contacts}>
-                  <a href="tel:+3726609010">+372 6 609 010</a>
-                  <a href="mailto:info@moneyexpresscrypto.ee">info@moneyexpresscrypto.ee</a>
-                </div>
-                <p>
-                  MoneyExpress OÜ
-                  <br />
-                  Reg. number: 11557160
-                  <br />
-                  KMKR: EE101342285
-                  <br />
-                  Pirita tee 20/4-219, Tallinn, 12011, Estonia
-                </p>
-              </address>
-            </div>
-            </div>
-
           </div>
           <div className={S.bottom}>
             <p>© MONEY EXPRESS © All Rights Reserved</p>
