@@ -1,0 +1,175 @@
+.footer {
+  background-color: #041533;
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 75rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+
+.body {
+  padding: 3.5rem 0 3.125rem;
+  border-bottom: .0625rem solid rgba(255, 255, 255, .12);
+  display: flex;
+  justify-content: space-between;
+}
+
+.body .social {
+  width: 12.5rem;
+}
+
+/* LOGO */
+.body .social a {
+  display: flex;
+  margin-bottom: 2.375rem;
+}
+
+.body .social a img {
+  pointer-events: none;
+  aspect-ratio: 194 / 20;
+  width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.body .social .crypto {
+  color: #FFD45A;
+  font-weight: 700;
+  position: relative;
+  bottom: 1px;
+  user-select: none;
+}
+
+/* SOCIAL */
+.body .social .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.body .social .icons a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.body .social .icons a svg path {
+  fill: white;
+  fill-opacity: 0.32;
+  transition: all .3s ease 0s;
+}
+
+.body .social .icons a svg:hover path {
+  fill-opacity: 0.7;
+}
+
+.body .info {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.body .info .item {
+  width: 260px;
+}
+
+.body .info .item .title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7;
+  margin: 0 0 .8125rem 0;
+  color: #99a1ae;
+}
+
+.body .info .item ul {
+  letter-spacing: -.0625rem;
+}
+
+.body .info .item ul .gap {
+  margin-bottom: 1.5rem;
+}
+
+.body .info .item ul li {
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  line-height: 1.32;
+}
+
+.body .info .item ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: .25rem 0;
+  cursor: pointer;
+}
+
+.body .info .item ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: .3125rem;
+}
+
+/* CONTACTS */
+.body .info .item address {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -.0625rem;
+}
+
+.body .info .item address .contacts {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.body .info .item address .contacts a {
+  margin-bottom: .5rem;
+  color: #fff;
+  display: block;
+}
+
+.body .info .item address .contacts a:hover {
+  text-decoration: underline;
+  text-underline-offset: .3125rem;
+}
+
+.body .info .item address p {
+  color: #99a1ae;
+}
+
+.bottom {
+  padding: 2rem 0 2.5rem;
+  column-gap: 2rem;
+  color: #ffffff8f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom p {
+  flex-shrink: 0;
+  line-height: 1.8;
+}
+
+.bottom .privacy {
+  text-decoration: underline;
+  line-height: 1.875;
+  text-align: center;
+}
+
+.bottom .privacy a {
+  color: #ffffff8f;
+  transition: color .3s ease 0s;
+}
+
+.bottom .privacy a:hover {
+  color: #fffc;
+}
+
+/* @media (max-width: 950px) {
+} */

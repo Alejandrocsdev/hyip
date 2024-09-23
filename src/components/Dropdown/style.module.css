@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+}
+
+.container>button {
+  padding: .5625rem .625rem;
+  background-color: #f0f0f033;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  gap: .125rem;
+  transition: background-color .3s ease 0s;
+  cursor: pointer;
+}
+
+.container>button:hover {
+  background-color: #ffffff14;
+}
+
+.container>button>span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.container>button>.angleDown {
+  transition: transform .5s ease 0s;
+}
+
+.container>ul {
+  max-height: 12.5rem;
+  padding: 1.0625rem 1.5rem 1.5rem;
+  color: #1e1e1e;
+  position: absolute;
+  top: 3.125rem;
+  right: -.625rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .5s ease-in-out;
+}
+
+.container>ul::before {
+  content: "";
+  background-color: #fff;
+  border-radius: .5rem;
+  position: absolute;
+  top: .4375rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container>ul>li {
+  margin-top: .875rem;
+}
+
+.container>ul>.triangle {
+  position: absolute;
+  right: 1.8125rem;
+  top: 0;
+  z-index: 200;
+}
+
+.container>ul>li>button {
+  display: flex;
+  align-items: center;
+  gap: .4375rem;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+.container>ul>li>button>img {
+  width: 24px;
+  height: 24px;
+}
+
+.container>ul>li>button>span {
+  color: rgb(30, 30, 30);
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #041632;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity .3s ease 0s;
+}
+
+.active {
+  font-weight: 700;
+  color: #ff5f45 !important;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
+.showDrop {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scaleY(1) !important;
+}
+
+.showBack {
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+}
