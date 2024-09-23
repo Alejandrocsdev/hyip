@@ -362,6 +362,10 @@
 }
 
 @media (max-width: 500px) {
+  .landing {
+    padding-bottom: 40px;
+  }
+
   .landing .container {
     padding: 0 1.25rem;
   }
