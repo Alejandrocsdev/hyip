@@ -463,6 +463,23 @@
     margin-bottom: 1rem;
   }
 
+  /* (3)Binary */
+  .advantages .container ul li .binaryImg {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages .container ul li .binaryImg img {
+    width: 16em;
+  }
+
+  /* (4) Fee*/
+  .advantages .container ul li .fee {
+    font-size: 5rem;
+  }
+
   /* (1)Profit */
   .advantages .container ul .wide {
     border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
@@ -472,15 +489,15 @@
   }
 
   .advantages .container ul .wide .info h3 {
-    margin-bottom: 1rem!important;
-    font-size: 1.5rem!important;
-    line-height: 2rem!important;
+    margin-bottom: 1rem !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 
   .advantages .container ul .wide .info p {
-    font-size: 1rem!important;
-    line-height: 1.5rem!important;
-    margin-bottom: 3.5rem!important;
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    margin-bottom: 3.5rem !important;
   }
 
   .advantages .container ul .wide .profit .greenBar {
