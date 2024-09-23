@@ -383,3 +383,50 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 500px) {
+  .how {
+    margin: 6.25rem 0;
+  }
+
+  .how .container {
+    padding: 0 1.25rem;
+  }
+
+  .how .container h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .how .container ol {
+    grid-template-columns: 1fr;
+  }
+
+  .how .container ol li {
+    max-width: 25rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1.25rem;
+  }
+
+  .how .container ol li .tag {
+    padding: .1875rem 1.5625rem;
+    font-size: 1.1875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .how .container ol li .tag::before {
+    right: -.5rem;
+    border-radius: 3.125rem;
+  }
+
+  .how .container ol li .name {
+    font-size: 1.5rem;
+    line-height: 2.625rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .how .container ol li .text {
+    font-size: 1rem;
+  }
+}
