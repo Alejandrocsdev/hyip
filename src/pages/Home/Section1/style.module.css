@@ -1,0 +1,164 @@
+.section {
+  padding: 14.875rem 0 10rem 0;
+  border-radius: 0 0 3.125rem 3.125rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.section .container {
+  max-width: 75rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 特殊背景 */
+.section .container::before {
+  content: "";
+  width: 31.875rem;
+  aspect-ratio: 1 / 1;
+  background-color: #ff5f4533;
+  filter: blur(4.6875rem);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* 登陸文字 */
+.section .container .content {
+  width: 50%;
+  position: relative;
+}
+
+/* 主標題 */
+.title {
+  margin: 0 0 1.25rem 0;
+  color: #fff;
+  font-size: 4.375rem;
+  font-weight: 800;
+}
+
+.title span {
+  color: #FFD45A;
+  font-size: 4.375rem;
+  font-weight: 800;
+}
+
+/* 副標題 */
+.subtitle {
+  margin-bottom: 4.5rem;
+  color: #99a1ae;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* USDT */
+.usdt,
+.usdtMob {
+  display: flex;
+  align-items: center;
+}
+
+.usdt img,
+.usdtMob img {
+  height: 53px;
+}
+
+.usdt span,
+.usdtMob span {
+  margin-left: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.usdtMob {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .section .container .content {
+    width: 37.076271%;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .title span {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 5.625rem 0 2.8125rem;
+  }
+
+  .section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section .container::before {
+    max-width: 96%;
+  }
+
+  .section .container .content {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .title {
+    margin-bottom: .5rem;
+  }
+
+  .subtitle {
+    margin: 0 auto 2.75rem;
+    font-size: 1.125rem;
+  }
+
+  .usdt {
+    display: none;
+  }
+
+  .usdtMob {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .title span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding-bottom: 40px;
+  }
+
+  .section .container {
+    padding: 0 1.25rem;
+  }
+
+  .title span {
+    display: block;
+  }
+
+  .usdtMob,
+  .usdtMob img {
+    height: 40px;
+  }
+
+  .usdtMob span {
+    font-size: 22px;
+  }
+}

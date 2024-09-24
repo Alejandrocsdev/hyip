@@ -4,16 +4,17 @@ import S from './style.module.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 // 圖檔
-import logo_dark_svg from '../../assets/img/logo/logo-dark.svg'
-import sign_in_svg from '../../assets/img/icon/sign-in.svg'
-import sign_up_svg from '../../assets/img/icon/sign-up.svg'
-import about_us_svg from '../../assets/img/icon/about_us.svg'
-import contacts_svg from '../../assets/img/icon/contacts.svg'
-import globe_svg from '../../assets/img/icon/globe.svg'
-import us_svg from '../../assets/img/flag/us.svg'
-import ru_svg from '../../assets/img/flag/ru.svg'
-import ee_svg from '../../assets/img/flag/ee.svg'
-import mkm_svg from '../../assets/img/organization/Estonian_Ministry_of_Economic_Affairs_and_Communications.svg'
+import sign_in_svg from '../../../assets/img/icon/sign-in.svg'
+import sign_up_svg from '../../../assets/img/icon/sign-up.svg'
+import about_us_svg from '../../../assets/img/icon/about_us.svg'
+import contacts_svg from '../../../assets/img/icon/contacts.svg'
+import globe_svg from '../../../assets/img/icon/globe.svg'
+import us_svg from '../../../assets/img/flag/us.svg'
+import ru_svg from '../../../assets/img/flag/ru.svg'
+import ee_svg from '../../../assets/img/flag/ee.svg'
+import mkm_svg from '../../../assets/img/organization/mkm.svg'
+// 組件
+import Logo from '../../../components/Logo'
 // 選單組件
 function MobileMenu() {
   const [isOpened, setIsOpened] = useState(false)
@@ -64,10 +65,7 @@ function MobileMenu() {
       <div className={`${S.body} ${isOpened ? S.bodyOpen : ''}`} ref={bodyRef}>
         {/* 抬頭 */}
         <div className={S.top}>
-          <Link className={S.logo} to="/">
-            <img src={logo_dark_svg} />
-            <span>CRYPTO</span>
-          </Link>
+          <Logo type="crypto" color="black" />
         </div>
         <div className={S.inner}>
           {/* 登入 & 登出 */}

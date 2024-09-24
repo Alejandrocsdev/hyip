@@ -3,13 +3,11 @@ import S from './style.module.css'
 // 鉤子函式
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-// 圖檔
-import logo_svg from '../../assets/img/logo/logo.svg'
-import logo_origin_svg from '../../assets/img/logo/logo-origin.svg'
 // 組件
-import FacebookSVG from '../SVG/FacebookSVG'
-import TwitterSVG from '../SVG/TwitterSVG'
-import InstagramSVG from '../SVG/InstagramSVG'
+import Logo from '../../components/Logo'
+import FacebookSvg from '../../components/Svg/FacebookSvg'
+import TwitterSvg from '../../components/SVG/TwitterSvg'
+import Instagramvg from '../../components/SVG/InstagramSvg'
 
 // 頁尾組件
 function Footer() {
@@ -19,22 +17,17 @@ function Footer() {
         <div className={S.container}>
           <div className={S.body}>
             <div className={S.social}>
-              <Link to="/">
-                <img src={logo_svg} />
-                <span className={S.crypto}>CRYPTO</span>
-              </Link>
-              <Link to="https://moneyexpress.ee/en" target="blank">
-                <img src={logo_origin_svg} />
-              </Link>
+            <Logo type="crypto" color="white" />
+            <Logo type="origin" color="white" />
               <div className={S.icons}>
                 <Link to="https://www.facebook.com/moneyexpresslv" target="blank">
-                  <FacebookSVG />
+                  <FacebookSvg />
                 </Link>
                 <Link to="https://x.com/MONEYEXPRESSLV" target="blank">
-                  <TwitterSVG />
+                  <TwitterSvg />
                 </Link>
                 <Link to="https://www.instagram.com/moneyexpress.lv/" target="blank">
-                  <InstagramSVG />
+                  <Instagramvg />
                 </Link>
               </div>
             </div>

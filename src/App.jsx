@@ -4,7 +4,7 @@ import './fonts.css'
 // 鉤子函式
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // 佈局組件
-import Layout from './components/Layout'
+import Layout from './Layout'
 // 頁面
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'

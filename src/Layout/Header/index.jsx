@@ -2,12 +2,10 @@
 import S from './style.module.css'
 // 鉤子函式
 import { Link } from 'react-router-dom'
-// 圖檔
-import logo_svg from '../../assets/img/logo/logo.svg'
 // 組件
-import Dropdown from '../Dropdown'
-import MobileMenu from '../MobileMenu'
-// import MobileDropdown from '../MobileDropdown'
+import Logo from '../../components/Logo'
+import LangDrop from './LangDrop'
+import MobileMenu from './MobileMenu'
 
 // 頁首組件
 function Header() {
@@ -15,17 +13,16 @@ function Header() {
     <>
       <header className={S.header}>
         <nav className={S.nav}>
-          <div className={S.logo}>
-            <Link to="/">
-              <img src={logo_svg} />
-              <span>CRYPTO</span>
-            </Link>
-          </div>
+          <Logo type="crypto" color="white" />
+          {/* 電腦版: 選單 */}
           <div className={S.menu}>
+            {/* 登入 */}
             <Link className={S.signIn} to="/sign-in">
               Sign In
             </Link>
-            <Dropdown />
+            {/* 語言: 下拉選單 */}
+            <LangDrop />
+            {/* 手機版: 選單 */}
             <MobileMenu />
           </div>
         </nav>

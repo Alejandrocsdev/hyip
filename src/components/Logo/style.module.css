@@ -1,0 +1,16 @@
+.container>a {
+  display: flex;
+}
+
+.container>a>img {
+  margin-right: 5px;
+  object-fit: cover;
+  aspect-ratio: 194 / 20;
+}
+
+.container>a>span {
+  color: #FFD45A;
+  text-transform: uppercase;
+  font-weight: 700;
+  user-select: none;
+}
