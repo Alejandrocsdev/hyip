@@ -6,8 +6,8 @@ import { useState } from 'react'
 // 組件
 import Logo from '../../components/Logo'
 import FacebookSvg from '../../components/Svg/FacebookSvg'
-import TwitterSvg from '../../components/SVG/TwitterSvg'
-import Instagramvg from '../../components/SVG/InstagramSvg'
+import TwitterSvg from '../../components/Svg/TwitterSvg'
+import InstagramSvg from '../../components/Svg/InstagramSvg'
 
 // 頁尾組件
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
                   <TwitterSvg />
                 </Link>
                 <Link to="https://www.instagram.com/moneyexpress.lv/" target="blank">
-                  <Instagramvg />
+                  <InstagramSvg />
                 </Link>
               </div>
             </div>
