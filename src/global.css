@@ -10,6 +10,7 @@ body {
   /* scrollbar on top of the page */
   width: 100vw;
   overflow-x: hidden;
+  background-color: #F1F3F9;
 }
 
 .no-scroll {

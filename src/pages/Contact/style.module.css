@@ -1,0 +1,299 @@
+.main {
+  padding-top: calc(9rem);
+  margin-bottom: 10rem;
+}
+
+.container {
+  overflow: clip;
+  max-width: 75rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 451fr 621fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 3rem;
+}
+
+/* .content {} */
+
+.content .title {
+  color: #020414;
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 5.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.content .text {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  color: #020414;
+  margin-bottom: 3rem;
+}
+
+.form {
+  grid-row: span 2;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem 2.5rem;
+  /* background-color: aquamarine; */
+}
+
+/* .form form {} */
+
+.form form .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form form .inputs .input>span {
+  padding: 0 .25rem;
+  margin-bottom: .5rem;
+  color: #505a63;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.14;
+  display: block;
+}
+
+.form form .inputs .input>input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: .0625rem solid rgba(0, 0, 0, .08);
+  background-color: #fff;
+  color: #878199;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.form form .inputs .input:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* .form form .message {} */
+
+.form form .message>span {
+  padding: 0 .25rem;
+  margin-bottom: .5rem;
+  color: #505a63;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.14;
+  display: block;
+}
+
+.form form .message textarea {
+  resize: none;
+  height: 7.5rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: .0625rem solid rgba(0, 0, 0, .08);
+  background-color: #fff;
+  color: #878199;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+/* .form form .agreements {} */
+
+.form form .agreements .checkbox {
+  position: absolute;
+  left: -100vw;
+  height: .0625rem;
+  width: .0625rem;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form form .agreements .checkboxBody {
+  margin: 1rem 0 1.5rem;
+  font-size: .875rem;
+  display: block;
+  color: #0f0233;
+  line-height: 1.25rem;
+  padding: .5rem 1.75rem;
+  padding-right: 0;
+  position: relative;
+}
+
+.form form .agreements .checkboxBody>label {
+  cursor: pointer;
+}
+
+.form form .agreements .checkboxBody>label::before {
+  /* border-color: #ff5f45;
+  background-color: #ff5f45; */
+
+
+
+  content: "";
+  border-radius: .25rem;
+  top: .5rem;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: .125rem solid #eae9ed;
+  transition: background-color .3s ease 0s, border-color .3s ease 0s;
+
+  position: absolute;
+  display: block;
+
+  /* background-color: #ffebeb; */
+  /* border-color: #e00909; */
+  background-color: #f3f2f5;
+}
+
+.form form .agreements .checkboxBody>img {
+  /* transform: scale(1); */
+
+
+  /* transform: scale(0); */
+  /* transition: transform .3s ease 0s; */
+  /* z-index: 1; */
+
+  position: absolute;
+  top: 0.9rem;
+  left: .35rem;
+  display: none;
+}
+
+/* .form form .agreements .checkboxBody>p {} */
+
+.form form .agreements .checkboxBody>p>a {
+  color: #0f0233;
+  text-decoration: underline;
+  text-underline-offset: .3125rem;
+  transition: color .3s ease-in-out 0s;
+}
+
+.form form .agreements .checkboxBody>p>a:hover {
+  color: #ff5f45;
+}
+
+.form button {
+  width: auto;
+  min-width: 18.75rem;
+  max-width: 100%;
+  background-color: #FFD45A;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .875rem 1.875rem;
+  border: .125rem solid transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border-radius: .5rem;
+  transition: color .3s ease 0s, background-color .3s ease 0s, border-color .3s ease 0s;
+}
+
+.form button:hover {
+  color: white;
+  background-color: #041d33;
+}
+
+.thanks {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4.25rem 0;
+
+  display: flex;
+}
+
+.thanks img {
+  margin-bottom: 1.75rem;
+}
+
+.thanks p {
+  font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.thanks button {
+  width: auto;
+  min-width: 14.25rem;
+  background-color: #FFD45A;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+  padding: .875rem 1.875rem;
+  border: .125rem solid transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border-radius: .5rem;
+  transition: color .3s ease 0s, background-color .3s ease 0s, border-color .3s ease 0s;
+}
+
+.thanks button:hover {
+  color: white;
+  background-color: #041d33;
+}
+
+.show {
+  display: flex;
+}
+
+.address {
+  color: #041533;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.8;
+}
+
+.address>a {
+  align-items: center;
+  display: flex;
+  gap: 1.125rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #020414;
+}
+
+.address>.map {
+  display: flex;
+  gap: 1.125rem;
+}
+
+.address>.map>p {
+  font-size: 18px;
+}
+
+.address>a>i,
+.address>.map>i {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.address>a>i>img,
+.address>.map>i>img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1200px) {}

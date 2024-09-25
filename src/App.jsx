@@ -8,6 +8,7 @@ import Layout from './Layout'
 // 頁面
 import Home from './pages/Home'
 import About from './pages/About'
+import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/about-us" element={<About />} />
+            <Route path="/contacts" element={<Contact />} />
             {/* 錯誤路由 */}
             <Route path="*" element={<NotFound />} />
           </Route>
