@@ -4,15 +4,15 @@ import S from './style.module.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 // 圖檔
-import sign_in_svg from '../../../assets/img/icon/sign-in.svg'
-import sign_up_svg from '../../../assets/img/icon/sign-up.svg'
-import about_us_svg from '../../../assets/img/icon/about_us.svg'
-import contacts_svg from '../../../assets/img/icon/contacts.svg'
-import globe_svg from '../../../assets/img/icon/globe.svg'
-import us_svg from '../../../assets/img/flag/us.svg'
-import ru_svg from '../../../assets/img/flag/ru.svg'
-import ee_svg from '../../../assets/img/flag/ee.svg'
-import mkm_svg from '../../../assets/img/organization/mkm.svg'
+import signInSvg from '../../../assets/img/icon/sign-in.svg'
+import signUpSvg from '../../../assets/img/icon/sign-up.svg'
+import aboutUsSvg from '../../../assets/img/icon/about_us.svg'
+import contactsSvg from '../../../assets/img/icon/contacts.svg'
+import globeSvg from '../../../assets/img/icon/globe.svg'
+import usSvg from '../../../assets/img/flag/us.svg'
+import ruSvg from '../../../assets/img/flag/ru.svg'
+import eeSvg from '../../../assets/img/flag/ee.svg'
+import mkmSvg from '../../../assets/img/organization/mkm.svg'
 // 組件
 import Logo from '../../../components/Logo'
 // 選單組件
@@ -74,13 +74,13 @@ function MobileMenu() {
             <ul>
               <li>
                 <Link to="/sign-in">
-                  <img src={sign_in_svg} />
+                  <img src={signInSvg} />
                   <span>Sign In</span>
                 </Link>
               </li>
               <li>
                 <Link to="/sign-up">
-                  <img src={sign_up_svg} />
+                  <img src={signUpSvg} />
                   <span>Sign Up</span>
                 </Link>
               </li>
@@ -90,13 +90,13 @@ function MobileMenu() {
           <ul className={S.info}>
             <li>
               <Link to="about-us">
-                <img src={about_us_svg} />
+                <img src={aboutUsSvg} />
                 <span>About Us</span>
               </Link>
             </li>
             <li>
               <Link to="contact">
-                <img src={contacts_svg} />
+                <img src={contactsSvg} />
                 <span>Contact</span>
               </Link>
             </li>
@@ -104,25 +104,25 @@ function MobileMenu() {
           {/* 語言 */}
           <div className={S.language}>
             <button>
-              <img src={globe_svg} />
+              <img src={globeSvg} />
               <span>{activeLang}</span>
             </button>
             <ul>
               <li>
                 <button onClick={() => switchLang('en')}>
-                  <img src={us_svg} />
+                  <img src={usSvg} />
                   <p className={activeLang === 'en' ? S.active : ''}>English</p>
                 </button>
               </li>
               <li>
                 <button onClick={() => switchLang('ru')}>
-                  <img src={ru_svg} />
+                  <img src={ruSvg} />
                   <p className={activeLang === 'ru' ? S.active : ''}>Русский</p>
                 </button>
               </li>
               <li>
                 <button onClick={() => switchLang('et')}>
-                  <img src={ee_svg} />
+                  <img src={eeSvg} />
                   <p className={activeLang === 'et' ? S.active : ''}>Eesti</p>
                 </button>
               </li>
@@ -131,12 +131,10 @@ function MobileMenu() {
         </div>
         {/* MKM圖 */}
         <div className={S.mkm}>
-            <img src={mkm_svg} />
-          </div>
+          <img src={mkmSvg} />
+        </div>
       </div>
-      <div className={`${S.backdrop} ${isOpened ? S.openBack : ''}`}>
-
-      </div>
+      <div className={`${S.backdrop} ${isOpened ? S.openBack : ''}`}></div>
     </>
   )
 }

@@ -70,7 +70,7 @@
   transition: all .5s ease-in-out 0s;
   pointer-events: none;
   opacity: 0;
-  
+
   overflow: auto;
   overflow-x: hidden;
 }
@@ -246,10 +246,12 @@
 
 .mkm {
   margin: auto;
+  padding: 10px 15px;
 }
 
 .mkm img {
-  width: 300px;
+  height: 100%;
+  background-size: contain;
 }
 
 .backdrop {
