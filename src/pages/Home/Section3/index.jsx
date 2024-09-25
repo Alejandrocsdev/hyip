@@ -15,7 +15,7 @@ function Section3() {
         <h2 className={S.title}>Benefits</h2>
         <ul className={S.content}>
           {/* 收益優勢 */}
-          <li className={S.wide}>
+          <li className={`${S.item} ${S.wide}`}>
             <div className={S.info}>
               <h3>Competitive profit</h3>
               <p>
@@ -32,7 +32,7 @@ function Section3() {
             </div>
           </li>
           {/* 公司可靠 */}
-          <li>
+          <li className={S.item}>
             <div className={S.info}>
               <h3>Reliable partner</h3>
               <p>
@@ -46,26 +46,20 @@ function Section3() {
             </div>
           </li>
           {/* 推廣計畫 */}
-          <li>
+          <li className={S.item}>
             <div className={S.info}>
               <h3>Affiliate Program</h3>
-              <p>
-                Earn more with our exclusive Affiliate Program! Unlock bonuses and rewards through
-                referrals and team growth. Full details available after signing up.
-              </p>
+              <p>Earn bonuses and rewards through referrals and team growth.</p>
             </div>
             <div className={S.affiliate}>
               <img src={affiliateProgramSvg} />
             </div>
           </li>
           {/* 手續優惠 */}
-          <li>
+          <li className={S.item}>
             <div className={S.info}>
               <h3>Low withdrawal fee</h3>
-              <p>
-                Enjoy a fixed 5 USDT withdrawal fee, regardless of amount. The more you withdraw,
-                the lower the fee percentage. Maximize your profits!
-              </p>
+              <p>Withdraw with a fixed 5 USDT fee, no matter the amount.</p>
             </div>
             <div className={S.fee}>
               <div>5</div>

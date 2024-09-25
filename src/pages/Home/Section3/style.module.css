@@ -24,7 +24,7 @@
   gap: 1rem;
 }
 
-.content li {
+.item {
   padding: 2.5rem;
   background-color: #fff;
   border-radius: 1.5rem;
@@ -35,48 +35,48 @@
   overflow: hidden;
 }
 
-.content li .info h3 {
+.item .info h3 {
   margin-bottom: 1rem;
   color: #121212;
   font-size: 1.625rem;
   line-height: 2rem;
 }
 
-.content li .info p {
+.item .info p {
   margin-bottom: .625rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 /* 較寬表單 */
-.content .wide {
+.wide {
   padding: 3.875rem 2.5rem;
   border-radius: 3.75rem 3.75rem 1.5rem 1.5rem;
   grid-column: span 3;
   flex-direction: row;
 }
 
-.content .wide .info h3 {
-  margin-bottom: 1.5rem !important;
-  font-size: 2rem !important;
-  line-height: 2.5rem !important;
+.wide .info h3 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-.content .wide .info p {
-  font-size: 1.25rem !important;
-  line-height: 1.75rem !important;
+.wide .info p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 /* (1)收益優勢 */
-.content .wide .profit {
+.wide .profit {
   text-align: center;
 }
 
-.content .wide .profit>img {
+.wide .profit>img {
   width: 100%;
 }
 
-.content .wide .profit .greenBar {
+.wide .profit .greenBar {
   width: 100%;
   margin-top: 20px;
   padding: 1rem .5rem;
@@ -92,7 +92,7 @@
 }
 
 /* (2)公司可靠 */
-.content li .partner {
+.item .partner {
   width: 100%;
   max-height: 100%;
   margin: auto 0 0;
@@ -102,26 +102,27 @@
   background-repeat: no-repeat;
 }
 
-.content li .partner img {
+.item .partner img {
   width: 100%;
   margin-top: 2.5rem;
 }
 
 /* (3)推廣計畫 */
-.content li .affiliate {
+.item .affiliate {
   padding: 1.25rem;
   aspect-ratio: 1 / 1;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.content li .affiliate img {
+.item .affiliate img {
   vertical-align: top;
   object-fit: cover;
 }
 
 /* (4)手續優惠 */
-.content li .fee {
+.item .fee {
   height: 100%;
   color: #ff5f45;
   font-size: 6rem;
@@ -133,7 +134,7 @@
   align-items: center;
 }
 
-.content li .fee div {
+.item .fee div {
   line-height: 1;
 }
 
@@ -142,82 +143,71 @@
     column-gap: calc(-43.7px + 59.7* 100vw / 1200);
   }
 
-  .content li {
+  .item {
     border-radius: 2.068966vw;
     padding: 3.448276vw;
   }
 
-  .content li .info h3 {
+  .item .info h3 {
     margin-bottom: 1.37931vw;
     font-size: 2.241379vw;
     line-height: 2.758621vw;
   }
 
-  .content li .info p {
+  .item .info p {
     font-size: 1.37931vw;
     line-height: 2.068966vw;
     margin-bottom: .862069vw;
   }
 
-  /* 較寬表單 */
-  .content .wide {
+  .wide {
     border-radius: 5.172414vw 5.172414vw 2.068966vw 2.068966vw;
+    padding: 5.344828vw 7.241379vw 5.344828vw 3.448276vw;
   }
 
-  .content .wide .info {
+  .wide .info {
     width: 44.37751%;
   }
 
-  .content .wide .info h3 {
-    margin-bottom: 2.068966vw !important;
-    font-size: 2.758621vw !important;
-    line-height: 3.448276vw !important;
+  .wide .info h3 {
+    margin-bottom: 2.068966vw;
+    font-size: 2.758621vw;
+    line-height: 3.448276vw;
   }
 
-  .content .wide .info p {
-    font-size: 1.724138vw !important;
-    line-height: 2.413793vw !important;
+  .wide .info p {
+    font-size: 1.724138vw;
+    line-height: 2.413793vw;
   }
 
   /* (1)收益優勢 */
-  .content .wide .profit {
+  .wide .profit {
     width: 40.160643%;
   }
 
-  .content .wide .profit>img {
-    width: 100%;
-  }
-
-  .content .wide .profit .greenBar {
+  .wide .profit .greenBar {
     padding: 1.333333vw .666667vw;
     border-radius: .666667vw;
     gap: .833333vw;
     font-size: .916667vw;
   }
 
-  .content .wide .profit .greenBar>img {
-    width: 1.333333vw;
-    height: 1.333333vw;
-  }
-
   /* (2)公司可靠 */
-  /* .content li .partner {} */
 
   /* (3)推廣計畫 */
-  .content li .affiliate {
-    margin: auto;
-    width: 20vw;
-    width: 20vw;
+  .item .affiliate {
+    padding: 0;
+    margin: 1rem;
   }
 
-  .content li .affiliate img {
+  .item .affiliate img {
     width: 100%;
     height: 100%;
   }
 
   /* (4)手續優惠 */
-  .content li .fee {
-    font-size: 4rem;
+  .item .fee {
+    font-size: 5rem;
   }
 }
 
@@ -236,63 +226,18 @@
     column-gap: .5625rem;
   }
 
-  .content li {
-    max-width: 25rem;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 1.25rem;
-    padding: 2rem;
-  }
-
-  .content li .info h3 {
-    margin-bottom: 1.37931vw;
-    font-size: 2.241379vw;
-    line-height: 2.758621vw;
-  }
-
-  .content li .info p {
-    font-size: 1.37931vw;
-    line-height: 2.068966vw;
-    margin-bottom: .862069vw;
-  }
-
-  /* 較寬表單 */
-  .content .wide {
-    max-width: 100%;
-    min-height: 100%;
-  }
-
   /* (1)收益優勢 */
-  .content .wide .profit {
-    width: 40.160643%;
-  }
-
-  .content .wide .profit>img {
-    width: 100%;
-  }
-
-  .content .wide .profit .greenBar {
-    padding: 1.333333vw .666667vw;
-    border-radius: .666667vw;
-    gap: .833333vw;
-    font-size: .916667vw;
-  }
-
-  .content .wide .profit .greenBar>img {
-    width: 1.333333vw;
-    height: 1.333333vw;
-  }
 
   /* (2)公司可靠 */
-  /* .content li .partner {} */
 
   /* (3)推廣計畫 */
-  /* .content li .affiliate {} */
 
   /* (4)手續優惠 */
-  .content li .fee {
-    font-size: 3.5rem;
+  .item .fee {
+    font-size: 4rem;
   }
+
+
 }
 
 @media (max-width: 800px) {
@@ -313,7 +258,7 @@
     grid-template-columns: 1fr;
   }
 
-  .content li {
+  .item {
     max-width: 25rem;
     width: 100%;
     min-height: 27.5rem;
@@ -322,133 +267,70 @@
     padding: 2rem;
   }
 
-  .content li .info h3 {
+  .item .info h3 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 1rem;
   }
 
-  .content li .info p {
+  .item .info p {
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: .625rem;
   }
 
-  .content .wide .info h3 {
-    font-size: 1.5rem!important;
-    line-height: 2rem!important;
-    margin-bottom: 1rem!important;
-  }
-
-  .content .wide .info p {
-    font-size: 1rem!important;
-    line-height: 1.5rem!important;
-    margin-bottom: 3.5rem!important;
-  }
-
-  /* 較寬表單 */
-  .content .wide {
-    max-width: 25rem;
-    min-height: auto;
+  .wide {
     border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
     grid-column: auto;
     flex-direction: column;
     padding: 2rem;
   }
 
-  .content .wide .info {
+  .wide .info {
     width: 100%;
+  }
+
+  .wide .info p {
+    margin-bottom: 3.5rem;
   }
 
   /* (1)收益優勢 */
-  .content .wide .profit {
+  .wide .profit {
     width: 100%;
   }
 
-  .content .wide .profit .greenBar {
+  .wide .profit>img {
+    width: 100%;
+  }
+
+  .wide .profit .greenBar {
     padding: .6875rem .3125rem;
     border-radius: .375rem;
     gap: .375rem;
     font-size: .5rem;
   }
 
-  .content .wide .profit .greenBar>img {
-    width: .6875rem;
-    height: .6875rem;
-  }
-
   /* (2)公司可靠 */
-  /* .content li .partner {} */
 
   /* (3)推廣計畫 */
-  .content li .affiliate {
-      width: 14rem;
-      height: 14rem;
+  /* .item .affiliate {
+    margin: 2rem;
+  } */
+
+  .item .affiliate img {
+    width: 70%;
+    height: 70%;
   }
 
   /* (4)手續優惠 */
-  .content li .fee {
-    font-size: 3.5rem;
+  .item .fee {
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 500px) {
-  .content li {
-    max-width: 25rem;
-    width: 100%;
-    min-height: 27.5rem;
-    margin: 0 auto;
-    border-radius: 1.25rem;
-    padding: 2rem;
-  }
-
-  .content li .info h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .content li .info p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 3.5rem;
-  }
-
-  /* 較寬表單 */
-  .content .wide .info h3 {
-    margin-bottom: 1rem !important;
-    font-size: 1.5rem !important;
-    line-height: 2rem !important;
-  }
-
-  .content .wide .info p {
-    font-size: 1rem !important;
-    line-height: 1.5rem !important;
-    margin-bottom: 3.5rem !important;
-  }
-
-  /* (1)收益優勢 */
-  .content .wide .profit .greenBar {
-    margin-top: 0;
-  }
-
-  /* (2)公司可靠 */
-  /* .content li .partner {} */
-
-  /* (3)推廣計畫 */
-  .content li .affiliate {
-    padding: 0.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .content li .affiliate img {
-    width: 16em;
-  }
-
-  /* (4) 手續優惠*/
-  .content li .fee {
-    font-size: 5rem;
-  }
+    /* (3)推廣計畫 */
+    /* .item .affiliate {
+      margin: 2rem;
+    } */
 }
