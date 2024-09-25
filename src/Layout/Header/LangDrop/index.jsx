@@ -3,11 +3,11 @@ import S from './style.module.css'
 // 鉤子函式
 import { useState, useEffect, useRef } from 'react'
 // 圖檔
-import us_svg from '../../../assets/img/flag/us.svg'
-import ru_svg from '../../../assets/img/flag/ru.svg'
-import ee_svg from '../../../assets/img/flag/ee.svg'
-import angle_down_svg from '../../../assets/img/element/angle-down.svg'
-import triangle_svg from '../../../assets/img/element/triangle.svg'
+import usSvg from '../../../assets/img/flag/us.svg'
+import ruSvg from '../../../assets/img/flag/ru.svg'
+import eeSvg from '../../../assets/img/flag/ee.svg'
+import angleDownSvg from '../../../assets/img/element/angle-down.svg'
+import triangleSvg from '../../../assets/img/element/triangle.svg'
 
 // 選單組件
 function LangDrop() {
@@ -55,29 +55,29 @@ function LangDrop() {
         {/* 語言按鈕 */}
         <button>
           <span>{activeLang}</span>
-          <img className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} src={angle_down_svg} />
+          <img className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} src={angleDownSvg} />
         </button>
         {/* 語言列表 */}
         <ul className={`${isOpened ? S.showDrop : ''}`} onClick={(e) => e.stopPropagation()}>
           <li>
             <button onClick={() => switchLang('en')}>
-              <img src={us_svg} />
+              <img src={usSvg} />
               <span className={activeLang === 'en' ? S.active : ''}>English</span>
             </button>
           </li>
           <li>
             <button onClick={() => switchLang('ru')}>
-              <img src={ru_svg} />
+              <img src={ruSvg} />
               <span className={activeLang === 'ru' ? S.active : ''}>Русский</span>
             </button>
           </li>
           <li>
             <button onClick={() => switchLang('et')}>
-              <img src={ee_svg} />
+              <img src={eeSvg} />
               <span className={activeLang === 'et' ? S.active : ''}>Eesti</span>
             </button>
           </li>
-          <img className={S.triangle} src={triangle_svg} />
+          <img className={S.triangle} src={triangleSvg} />
         </ul>
         {/* 詼諧背景 */}
         <div className={`${S.backdrop} ${isOpened ? S.showBack : ''}`}></div>
