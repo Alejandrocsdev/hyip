@@ -1,7 +1,9 @@
 // 模組樣式
 import S from './style.module.css'
 // 鉤子函式
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
+import useBodyClass from '../../../hooks/useBodyClass'
+import useClickOutside from '../../../hooks/useClickOutside'
 // 圖檔
 import usSvg from '../../../assets/img/flag/us.svg'
 import ruSvg from '../../../assets/img/flag/ru.svg'
@@ -13,37 +15,23 @@ import triangleSvg from '../../../assets/img/element/triangle.svg'
 function LangDrop() {
   const [isOpened, setIsOpened] = useState(false)
   const [activeLang, setActiveLang] = useState('en')
-
   const dropdownRef = useRef(null)
+
+  useBodyClass(isOpened ? 'no-scroll' : '')
 
   const toggleDropdown = () => {
     setIsOpened((prev) => !prev)
-
-    if (!isOpened) {
-      document.body.classList.add('no-scroll')
-    } else {
-      document.body.classList.remove('no-scroll')
-    }
   }
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        console.log('test')
-        console.log('isOpened: ', isOpened)
-        setIsOpened(false)
-        document.body.classList.remove('no-scroll')
-      }
-    }
+  const closeDropdown = () => {
+    setIsOpened(false)
+  }
 
-    // if (isOpened) {
-    document.addEventListener('mousedown', handleClickOutside)
-    // }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
+  useClickOutside(dropdownRef, () => {
+    if (isOpened) {
+      closeDropdown()
     }
-  }, [])
+  })
 
   const switchLang = (lang) => {
     setActiveLang(lang)

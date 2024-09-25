@@ -3,6 +3,8 @@ import S from './style.module.css'
 // 鉤子函式
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
+import useBodyClass from '../../../hooks/useBodyClass'
+import useClickOutside from '../../../hooks/useClickOutside'
 // 圖檔
 import signInSvg from '../../../assets/img/icon/sign-in.svg'
 import signUpSvg from '../../../assets/img/icon/sign-up.svg'
@@ -19,37 +21,23 @@ import Logo from '../../../components/Logo'
 function MobileMenu() {
   const [isOpened, setIsOpened] = useState(false)
   const [activeLang, setActiveLang] = useState('en')
-
   const bodyRef = useRef(null)
+  const menuRef = useRef(null)
+
+  useBodyClass(isOpened ? 'no-scroll' : '')
+
+  // 使用自定義鉤子來處理點擊外部事件
+  useClickOutside(
+    bodyRef,
+    () => {
+      setIsOpened(false)
+    },
+    [menuRef] // 忽略menuRef的點擊
+  )
 
   const toggleMenu = () => {
     setIsOpened((prev) => !prev)
-
-    if (!isOpened) {
-      document.body.classList.add('no-scroll')
-    } else {
-      document.body.classList.remove('no-scroll')
-    }
   }
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (bodyRef.current && !bodyRef.current.contains(event.target)) {
-        if (!event.target.closest(`.${S.menu}`)) {
-          setIsOpened(false)
-          document.body.classList.remove('no-scroll')
-        }
-      }
-    }
-
-    if (isOpened) {
-      document.addEventListener('mousedown', handleClickOutside)
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
 
   const switchLang = (lang) => {
     setActiveLang(lang)
@@ -58,7 +46,7 @@ function MobileMenu() {
   return (
     <>
       {/* 手機列表按鈕 */}
-      <button className={`${S.menu} ${isOpened ? S.open : ''}`} onClick={toggleMenu}>
+      <button className={`${S.menu} ${isOpened ? S.open : ''}`} onClick={toggleMenu} ref={menuRef}>
         <span></span>
       </button>
       {/* 手機列表 */}

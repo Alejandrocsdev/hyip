@@ -70,9 +70,7 @@
   transition: all .5s ease-in-out 0s;
   pointer-events: none;
   opacity: 0;
-
-  /* overflow: auto;
-  overflow-x: hidden; */
+  overflow: hidden;
 }
 
 .bodyOpen {
@@ -109,10 +107,7 @@
 .body .inner {
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  overflow-x: hidden;
-
-  
+  overflow: hidden;
 }
 
 .body .inner .service {
