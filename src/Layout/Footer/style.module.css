@@ -161,11 +161,16 @@
     flex-direction: column;
   }
 
+  .body .social .icons a {
+    margin-bottom: 1rem;
+  }
+
   .body .info {
     /* width: 70%; */
     /* display: flex; */
     /* justify-content: space-evenly; */
     flex-direction: column;
+    gap: 1.25rem;
   }
 
   .bottom {
@@ -177,4 +182,16 @@
     /* justify-content: space-between; */
     flex-direction: column;
   }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .bottom p,
+  .bottom .privacy {
+    font-size: .875rem;
+  }
+
 }
