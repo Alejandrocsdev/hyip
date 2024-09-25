@@ -2,7 +2,6 @@
 import S from './style.module.css'
 // 鉤子函式
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 // 組件
 import Logo from '../../components/Logo'
 import FacebookSvg from '../../components/Svg/FacebookSvg'
@@ -15,10 +14,12 @@ function Footer() {
     <>
       <footer className={S.footer}>
         <div className={S.container}>
+          {/* 主體 */}
           <div className={S.body}>
+            {/* 社群 */}
             <div className={S.social}>
-            <Logo type="crypto" color="white" />
-            <Logo type="origin" color="white" />
+              <Logo type="crypto" color="white" />
+              <Logo type="origin" color="white" />
               <div className={S.icons}>
                 <Link to="https://www.facebook.com/moneyexpresslv" target="blank">
                   <FacebookSvg />
@@ -31,7 +32,9 @@ function Footer() {
                 </Link>
               </div>
             </div>
+            {/* 資訊 */}
             <div className={S.info}>
+              {/* 關於 */}
               <div className={S.item}>
                 <h5 className={S.title}>About us</h5>
                 <ul>
@@ -43,7 +46,8 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              {/* <div className={S.item}>
+              {/* 聯繫 */}
+              <div className={S.item}>
                 <h5 className={S.title}>Contacts</h5>
                 <address>
                   <div className={S.contacts}>
@@ -60,10 +64,11 @@ function Footer() {
                     Pirita tee 20/4-219, Tallinn, 12011, Estonia
                   </p>
                 </address>
-              </div> */}
+              </div>
             </div>
           </div>
-          {/* <div className={S.bottom}>
+          {/* 下方 */}
+          <div className={S.bottom}>
             <p>© MONEY EXPRESS © All Rights Reserved</p>
             <div className={S.privacy}>
               <Link to="/privacy-policy">Terms and conditions</Link>
@@ -72,7 +77,7 @@ function Footer() {
               <span> | </span>
               <Link to="/complaints">Complaints resolution procedure</Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </footer>
     </>
