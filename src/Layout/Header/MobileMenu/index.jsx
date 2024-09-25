@@ -2,7 +2,7 @@
 import S from './style.module.css'
 // 鉤子函式
 import { Link } from 'react-router-dom'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import useBodyClass from '../../../hooks/useBodyClass'
 import useClickOutside from '../../../hooks/useClickOutside'
 // 圖檔
