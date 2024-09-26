@@ -1,0 +1,165 @@
+.main {
+  grid-row: span 2;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem 2.5rem;
+  /* background-color: aquamarine; */
+}
+
+/* .main form {} */
+
+.main form .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.main form .inputs .input>span {
+  padding: 0 .25rem;
+  margin-bottom: .5rem;
+  color: #505a63;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.14;
+  display: block;
+}
+
+.main form .inputs .input>input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: .0625rem solid rgba(0, 0, 0, .08);
+  background-color: #fff;
+  color: #878199;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.main form .inputs .input:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* .main form .message {} */
+
+.main form .message>span {
+  padding: 0 .25rem;
+  margin-bottom: .5rem;
+  color: #505a63;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.14;
+  display: block;
+}
+
+.main form .message textarea {
+  resize: none;
+  height: 7.5rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: .0625rem solid rgba(0, 0, 0, .08);
+  background-color: #fff;
+  color: #878199;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.main form .agreements {
+  margin: 1rem 0 1.5rem;
+  font-size: .875rem;
+  display: block;
+  color: #0f0233;
+  line-height: 1.25rem;
+  padding: .5rem 0;
+  position: relative;
+
+  display: flex;
+  gap: 8px;
+}
+
+/* .main form .agreements>p {} */
+
+.main form .agreements>p>a {
+  color: #0f0233;
+  text-decoration: underline;
+  text-underline-offset: .3125rem;
+  transition: color .3s ease-in-out 0s;
+}
+
+.main form .agreements>p>a:hover {
+  color: #ff5f45;
+}
+
+.main button {
+  width: auto;
+  min-width: 18.75rem;
+  max-width: 100%;
+  background-color: #FFD45A;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .875rem 1.875rem;
+  border: .125rem solid transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border-radius: .5rem;
+  transition: color .3s ease 0s, background-color .3s ease 0s, border-color .3s ease 0s;
+}
+
+.main button:hover {
+  color: white;
+  background-color: #041d33;
+}
+
+.thanks {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4.25rem 0;
+}
+
+.thanks img {
+  margin-bottom: 1.75rem;
+}
+
+.thanks p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.thanks button {
+  width: auto;
+  min-width: 14.25rem;
+  background-color: #FFD45A;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+  padding: .875rem 1.875rem;
+  border: .125rem solid transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border-radius: .5rem;
+  transition: color .3s ease 0s, background-color .3s ease 0s, border-color .3s ease 0s;
+}
+
+.thanks button:hover {
+  color: white;
+  background-color: #041d33;
+}
+
+.show {
+  display: flex;
+}

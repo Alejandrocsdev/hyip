@@ -1,0 +1,31 @@
+.checkbox {
+  height: 1.25rem;
+  aspect-ratio: 1/1;
+  border-radius: .25rem;
+  background-color: #f3f2f5;
+  border: .125rem solid #eae9ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .3s ease 0s, border-color .3s ease 0s;
+  cursor: pointer;
+}
+
+.checkbox img {
+  display: none;
+  user-select: none;
+}
+
+.show {
+  display: inline !important;
+}
+
+.active {
+  border-color: #ff5f45;
+  background-color: #ff5f45;
+}
+
+.inactive {
+  background-color: #ffebeb;
+  border-color: #e00909;
+}

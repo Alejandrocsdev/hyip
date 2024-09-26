@@ -8,8 +8,9 @@ import useClickOutside from '../../../hooks/useClickOutside'
 import usSvg from '../../../assets/img/flag/us.svg'
 import ruSvg from '../../../assets/img/flag/ru.svg'
 import eeSvg from '../../../assets/img/flag/ee.svg'
-import angleDownSvg from '../../../assets/img/element/angle-down.svg'
 import triangleSvg from '../../../assets/img/element/triangle.svg'
+// 組件
+import AngleDownSvg from '../../../components/Svg/AngleDownSvg'
 
 // 選單組件
 function LangDrop() {
@@ -43,7 +44,7 @@ function LangDrop() {
         {/* 語言按鈕 */}
         <button>
           <span>{activeLang}</span>
-          <img className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} src={angleDownSvg} />
+          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} stroke="white" />
         </button>
         {/* 語言列表 */}
         <ul className={`${isOpened ? S.showDrop : ''}`} onClick={(e) => e.stopPropagation()}>
