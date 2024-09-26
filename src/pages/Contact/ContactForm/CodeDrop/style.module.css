@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   position: relative;
-    display: inline-block;
+  display: inline-block;
 }
 
 .main .codeContainer {
@@ -13,34 +13,34 @@
   left: 0;
 
   z-index: 2;
+
+  cursor: pointer;
 }
 
 .main .codeContainer .selected {
   min-width: 7.125rem;
-        font-size: 1rem;
+  font-size: 1rem;
   background-color: #0000000d;
 
-    padding-left: 1rem;
-    color: #3e345c;
-    font-weight: 700;
-    border-radius: .75rem 0 0 .75rem;
+  
+  color: #3e345c;
+  font-weight: 700;
+  border-radius: .75rem 0 0 .75rem;
 
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 6px 0 8px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 6px 0 1rem;
 }
 
 .main .codeContainer .selected .flag {
   width: 20px;
-  height: 14px;
-  background-position: -5131px 0;
   pointer-events: none;
-  /* background-image: url(media/flags-5TON5ZGR.webp); */
+  background-image: url(webp/flags-sprite-sheets.webp);
   background-repeat: no-repeat;
-    background-color: #dbdbdb;
+  background-color: #dbdbdb;
 }
 
 .main .codeContainer .selected .code {

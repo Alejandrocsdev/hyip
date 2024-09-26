@@ -1,0 +1,2200 @@
+{
+    "flags": [
+        {
+            "id": "1",
+            "countryCode": "af",
+            "dialingCode": "93",
+            "englishName": "Afghanistan ",
+            "originalName": "‫افغانستان‬‎",
+            "position": "-66",
+            "height": "14"
+        },
+        {
+            "id": "2",
+            "countryCode": "al",
+            "dialingCode": "355",
+            "englishName": "Albania ",
+            "originalName": "Shqipëri",
+            "position": "-132",
+            "height": "15"
+        },
+        {
+            "id": "3",
+            "countryCode": "dz",
+            "dialingCode": "213",
+            "englishName": "Algeria ",
+            "originalName": "‫الجزائر‬‎",
+            "position": "-1401",
+            "height": "14"
+        },
+        {
+            "id": "4",
+            "countryCode": "as",
+            "dialingCode": "1",
+            "englishName": "American Samoa",
+            "originalName": null,
+            "position": "-242",
+            "height": "10"
+        },
+        {
+            "id": "5",
+            "countryCode": "ad",
+            "dialingCode": "376",
+            "englishName": "Andorra",
+            "originalName": null,
+            "position": "-22",
+            "height": "14"
+        },
+        {
+            "id": "6",
+            "countryCode": "ao",
+            "dialingCode": "244",
+            "englishName": "Angola",
+            "originalName": null,
+            "position": "-176",
+            "height": "14"
+        },
+        {
+            "id": "7",
+            "countryCode": "ai",
+            "dialingCode": "1",
+            "englishName": "Anguilla",
+            "originalName": null,
+            "position": "-110",
+            "height": "10"
+        },
+        {
+            "id": "8",
+            "countryCode": "ag",
+            "dialingCode": "1",
+            "englishName": "Antigua and Barbuda",
+            "originalName": null,
+            "position": "-88",
+            "height": "14"
+        },
+        {
+            "id": "9",
+            "countryCode": "ar",
+            "dialingCode": "54",
+            "englishName": "Argentina",
+            "originalName": null,
+            "position": "-220",
+            "height": "13"
+        },
+        {
+            "id": "10",
+            "countryCode": "am",
+            "dialingCode": "374",
+            "englishName": "Armenia ",
+            "originalName": "Հայաստան",
+            "position": "-154",
+            "height": "10"
+        },
+        {
+            "id": "11",
+            "countryCode": "aw",
+            "dialingCode": "297",
+            "englishName": "Aruba",
+            "originalName": null,
+            "position": "-308",
+            "height": "14"
+        },
+        {
+            "id": "12",
+            "countryCode": "ac",
+            "dialingCode": "247",
+            "englishName": "Ascension Island",
+            "originalName": null,
+            "position": "0",
+            "height": "10"
+        },
+        {
+            "id": "13",
+            "countryCode": "au",
+            "dialingCode": "61",
+            "englishName": "Australia",
+            "originalName": null,
+            "position": "-286",
+            "height": "10"
+        },
+        {
+            "id": "14",
+            "countryCode": "at",
+            "dialingCode": "43",
+            "englishName": "Austria ",
+            "originalName": "Österreich",
+            "position": "-264",
+            "height": "14"
+        },
+        {
+            "id": "15",
+            "countryCode": "az",
+            "dialingCode": "994",
+            "englishName": "Azerbaijan ",
+            "originalName": "Azərbaycan",
+            "position": "-352",
+            "height": "10"
+        },
+        {
+            "id": "16",
+            "countryCode": "bs",
+            "dialingCode": "1",
+            "englishName": "Bahamas",
+            "originalName": null,
+            "position": "-702",
+            "height": "10"
+        },
+        {
+            "id": "17",
+            "countryCode": "bh",
+            "dialingCode": "973",
+            "englishName": "Bahrain ",
+            "originalName": "‫البحرين‬‎",
+            "position": "-504",
+            "height": "12"
+        },
+        {
+            "id": "18",
+            "countryCode": "bd",
+            "dialingCode": "880",
+            "englishName": "Bangladesh ",
+            "originalName": "বাংলাদেশ",
+            "position": "-418",
+            "height": "12"
+        },
+        {
+            "id": "19",
+            "countryCode": "bb",
+            "dialingCode": "1",
+            "englishName": "Barbados",
+            "originalName": null,
+            "position": "-396",
+            "height": "14"
+        },
+        {
+            "id": "20",
+            "countryCode": "by",
+            "dialingCode": "375",
+            "englishName": "Belarus ",
+            "originalName": "Беларусь",
+            "position": "-790",
+            "height": "10"
+        },
+        {
+            "id": "21",
+            "countryCode": "be",
+            "dialingCode": "32",
+            "englishName": "Belgium ",
+            "originalName": "België",
+            "position": "-440",
+            "height": "15"
+        },
+        {
+            "id": "22",
+            "countryCode": "bz",
+            "dialingCode": "501",
+            "englishName": "Belize",
+            "originalName": null,
+            "position": "-812",
+            "height": "14"
+        },
+        {
+            "id": "23",
+            "countryCode": "bj",
+            "dialingCode": "229",
+            "englishName": "Benin ",
+            "originalName": "Bénin",
+            "position": "-548",
+            "height": "14"
+        },
+        {
+            "id": "24",
+            "countryCode": "bm",
+            "dialingCode": "1",
+            "englishName": "Bermuda",
+            "originalName": null,
+            "position": "-592",
+            "height": "10"
+        },
+        {
+            "id": "25",
+            "countryCode": "bt",
+            "dialingCode": "975",
+            "englishName": "Bhutan ",
+            "originalName": "འབྲུག",
+            "position": "-724",
+            "height": "14"
+        },
+        {
+            "id": "26",
+            "countryCode": "bo",
+            "dialingCode": "591",
+            "englishName": "Bolivia",
+            "originalName": null,
+            "position": "-636",
+            "height": "14"
+        },
+        {
+            "id": "27",
+            "countryCode": "ba",
+            "dialingCode": "387",
+            "englishName": "Bosnia and Herzegovina ",
+            "originalName": "Босна и Херцеговина",
+            "position": "-374",
+            "height": "10"
+        },
+        {
+            "id": "28",
+            "countryCode": "bw",
+            "dialingCode": "267",
+            "englishName": "Botswana",
+            "originalName": null,
+            "position": "-768",
+            "height": "14"
+        },
+        {
+            "id": "29",
+            "countryCode": "br",
+            "dialingCode": "55",
+            "englishName": "Brazil ",
+            "originalName": "Brasil",
+            "position": "-680",
+            "height": "14"
+        },
+        {
+            "id": "30",
+            "countryCode": "io",
+            "dialingCode": "246",
+            "englishName": "British Indian Ocean Territory",
+            "originalName": null,
+            "position": "-2435",
+            "height": "10"
+        },
+        {
+            "id": "31",
+            "countryCode": "vg",
+            "dialingCode": "1",
+            "englishName": "British Virgin Islands",
+            "originalName": null,
+            "position": "-5390",
+            "height": "10"
+        },
+        {
+            "id": "32",
+            "countryCode": "bn",
+            "dialingCode": "673",
+            "englishName": "Brunei",
+            "originalName": null,
+            "position": "-614",
+            "height": "10"
+        },
+        {
+            "id": "33",
+            "countryCode": "bg",
+            "dialingCode": "359",
+            "englishName": "Bulgaria ",
+            "originalName": "България",
+            "position": "-482",
+            "height": "12"
+        },
+        {
+            "id": "34",
+            "countryCode": "bf",
+            "dialingCode": "226",
+            "englishName": "Burkina Faso",
+            "originalName": null,
+            "position": "-460",
+            "height": "14"
+        },
+        {
+            "id": "35",
+            "countryCode": "bi",
+            "dialingCode": "257",
+            "englishName": "Burundi ",
+            "originalName": "Uburundi",
+            "position": "-526",
+            "height": "12"
+        },
+        {
+            "id": "36",
+            "countryCode": "kh",
+            "dialingCode": "855",
+            "englishName": "Cambodia ",
+            "originalName": "កម្ពុជា",
+            "position": "-2677",
+            "height": "13"
+        },
+        {
+            "id": "37",
+            "countryCode": "cm",
+            "dialingCode": "237",
+            "englishName": "Cameroon ",
+            "originalName": "Cameroun",
+            "position": "-1027",
+            "height": "14"
+        },
+        {
+            "id": "38",
+            "countryCode": "ca",
+            "dialingCode": "1",
+            "englishName": "Canada",
+            "originalName": null,
+            "position": "-834",
+            "height": "10"
+        },
+        {
+            "id": "39",
+            "countryCode": "cv",
+            "dialingCode": "238",
+            "englishName": "Cape Verde ",
+            "originalName": "Kabu Verdi",
+            "position": "-1159",
+            "height": "12"
+        },
+        {
+            "id": "40",
+            "countryCode": "bq",
+            "dialingCode": "599",
+            "englishName": "Caribbean Netherlands",
+            "originalName": null,
+            "position": "-658",
+            "height": "14"
+        },
+        {
+            "id": "41",
+            "countryCode": "ky",
+            "dialingCode": "1",
+            "englishName": "Cayman Islands",
+            "originalName": null,
+            "position": "-2831",
+            "height": "10"
+        },
+        {
+            "id": "42",
+            "countryCode": "cf",
+            "dialingCode": "236",
+            "englishName": "Central African Republic ",
+            "originalName": "République centrafricaine",
+            "position": "-900",
+            "height": "14"
+        },
+        {
+            "id": "43",
+            "countryCode": "td",
+            "dialingCode": "235",
+            "englishName": "Chad ",
+            "originalName": "Tchad",
+            "position": "-4845",
+            "height": "14"
+        },
+        {
+            "id": "44",
+            "countryCode": "cl",
+            "dialingCode": "56",
+            "englishName": "Chile",
+            "originalName": null,
+            "position": "-1005",
+            "height": "14"
+        },
+        {
+            "id": "45",
+            "countryCode": "cn",
+            "dialingCode": "86",
+            "englishName": "China ",
+            "originalName": "中国",
+            "position": "-1049",
+            "height": "14"
+        },
+        {
+            "id": "46",
+            "countryCode": "cx",
+            "dialingCode": "61",
+            "englishName": "Christmas Island",
+            "originalName": null,
+            "position": "-1203",
+            "height": "10"
+        },
+        {
+            "id": "47",
+            "countryCode": "cc",
+            "dialingCode": "61",
+            "englishName": "Cocos ",
+            "originalName": "Keeling Islands",
+            "position": "-856",
+            "height": "10"
+        },
+        {
+            "id": "48",
+            "countryCode": "co",
+            "dialingCode": "57",
+            "englishName": "Colombia",
+            "originalName": null,
+            "position": "-1071",
+            "height": "14"
+        },
+        {
+            "id": "49",
+            "countryCode": "km",
+            "dialingCode": "269",
+            "englishName": "Comoros ",
+            "originalName": "‫جزر القمر‬‎",
+            "position": "-2721",
+            "height": "12"
+        },
+        {
+            "id": "50",
+            "countryCode": "cd",
+            "dialingCode": "243",
+            "englishName": "Congo ",
+            "originalName": "DRC Jamhuri ya Kidemokrasia ya Kongo",
+            "position": "-878",
+            "height": "15"
+        },
+        {
+            "id": "51",
+            "countryCode": "cg",
+            "dialingCode": "242",
+            "englishName": "Congo ",
+            "originalName": "Republic Congo-Brazzaville",
+            "position": "-922",
+            "height": "14"
+        },
+        {
+            "id": "52",
+            "countryCode": "ck",
+            "dialingCode": "682",
+            "englishName": "Cook Islands",
+            "originalName": null,
+            "position": "-983",
+            "height": "10"
+        },
+        {
+            "id": "53",
+            "countryCode": "cr",
+            "dialingCode": "506",
+            "englishName": "Costa Rica",
+            "originalName": null,
+            "position": "-1115",
+            "height": "12"
+        },
+        {
+            "id": "54",
+            "countryCode": "ci",
+            "dialingCode": "225",
+            "englishName": "Côte d’Ivoire",
+            "originalName": null,
+            "position": "-961",
+            "height": "14"
+        },
+        {
+            "id": "55",
+            "countryCode": "hr",
+            "dialingCode": "385",
+            "englishName": "Croatia ",
+            "originalName": "Hrvatska",
+            "position": "-2237",
+            "height": "10"
+        },
+        {
+            "id": "56",
+            "countryCode": "cu",
+            "dialingCode": "53",
+            "englishName": "Cuba",
+            "originalName": null,
+            "position": "-1137",
+            "height": "10"
+        },
+        {
+            "id": "57",
+            "countryCode": "cw",
+            "dialingCode": "599",
+            "englishName": "Curaçao",
+            "originalName": null,
+            "position": "-1181",
+            "height": "14"
+        },
+        {
+            "id": "58",
+            "countryCode": "cy",
+            "dialingCode": "357",
+            "englishName": "Cyprus ",
+            "originalName": "Κύπρος",
+            "position": "-1225",
+            "height": "14"
+        },
+        {
+            "id": "59",
+            "countryCode": "cz",
+            "dialingCode": "420",
+            "englishName": "Czech Republic ",
+            "originalName": "Česká republika",
+            "position": "-1247",
+            "height": "14"
+        },
+        {
+            "id": "60",
+            "countryCode": "dk",
+            "dialingCode": "45",
+            "englishName": "Denmark ",
+            "originalName": "Danmark",
+            "position": "-1335",
+            "height": "15"
+        },
+        {
+            "id": "61",
+            "countryCode": "dj",
+            "dialingCode": "253",
+            "englishName": "Djibouti",
+            "originalName": null,
+            "position": "-1313",
+            "height": "14"
+        },
+        {
+            "id": "62",
+            "countryCode": "dm",
+            "dialingCode": "1",
+            "englishName": "Dominica",
+            "originalName": null,
+            "position": "-1357",
+            "height": "10"
+        },
+        {
+            "id": "63",
+            "countryCode": "do",
+            "dialingCode": "1",
+            "englishName": "Dominican Republic ",
+            "originalName": "República Dominicana",
+            "position": "-1379",
+            "height": "14"
+        },
+        {
+            "id": "64",
+            "countryCode": "ec",
+            "dialingCode": "593",
+            "englishName": "Ecuador",
+            "originalName": null,
+            "position": "-1445",
+            "height": "14"
+        },
+        {
+            "id": "65",
+            "countryCode": "eg",
+            "dialingCode": "20",
+            "englishName": "Egypt ",
+            "originalName": "‫مصر‬‎",
+            "position": "-1489",
+            "height": "14"
+        },
+        {
+            "id": "66",
+            "countryCode": "sv",
+            "dialingCode": "503",
+            "englishName": "El Salvador",
+            "originalName": null,
+            "position": "-4713",
+            "height": "12"
+        },
+        {
+            "id": "67",
+            "countryCode": "gq",
+            "dialingCode": "240",
+            "englishName": "Equatorial Guinea ",
+            "originalName": "Guinea Ecuatorial",
+            "position": "-2017",
+            "height": "14"
+        },
+        {
+            "id": "68",
+            "countryCode": "er",
+            "dialingCode": "291",
+            "englishName": "Eritrea",
+            "originalName": null,
+            "position": "-1533",
+            "height": "10"
+        },
+        {
+            "id": "69",
+            "countryCode": "ee",
+            "dialingCode": "372",
+            "englishName": "Estonia ",
+            "originalName": "Eesti",
+            "position": "-1467",
+            "height": "13"
+        },
+        {
+            "id": "70",
+            "countryCode": "sz",
+            "dialingCode": "268",
+            "englishName": "Eswatini",
+            "originalName": null,
+            "position": "-4779",
+            "height": "14"
+        },
+        {
+            "id": "71",
+            "countryCode": "et",
+            "dialingCode": "251",
+            "englishName": "Ethiopia",
+            "originalName": null,
+            "position": "-1577",
+            "height": "10"
+        },
+        {
+            "id": "72",
+            "countryCode": "fk",
+            "dialingCode": "500",
+            "englishName": "Falkland Islands ",
+            "originalName": "Islas Malvinas",
+            "position": "-1665",
+            "height": "10"
+        },
+        {
+            "id": "73",
+            "countryCode": "fo",
+            "dialingCode": "298",
+            "englishName": "Faroe Islands ",
+            "originalName": "Føroyar",
+            "position": "-1709",
+            "height": "15"
+        },
+        {
+            "id": "74",
+            "countryCode": "fj",
+            "dialingCode": "679",
+            "englishName": "Fiji",
+            "originalName": null,
+            "position": "-1643",
+            "height": "10"
+        },
+        {
+            "id": "75",
+            "countryCode": "fi",
+            "dialingCode": "358",
+            "englishName": "Finland ",
+            "originalName": "Suomi",
+            "position": "-1621",
+            "height": "12"
+        },
+        {
+            "id": "76",
+            "countryCode": "fr",
+            "dialingCode": "33",
+            "englishName": "France",
+            "originalName": null,
+            "position": "-1731",
+            "height": "14"
+        },
+        {
+            "id": "77",
+            "countryCode": "gf",
+            "dialingCode": "594",
+            "englishName": "French Guiana ",
+            "originalName": "Guyane française",
+            "position": "-1841",
+            "height": "14"
+        },
+        {
+            "id": "78",
+            "countryCode": "pf",
+            "dialingCode": "689",
+            "englishName": "French Polynesia ",
+            "originalName": "Polynésie française",
+            "position": "-3943",
+            "height": "14"
+        },
+        {
+            "id": "79",
+            "countryCode": "ga",
+            "dialingCode": "241",
+            "englishName": "Gabon",
+            "originalName": null,
+            "position": "-1753",
+            "height": "15"
+        },
+        {
+            "id": "80",
+            "countryCode": "gm",
+            "dialingCode": "220",
+            "englishName": "Gambia",
+            "originalName": null,
+            "position": "-1951",
+            "height": "14"
+        },
+        {
+            "id": "81",
+            "countryCode": "ge",
+            "dialingCode": "995",
+            "englishName": "Georgia ",
+            "originalName": "საქართველო",
+            "position": "-1819",
+            "height": "14"
+        },
+        {
+            "id": "82",
+            "countryCode": "de",
+            "dialingCode": "49",
+            "englishName": "Germany ",
+            "originalName": "Deutschland",
+            "position": "-1269",
+            "height": "12"
+        },
+        {
+            "id": "83",
+            "countryCode": "gh",
+            "dialingCode": "233",
+            "englishName": "Ghana ",
+            "originalName": "Gaana",
+            "position": "-1885",
+            "height": "14"
+        },
+        {
+            "id": "84",
+            "countryCode": "gi",
+            "dialingCode": "350",
+            "englishName": "Gibraltar",
+            "originalName": null,
+            "position": "-1907",
+            "height": "10"
+        },
+        {
+            "id": "85",
+            "countryCode": "gr",
+            "dialingCode": "30",
+            "englishName": "Greece ",
+            "originalName": "Ελλάδα",
+            "position": "-2039",
+            "height": "14"
+        },
+        {
+            "id": "86",
+            "countryCode": "gl",
+            "dialingCode": "299",
+            "englishName": "Greenland ",
+            "originalName": "Kalaallit Nunaat",
+            "position": "-1929",
+            "height": "14"
+        },
+        {
+            "id": "87",
+            "countryCode": "gd",
+            "dialingCode": "1",
+            "englishName": "Grenada",
+            "originalName": null,
+            "position": "-1797",
+            "height": "12"
+        },
+        {
+            "id": "88",
+            "countryCode": "gp",
+            "dialingCode": "590",
+            "englishName": "Guadeloupe",
+            "originalName": null,
+            "position": "-1995",
+            "height": "14"
+        },
+        {
+            "id": "89",
+            "countryCode": "gu",
+            "dialingCode": "1",
+            "englishName": "Guam",
+            "originalName": null,
+            "position": "-2105",
+            "height": "11"
+        },
+        {
+            "id": "90",
+            "countryCode": "gt",
+            "dialingCode": "502",
+            "englishName": "Guatemala",
+            "originalName": null,
+            "position": "-2083",
+            "height": "13"
+        },
+        {
+            "id": "91",
+            "countryCode": "gg",
+            "dialingCode": "44",
+            "englishName": "Guernsey",
+            "originalName": null,
+            "position": "-1863",
+            "height": "14"
+        },
+        {
+            "id": "92",
+            "countryCode": "gn",
+            "dialingCode": "224",
+            "englishName": "Guinea ",
+            "originalName": "Guinée",
+            "position": "-1973",
+            "height": "14"
+        },
+        {
+            "id": "93",
+            "countryCode": "gw",
+            "dialingCode": "245",
+            "englishName": "Guinea-Bissau ",
+            "originalName": "Guiné Bissau",
+            "position": "-2127",
+            "height": "10"
+        },
+        {
+            "id": "94",
+            "countryCode": "gy",
+            "dialingCode": "592",
+            "englishName": "Guyana",
+            "originalName": null,
+            "position": "-2149",
+            "height": "12"
+        },
+        {
+            "id": "95",
+            "countryCode": "ht",
+            "dialingCode": "509",
+            "englishName": "Haiti",
+            "originalName": null,
+            "position": "-2259",
+            "height": "12"
+        },
+        {
+            "id": "96",
+            "countryCode": "hn",
+            "dialingCode": "504",
+            "englishName": "Honduras",
+            "originalName": null,
+            "position": "-2215",
+            "height": "10"
+        },
+        {
+            "id": "97",
+            "countryCode": "hk",
+            "dialingCode": "852",
+            "englishName": "Hong Kong ",
+            "originalName": "香港",
+            "position": "-2171",
+            "height": "14"
+        },
+        {
+            "id": "98",
+            "countryCode": "hu",
+            "dialingCode": "36",
+            "englishName": "Hungary ",
+            "originalName": "Magyarország",
+            "position": "-2281",
+            "height": "10"
+        },
+        {
+            "id": "99",
+            "countryCode": "is",
+            "dialingCode": "354",
+            "englishName": "Iceland ",
+            "originalName": "Ísland",
+            "position": "-2501",
+            "height": "15"
+        },
+        {
+            "id": "100",
+            "countryCode": "in",
+            "dialingCode": "91",
+            "englishName": "India ",
+            "originalName": "भारत",
+            "position": "-2413",
+            "height": "14"
+        },
+        {
+            "id": "101",
+            "countryCode": "id",
+            "dialingCode": "62",
+            "englishName": "Indonesia",
+            "originalName": null,
+            "position": "-2325",
+            "height": "14"
+        },
+        {
+            "id": "102",
+            "countryCode": "ir",
+            "dialingCode": "98",
+            "englishName": "Iran ",
+            "originalName": "‫ایران‬‎",
+            "position": "-2479",
+            "height": "12"
+        },
+        {
+            "id": "103",
+            "countryCode": "iq",
+            "dialingCode": "964",
+            "englishName": "Iraq ",
+            "originalName": "‫العراق‬‎",
+            "position": "-2457",
+            "height": "14"
+        },
+        {
+            "id": "104",
+            "countryCode": "ie",
+            "dialingCode": "353",
+            "englishName": "Ireland",
+            "originalName": null,
+            "position": "-2347",
+            "height": "10"
+        },
+        {
+            "id": "105",
+            "countryCode": "im",
+            "dialingCode": "44",
+            "englishName": "Isle of Man",
+            "originalName": null,
+            "position": "-2391",
+            "height": "10"
+        },
+        {
+            "id": "106",
+            "countryCode": "il",
+            "dialingCode": "972",
+            "englishName": "Israel ",
+            "originalName": "‫ישראל‬‎",
+            "position": "-2369",
+            "height": "15"
+        },
+        {
+            "id": "107",
+            "countryCode": "it",
+            "dialingCode": "39",
+            "englishName": "Italy ",
+            "originalName": "Italia",
+            "position": "-2523",
+            "height": "14"
+        },
+        {
+            "id": "108",
+            "countryCode": "jm",
+            "dialingCode": "1",
+            "englishName": "Jamaica",
+            "originalName": null,
+            "position": "-2567",
+            "height": "10"
+        },
+        {
+            "id": "109",
+            "countryCode": "jp",
+            "dialingCode": "81",
+            "englishName": "Japan ",
+            "originalName": "日本",
+            "position": "-2611",
+            "height": "14"
+        },
+        {
+            "id": "110",
+            "countryCode": "je",
+            "dialingCode": "44",
+            "englishName": "Jersey",
+            "originalName": null,
+            "position": "-2545",
+            "height": "12"
+        },
+        {
+            "id": "111",
+            "countryCode": "jo",
+            "dialingCode": "962",
+            "englishName": "Jordan ",
+            "originalName": "‫الأردن‬‎",
+            "position": "-2589",
+            "height": "10"
+        },
+        {
+            "id": "112",
+            "countryCode": "kz",
+            "dialingCode": "7",
+            "englishName": "Kazakhstan ",
+            "originalName": "Казахстан",
+            "position": "-2853",
+            "height": "10"
+        },
+        {
+            "id": "113",
+            "countryCode": "ke",
+            "dialingCode": "254",
+            "englishName": "Kenya",
+            "originalName": null,
+            "position": "-2633",
+            "height": "14"
+        },
+        {
+            "id": "114",
+            "countryCode": "ki",
+            "dialingCode": "686",
+            "englishName": "Kiribati",
+            "originalName": null,
+            "position": "-2699",
+            "height": "10"
+        },
+        {
+            "id": "115",
+            "countryCode": "xk",
+            "dialingCode": "383",
+            "englishName": "Kosovo",
+            "originalName": null,
+            "position": "-5522",
+            "height": "15"
+        },
+        {
+            "id": "116",
+            "countryCode": "kw",
+            "dialingCode": "965",
+            "englishName": "Kuwait ",
+            "originalName": "‫الكويت‬‎",
+            "position": "-2809",
+            "height": "10"
+        },
+        {
+            "id": "117",
+            "countryCode": "kg",
+            "dialingCode": "996",
+            "englishName": "Kyrgyzstan ",
+            "originalName": "Кыргызстан",
+            "position": "-2655",
+            "height": "12"
+        },
+        {
+            "id": "118",
+            "countryCode": "la",
+            "dialingCode": "856",
+            "englishName": "Laos ",
+            "originalName": "ລາວ",
+            "position": "-2875",
+            "height": "14"
+        },
+        {
+            "id": "119",
+            "countryCode": "lv",
+            "dialingCode": "371",
+            "englishName": "Latvia ",
+            "originalName": "Latvija",
+            "position": "-3073",
+            "height": "10"
+        },
+        {
+            "id": "120",
+            "countryCode": "lb",
+            "dialingCode": "961",
+            "englishName": "Lebanon ",
+            "originalName": "‫لبنان‬‎",
+            "position": "-2897",
+            "height": "14"
+        },
+        {
+            "id": "121",
+            "countryCode": "ls",
+            "dialingCode": "266",
+            "englishName": "Lesotho",
+            "originalName": null,
+            "position": "-3007",
+            "height": "14"
+        },
+        {
+            "id": "122",
+            "countryCode": "lr",
+            "dialingCode": "231",
+            "englishName": "Liberia",
+            "originalName": null,
+            "position": "-2985",
+            "height": "11"
+        },
+        {
+            "id": "123",
+            "countryCode": "ly",
+            "dialingCode": "218",
+            "englishName": "Libya ",
+            "originalName": "‫ليبيا‬‎",
+            "position": "-3095",
+            "height": "10"
+        },
+        {
+            "id": "124",
+            "countryCode": "li",
+            "dialingCode": "423",
+            "englishName": "Liechtenstein",
+            "originalName": null,
+            "position": "-2941",
+            "height": "12"
+        },
+        {
+            "id": "125",
+            "countryCode": "lt",
+            "dialingCode": "370",
+            "englishName": "Lithuania ",
+            "originalName": "Lietuva",
+            "position": "-3029",
+            "height": "12"
+        },
+        {
+            "id": "126",
+            "countryCode": "lu",
+            "dialingCode": "352",
+            "englishName": "Luxembourg",
+            "originalName": null,
+            "position": "-3051",
+            "height": "12"
+        },
+        {
+            "id": "127",
+            "countryCode": "mo",
+            "dialingCode": "853",
+            "englishName": "Macau ",
+            "originalName": "澳門",
+            "position": "-3358",
+            "height": "14"
+        },
+        {
+            "id": "128",
+            "countryCode": "mg",
+            "dialingCode": "261",
+            "englishName": "Madagascar ",
+            "originalName": "Madagasikara",
+            "position": "-3226",
+            "height": "14"
+        },
+        {
+            "id": "129",
+            "countryCode": "mw",
+            "dialingCode": "265",
+            "englishName": "Malawi",
+            "originalName": null,
+            "position": "-3534",
+            "height": "14"
+        },
+        {
+            "id": "130",
+            "countryCode": "my",
+            "dialingCode": "60",
+            "englishName": "Malaysia",
+            "originalName": null,
+            "position": "-3578",
+            "height": "10"
+        },
+        {
+            "id": "131",
+            "countryCode": "mv",
+            "dialingCode": "960",
+            "englishName": "Maldives",
+            "originalName": null,
+            "position": "-3512",
+            "height": "14"
+        },
+        {
+            "id": "132",
+            "countryCode": "ml",
+            "dialingCode": "223",
+            "englishName": "Mali",
+            "originalName": null,
+            "position": "-3292",
+            "height": "14"
+        },
+        {
+            "id": "133",
+            "countryCode": "mt",
+            "dialingCode": "356",
+            "englishName": "Malta",
+            "originalName": null,
+            "position": "-3468",
+            "height": "14"
+        },
+        {
+            "id": "134",
+            "countryCode": "mh",
+            "dialingCode": "692",
+            "englishName": "Marshall Islands",
+            "originalName": null,
+            "position": "-3248",
+            "height": "11"
+        },
+        {
+            "id": "135",
+            "countryCode": "mq",
+            "dialingCode": "596",
+            "englishName": "Martinique",
+            "originalName": null,
+            "position": "-3402",
+            "height": "14"
+        },
+        {
+            "id": "136",
+            "countryCode": "mr",
+            "dialingCode": "222",
+            "englishName": "Mauritania ",
+            "originalName": "‫موريتانيا‬‎",
+            "position": "-3424",
+            "height": "14"
+        },
+        {
+            "id": "137",
+            "countryCode": "mu",
+            "dialingCode": "230",
+            "englishName": "Mauritius ",
+            "originalName": "Moris",
+            "position": "-3490",
+            "height": "14"
+        },
+        {
+            "id": "138",
+            "countryCode": "yt",
+            "dialingCode": "262",
+            "englishName": "Mayotte",
+            "originalName": null,
+            "position": "-5566",
+            "height": "14"
+        },
+        {
+            "id": "139",
+            "countryCode": "mx",
+            "dialingCode": "52",
+            "englishName": "Mexico ",
+            "originalName": "México",
+            "position": "-3556",
+            "height": "12"
+        },
+        {
+            "id": "140",
+            "countryCode": "fm",
+            "dialingCode": "691",
+            "englishName": "Micronesia",
+            "originalName": null,
+            "position": "-1687",
+            "height": "11"
+        },
+        {
+            "id": "141",
+            "countryCode": "md",
+            "dialingCode": "373",
+            "englishName": "Moldova ",
+            "originalName": "Republica Moldova",
+            "position": "-3160",
+            "height": "10"
+        },
+        {
+            "id": "142",
+            "countryCode": "mc",
+            "dialingCode": "377",
+            "englishName": "Monaco",
+            "originalName": null,
+            "position": "-3139",
+            "height": "15"
+        },
+        {
+            "id": "143",
+            "countryCode": "mn",
+            "dialingCode": "976",
+            "englishName": "Mongolia ",
+            "originalName": "Монгол",
+            "position": "-3336",
+            "height": "10"
+        },
+        {
+            "id": "144",
+            "countryCode": "me",
+            "dialingCode": "382",
+            "englishName": "Montenegro ",
+            "originalName": "Crna Gora",
+            "position": "-3182",
+            "height": "10"
+        },
+        {
+            "id": "145",
+            "countryCode": "ms",
+            "dialingCode": "1",
+            "englishName": "Montserrat",
+            "originalName": null,
+            "position": "-3446",
+            "height": "10"
+        },
+        {
+            "id": "146",
+            "countryCode": "ma",
+            "dialingCode": "212",
+            "englishName": "Morocco ",
+            "originalName": "‫المغرب‬‎",
+            "position": "-3117",
+            "height": "14"
+        },
+        {
+            "id": "147",
+            "countryCode": "mz",
+            "dialingCode": "258",
+            "englishName": "Mozambique ",
+            "originalName": "Moçambique",
+            "position": "-3600",
+            "height": "14"
+        },
+        {
+            "id": "148",
+            "countryCode": "mm",
+            "dialingCode": "95",
+            "englishName": "Myanmar ",
+            "originalName": "Burma မြန်မာ",
+            "position": "-3314",
+            "height": "14"
+        },
+        {
+            "id": "149",
+            "countryCode": "na",
+            "dialingCode": "264",
+            "englishName": "Namibia ",
+            "originalName": "Namibië",
+            "position": "-3622",
+            "height": "14"
+        },
+        {
+            "id": "150",
+            "countryCode": "nr",
+            "dialingCode": "674",
+            "englishName": "Nauru",
+            "originalName": null,
+            "position": "-3811",
+            "height": "10"
+        },
+        {
+            "id": "151",
+            "countryCode": "np",
+            "dialingCode": "977",
+            "englishName": "Nepal ",
+            "originalName": "नेपाल",
+            "position": "-3796",
+            "height": "15"
+        },
+        {
+            "id": "152",
+            "countryCode": "nl",
+            "dialingCode": "31",
+            "englishName": "Netherlands ",
+            "originalName": "Nederland",
+            "position": "-3752",
+            "height": "14"
+        },
+        {
+            "id": "153",
+            "countryCode": "nc",
+            "dialingCode": "687",
+            "englishName": "New Caledonia ",
+            "originalName": "Nouvelle-Calédonie",
+            "position": "-3644",
+            "height": "10"
+        },
+        {
+            "id": "154",
+            "countryCode": "nz",
+            "dialingCode": "64",
+            "englishName": "New Zealand",
+            "originalName": null,
+            "position": "-3855",
+            "height": "10"
+        },
+        {
+            "id": "155",
+            "countryCode": "ni",
+            "dialingCode": "505",
+            "englishName": "Nicaragua",
+            "originalName": null,
+            "position": "-3730",
+            "height": "12"
+        },
+        {
+            "id": "156",
+            "countryCode": "ne",
+            "dialingCode": "227",
+            "englishName": "Niger ",
+            "originalName": "Nijar",
+            "position": "-3666",
+            "height": "15"
+        },
+        {
+            "id": "157",
+            "countryCode": "ng",
+            "dialingCode": "234",
+            "englishName": "Nigeria",
+            "originalName": null,
+            "position": "-3708",
+            "height": "10"
+        },
+        {
+            "id": "158",
+            "countryCode": "nu",
+            "dialingCode": "683",
+            "englishName": "Niue",
+            "originalName": null,
+            "position": "-3833",
+            "height": "10"
+        },
+        {
+            "id": "159",
+            "countryCode": "nf",
+            "dialingCode": "672",
+            "englishName": "Norfolk Island",
+            "originalName": null,
+            "position": "-3686",
+            "height": "10"
+        },
+        {
+            "id": "160",
+            "countryCode": "kp",
+            "dialingCode": "850",
+            "englishName": "North Korea ",
+            "originalName": "조선 민주주의 인민 공화국",
+            "position": "-2765",
+            "height": "10"
+        },
+        {
+            "id": "161",
+            "countryCode": "mk",
+            "dialingCode": "389",
+            "englishName": "North Macedonia ",
+            "originalName": "Северна Македонија",
+            "position": "-3270",
+            "height": "10"
+        },
+        {
+            "id": "162",
+            "countryCode": "mp",
+            "dialingCode": "1",
+            "englishName": "Northern Mariana Islands",
+            "originalName": null,
+            "position": "-3380",
+            "height": "10"
+        },
+        {
+            "id": "163",
+            "countryCode": "no",
+            "dialingCode": "47",
+            "englishName": "Norway ",
+            "originalName": "Norge",
+            "position": "-3774",
+            "height": "15"
+        },
+        {
+            "id": "164",
+            "countryCode": "om",
+            "dialingCode": "968",
+            "englishName": "Oman ",
+            "originalName": "‫عُمان‬‎",
+            "position": "-3877",
+            "height": "10"
+        },
+        {
+            "id": "165",
+            "countryCode": "pk",
+            "dialingCode": "92",
+            "englishName": "Pakistan ",
+            "originalName": "‫پاکستان‬‎",
+            "position": "-4009",
+            "height": "14"
+        },
+        {
+            "id": "166",
+            "countryCode": "pw",
+            "dialingCode": "680",
+            "englishName": "Palau",
+            "originalName": null,
+            "position": "-4163",
+            "height": "13"
+        },
+        {
+            "id": "167",
+            "countryCode": "ps",
+            "dialingCode": "970",
+            "englishName": "Palestine ",
+            "originalName": "‫فلسطين‬‎",
+            "position": "-4119",
+            "height": "10"
+        },
+        {
+            "id": "168",
+            "countryCode": "pa",
+            "dialingCode": "507",
+            "englishName": "Panama ",
+            "originalName": "Panamá",
+            "position": "-3899",
+            "height": "14"
+        },
+        {
+            "id": "169",
+            "countryCode": "pg",
+            "dialingCode": "675",
+            "englishName": "Papua New Guinea",
+            "originalName": null,
+            "position": "-3965",
+            "height": "15"
+        },
+        {
+            "id": "170",
+            "countryCode": "py",
+            "dialingCode": "595",
+            "englishName": "Paraguay",
+            "originalName": null,
+            "position": "-4185",
+            "height": "11"
+        },
+        {
+            "id": "171",
+            "countryCode": "pe",
+            "dialingCode": "51",
+            "englishName": "Peru ",
+            "originalName": "Perú",
+            "position": "-3921",
+            "height": "14"
+        },
+        {
+            "id": "172",
+            "countryCode": "ph",
+            "dialingCode": "63",
+            "englishName": "Philippines",
+            "originalName": null,
+            "position": "-3987",
+            "height": "10"
+        },
+        {
+            "id": "173",
+            "countryCode": "pl",
+            "dialingCode": "48",
+            "englishName": "Poland ",
+            "originalName": "Polska",
+            "position": "-4031",
+            "height": "13"
+        },
+        {
+            "id": "174",
+            "countryCode": "pt",
+            "dialingCode": "351",
+            "englishName": "Portugal",
+            "originalName": null,
+            "position": "-4141",
+            "height": "14"
+        },
+        {
+            "id": "175",
+            "countryCode": "pr",
+            "dialingCode": "1",
+            "englishName": "Puerto Rico",
+            "originalName": null,
+            "position": "-4097",
+            "height": "14"
+        },
+        {
+            "id": "176",
+            "countryCode": "qa",
+            "dialingCode": "974",
+            "englishName": "Qatar ",
+            "originalName": "‫قطر‬‎",
+            "position": "-4207",
+            "height": "8"
+        },
+        {
+            "id": "177",
+            "countryCode": "re",
+            "dialingCode": "262",
+            "englishName": "Réunion ",
+            "originalName": "La Réunion",
+            "position": "-4229",
+            "height": "14"
+        },
+        {
+            "id": "178",
+            "countryCode": "ro",
+            "dialingCode": "40",
+            "englishName": "Romania ",
+            "originalName": "România",
+            "position": "-4251",
+            "height": "14"
+        },
+        {
+            "id": "179",
+            "countryCode": "ru",
+            "dialingCode": "7",
+            "englishName": "Russia ",
+            "originalName": "Россия",
+            "position": "-4295",
+            "height": "14"
+        },
+        {
+            "id": "180",
+            "countryCode": "rw",
+            "dialingCode": "250",
+            "englishName": "Rwanda",
+            "originalName": null,
+            "position": "-4317",
+            "height": "14"
+        },
+        {
+            "id": "181",
+            "countryCode": "bl",
+            "dialingCode": "590",
+            "englishName": "Saint Barthélemy",
+            "originalName": null,
+            "position": "-570",
+            "height": "14"
+        },
+        {
+            "id": "182",
+            "countryCode": "sh",
+            "dialingCode": "290",
+            "englishName": "Saint Helena",
+            "originalName": null,
+            "position": "-4471",
+            "height": "10"
+        },
+        {
+            "id": "183",
+            "countryCode": "kn",
+            "dialingCode": "1",
+            "englishName": "Saint Kitts and Nevis",
+            "originalName": null,
+            "position": "-2743",
+            "height": "14"
+        },
+        {
+            "id": "184",
+            "countryCode": "lc",
+            "dialingCode": "1",
+            "englishName": "Saint Lucia",
+            "originalName": null,
+            "position": "-2919",
+            "height": "10"
+        },
+        {
+            "id": "185",
+            "countryCode": "mf",
+            "dialingCode": "590",
+            "englishName": "Saint Martin ",
+            "originalName": "Saint-Martin (partie française)",
+            "position": "-3204",
+            "height": "14"
+        },
+        {
+            "id": "186",
+            "countryCode": "pm",
+            "dialingCode": "508",
+            "englishName": "Saint Pierre and Miquelon ",
+            "originalName": "Saint-Pierre-et-Miquelon",
+            "position": "-4053",
+            "height": "14"
+        },
+        {
+            "id": "187",
+            "countryCode": "vc",
+            "dialingCode": "1",
+            "englishName": "Saint Vincent and the Grenadines",
+            "originalName": null,
+            "position": "-5346",
+            "height": "14"
+        },
+        {
+            "id": "188",
+            "countryCode": "ws",
+            "dialingCode": "685",
+            "englishName": "Samoa",
+            "originalName": null,
+            "position": "-5500",
+            "height": "10"
+        },
+        {
+            "id": "189",
+            "countryCode": "sm",
+            "dialingCode": "378",
+            "englishName": "San Marino",
+            "originalName": null,
+            "position": "-4581",
+            "height": "15"
+        },
+        {
+            "id": "190",
+            "countryCode": "st",
+            "dialingCode": "239",
+            "englishName": "São Tomé and Príncipe ",
+            "originalName": "São Tomé e Príncipe",
+            "position": "-4691",
+            "height": "10"
+        },
+        {
+            "id": "191",
+            "countryCode": "sa",
+            "dialingCode": "966",
+            "englishName": "Saudi Arabia ",
+            "originalName": "‫المملكة العربية السعودية‬‎",
+            "position": "-4339",
+            "height": "14"
+        },
+        {
+            "id": "192",
+            "countryCode": "sn",
+            "dialingCode": "221",
+            "englishName": "Senegal ",
+            "originalName": "Sénégal",
+            "position": "-4603",
+            "height": "14"
+        },
+        {
+            "id": "193",
+            "countryCode": "rs",
+            "dialingCode": "381",
+            "englishName": "Serbia ",
+            "originalName": "Србија",
+            "position": "-4273",
+            "height": "14"
+        },
+        {
+            "id": "194",
+            "countryCode": "sc",
+            "dialingCode": "248",
+            "englishName": "Seychelles",
+            "originalName": null,
+            "position": "-4383",
+            "height": "10"
+        },
+        {
+            "id": "195",
+            "countryCode": "sl",
+            "dialingCode": "232",
+            "englishName": "Sierra Leone",
+            "originalName": null,
+            "position": "-4559",
+            "height": "14"
+        },
+        {
+            "id": "196",
+            "countryCode": "sg",
+            "dialingCode": "65",
+            "englishName": "Singapore",
+            "originalName": null,
+            "position": "-4449",
+            "height": "14"
+        },
+        {
+            "id": "197",
+            "countryCode": "sx",
+            "dialingCode": "1",
+            "englishName": "Sint Maarten",
+            "originalName": null,
+            "position": "-4735",
+            "height": "14"
+        },
+        {
+            "id": "198",
+            "countryCode": "sk",
+            "dialingCode": "421",
+            "englishName": "Slovakia ",
+            "originalName": "Slovensko",
+            "position": "-4537",
+            "height": "14"
+        },
+        {
+            "id": "199",
+            "countryCode": "si",
+            "dialingCode": "386",
+            "englishName": "Slovenia ",
+            "originalName": "Slovenija",
+            "position": "-4493",
+            "height": "10"
+        },
+        {
+            "id": "200",
+            "countryCode": "sb",
+            "dialingCode": "677",
+            "englishName": "Solomon Islands",
+            "originalName": null,
+            "position": "-4361",
+            "height": "10"
+        },
+        {
+            "id": "201",
+            "countryCode": "so",
+            "dialingCode": "252",
+            "englishName": "Somalia ",
+            "originalName": "Soomaaliya",
+            "position": "-4625",
+            "height": "14"
+        },
+        {
+            "id": "202",
+            "countryCode": "za",
+            "dialingCode": "27",
+            "englishName": "South Africa",
+            "originalName": null,
+            "position": "-5588",
+            "height": "14"
+        },
+        {
+            "id": "203",
+            "countryCode": "kr",
+            "dialingCode": "82",
+            "englishName": "South Korea ",
+            "originalName": "대한민국",
+            "position": "-2787",
+            "height": "14"
+        },
+        {
+            "id": "204",
+            "countryCode": "ss",
+            "dialingCode": "211",
+            "englishName": "South Sudan ",
+            "originalName": "‫جنوب السودان‬‎",
+            "position": "-4669",
+            "height": "10"
+        },
+        {
+            "id": "205",
+            "countryCode": "es",
+            "dialingCode": "34",
+            "englishName": "Spain ",
+            "originalName": "España",
+            "position": "-1555",
+            "height": "14"
+        },
+        {
+            "id": "206",
+            "countryCode": "lk",
+            "dialingCode": "94",
+            "englishName": "Sri Lanka ",
+            "originalName": "ශ්‍රී ලංකාව",
+            "position": "-2963",
+            "height": "10"
+        },
+        {
+            "id": "207",
+            "countryCode": "sd",
+            "dialingCode": "249",
+            "englishName": "Sudan ",
+            "originalName": "‫السودان‬‎",
+            "position": "-4405",
+            "height": "10"
+        },
+        {
+            "id": "208",
+            "countryCode": "sr",
+            "dialingCode": "597",
+            "englishName": "Suriname",
+            "originalName": null,
+            "position": "-4647",
+            "height": "14"
+        },
+        {
+            "id": "209",
+            "countryCode": "sj",
+            "dialingCode": "47",
+            "englishName": "Svalbard and Jan Mayen",
+            "originalName": null,
+            "position": "-4515",
+            "height": "15"
+        },
+        {
+            "id": "210",
+            "countryCode": "se",
+            "dialingCode": "46",
+            "englishName": "Sweden ",
+            "originalName": "Sverige",
+            "position": "-4427",
+            "height": "13"
+        },
+        {
+            "id": "211",
+            "countryCode": "ch",
+            "dialingCode": "41",
+            "englishName": "Switzerland ",
+            "originalName": "Schweiz",
+            "position": "-944",
+            "height": "15"
+        },
+        {
+            "id": "212",
+            "countryCode": "sy",
+            "dialingCode": "963",
+            "englishName": "Syria ",
+            "originalName": "‫سوريا‬‎",
+            "position": "-4757",
+            "height": "14"
+        },
+        {
+            "id": "213",
+            "countryCode": "tw",
+            "dialingCode": "886",
+            "englishName": "Taiwan ",
+            "originalName": "台灣",
+            "position": "-5131",
+            "height": "14"
+        },
+        {
+            "id": "214",
+            "countryCode": "tj",
+            "dialingCode": "992",
+            "englishName": "Tajikistan",
+            "originalName": null,
+            "position": "-4933",
+            "height": "10"
+        },
+        {
+            "id": "215",
+            "countryCode": "tz",
+            "dialingCode": "255",
+            "englishName": "Tanzania",
+            "originalName": null,
+            "position": "-5153",
+            "height": "14"
+        },
+        {
+            "id": "216",
+            "countryCode": "th",
+            "dialingCode": "66",
+            "englishName": "Thailand ",
+            "originalName": "ไทย",
+            "position": "-4911",
+            "height": "14"
+        },
+        {
+            "id": "217",
+            "countryCode": "tl",
+            "dialingCode": "670",
+            "englishName": "Timor-Leste",
+            "originalName": null,
+            "position": "-4977",
+            "height": "10"
+        },
+        {
+            "id": "218",
+            "countryCode": "tg",
+            "dialingCode": "228",
+            "englishName": "Togo",
+            "originalName": null,
+            "position": "-4889",
+            "height": "13"
+        },
+        {
+            "id": "219",
+            "countryCode": "tk",
+            "dialingCode": "690",
+            "englishName": "Tokelau",
+            "originalName": null,
+            "position": "-4955",
+            "height": "10"
+        },
+        {
+            "id": "220",
+            "countryCode": "to",
+            "dialingCode": "676",
+            "englishName": "Tonga",
+            "originalName": null,
+            "position": "-5043",
+            "height": "10"
+        },
+        {
+            "id": "221",
+            "countryCode": "tt",
+            "dialingCode": "1",
+            "englishName": "Trinidad and Tobago",
+            "originalName": null,
+            "position": "-5087",
+            "height": "12"
+        },
+        {
+            "id": "222",
+            "countryCode": "tn",
+            "dialingCode": "216",
+            "englishName": "Tunisia ",
+            "originalName": "‫تونس‬‎",
+            "position": "-5021",
+            "height": "14"
+        },
+        {
+            "id": "223",
+            "countryCode": "tr",
+            "dialingCode": "90",
+            "englishName": "Turkey ",
+            "originalName": "Türkiye",
+            "position": "-5065",
+            "height": "14"
+        },
+        {
+            "id": "224",
+            "countryCode": "tm",
+            "dialingCode": "993",
+            "englishName": "Turkmenistan",
+            "originalName": null,
+            "position": "-4999",
+            "height": "14"
+        },
+        {
+            "id": "225",
+            "countryCode": "tc",
+            "dialingCode": "1",
+            "englishName": "Turks and Caicos Islands",
+            "originalName": null,
+            "position": "-4823",
+            "height": "10"
+        },
+        {
+            "id": "226",
+            "countryCode": "tv",
+            "dialingCode": "688",
+            "englishName": "Tuvalu",
+            "originalName": null,
+            "position": "-5109",
+            "height": "10"
+        },
+        {
+            "id": "227",
+            "countryCode": "vi",
+            "dialingCode": "1",
+            "englishName": "U.S. Virgin Islands",
+            "originalName": null,
+            "position": "-5412",
+            "height": "14"
+        },
+        {
+            "id": "228",
+            "countryCode": "ug",
+            "dialingCode": "256",
+            "englishName": "Uganda",
+            "originalName": null,
+            "position": "-5197",
+            "height": "14"
+        },
+        {
+            "id": "229",
+            "countryCode": "ua",
+            "dialingCode": "380",
+            "englishName": "Ukraine ",
+            "originalName": "Україна",
+            "position": "-5175",
+            "height": "14"
+        },
+        {
+            "id": "230",
+            "countryCode": "ae",
+            "dialingCode": "971",
+            "englishName": "United Arab Emirates ",
+            "originalName": "‫الإمارات العربية المتحدة‬‎",
+            "position": "-44",
+            "height": "10"
+        },
+        {
+            "id": "231",
+            "countryCode": "gb",
+            "dialingCode": "44",
+            "englishName": "United Kingdom",
+            "originalName": null,
+            "position": "-1775",
+            "height": "10"
+        },
+        {
+            "id": "232",
+            "countryCode": "us",
+            "dialingCode": "1",
+            "englishName": "United States",
+            "originalName": null,
+            "position": "-5263",
+            "height": "11"
+        },
+        {
+            "id": "233",
+            "countryCode": "uy",
+            "dialingCode": "598",
+            "englishName": "Uruguay",
+            "originalName": null,
+            "position": "-5285",
+            "height": "14"
+        },
+        {
+            "id": "234",
+            "countryCode": "uz",
+            "dialingCode": "998",
+            "englishName": "Uzbekistan ",
+            "originalName": "Oʻzbekiston",
+            "position": "-5307",
+            "height": "10"
+        },
+        {
+            "id": "235",
+            "countryCode": "vu",
+            "dialingCode": "678",
+            "englishName": "Vanuatu",
+            "originalName": null,
+            "position": "-5456",
+            "height": "12"
+        },
+        {
+            "id": "236",
+            "countryCode": "va",
+            "dialingCode": "39",
+            "englishName": "Vatican City ",
+            "originalName": "Città del Vaticano",
+            "position": "-5329",
+            "height": "15"
+        },
+        {
+            "id": "237",
+            "countryCode": "ve",
+            "dialingCode": "58",
+            "englishName": "Venezuela",
+            "originalName": null,
+            "position": "-5368",
+            "height": "14"
+        },
+        {
+            "id": "238",
+            "countryCode": "vn",
+            "dialingCode": "84",
+            "englishName": "Vietnam ",
+            "originalName": "Việt Nam",
+            "position": "-5434",
+            "height": "14"
+        },
+        {
+            "id": "239",
+            "countryCode": "wf",
+            "dialingCode": "681",
+            "englishName": "Wallis and Futuna ",
+            "originalName": "Wallis-et-Futuna",
+            "position": "-5478",
+            "height": "14"
+        },
+        {
+            "id": "240",
+            "countryCode": "eh",
+            "dialingCode": "212",
+            "englishName": "Western Sahara ",
+            "originalName": "‫الصحراء الغربية‬‎",
+            "position": "-1511",
+            "height": "10"
+        },
+        {
+            "id": "241",
+            "countryCode": "ye",
+            "dialingCode": "967",
+            "englishName": "Yemen ",
+            "originalName": "‫اليمن‬‎",
+            "position": "-5544",
+            "height": "14"
+        },
+        {
+            "id": "242",
+            "countryCode": "zm",
+            "dialingCode": "260",
+            "englishName": "Zambia",
+            "originalName": null,
+            "position": "-5610",
+            "height": "14"
+        },
+        {
+            "id": "243",
+            "countryCode": "zw",
+            "dialingCode": "263",
+            "englishName": "Zimbabwe",
+            "originalName": null,
+            "position": "-5632",
+            "height": "10"
+        },
+        {
+            "id": "244",
+            "countryCode": "ax",
+            "dialingCode": "358",
+            "englishName": "Åland Islands",
+            "originalName": null,
+            "position": "-330",
+            "height": "13"
+        }
+    ]
+}
