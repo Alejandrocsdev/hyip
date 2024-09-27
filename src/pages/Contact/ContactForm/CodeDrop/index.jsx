@@ -21,7 +21,7 @@ function CodeDrop() {
           <div className={S.code}>+{dialingCode || '66'}</div>
           <AngleDownSvg className={S.arrow} stroke="#3e345c" />
         </div>
-        <Flags />
+        {/* <Flags /> */}
       </div>
       <input type="text" />
     </main>

@@ -5,14 +5,11 @@ import flagsData from '../Flag/flags.json'
 // 組件
 import Flag from '../Flag'
 
-import useExampleNumber from '../../hooks/useExampleNumber'
-
 // 首頁
 function Flags({ countryCode }) {
   const { exampleNumber } = useExampleNumber('vn')
   return (
     <ul className={S.main}>
-      <button>{exampleNumber}</button>
       {flagsData.flags.map(({ countryCode, dialingCode, englishName, originalName }) => (
         <li key={countryCode}>
           <div className={S.flag}>
