@@ -9,6 +9,8 @@ import Layout from './Layout'
 import ScrollToTop from './components/ScrollToTop'
 // 頁面
 import Home from './pages/Home'
+// import SignIn from './pages/SignIn'
+// import SignUp from './pages/SignUp'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -30,6 +32,8 @@ function App() {
           <Route path="/" element={<Layout />}>
 
             <Route index element={<Home />} />
+            {/* <Route path="/sign-in" element={<Navigate to="https://client.newlean14.store/sign-in" replace />} /> */}
+            {/* <Route path="/sign-up" element={<Navigate to="https://client.newlean14.store/sign-up" replace />} /> */}
             <Route path="/about-us" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
