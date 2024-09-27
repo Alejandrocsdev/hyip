@@ -1,8 +1,17 @@
 .flag {
   width: 20px;
   pointer-events: none;
-  /* background-image: url(webp/flags-sprite-sheets.webp); */
-  background-image: url(webp/flags-sprite-sheets-mob.webp);
+  background-image: url(webp/flags-sprite-sheets.webp);
   background-repeat: no-repeat;
   background-color: #dbdbdb;
+
+  background-size: 5652px 15px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution:192dpi) {
+  .flag {
+    background-image: url(webp/flags-sprite-sheets-mob.webp);
+    background-size: 5652px 15px;
+  }
 }
