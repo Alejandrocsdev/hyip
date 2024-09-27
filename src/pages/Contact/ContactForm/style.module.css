@@ -170,3 +170,54 @@
 .showThanks {
   display: flex;
 }
+
+@media (max-width:1200px) {}
+
+@media (max-width:1000px) {
+  .main {
+    padding: 2rem;
+  }
+
+  .main form .inputs {
+    margin-bottom: 1.875rem;
+    grid-template-columns: 1fr;
+  }
+
+  .main form .inputs .input:nth-child(3) {
+    grid-column: 1;
+  }
+
+  .thanks {
+    padding: 2.75rem 0;
+  }
+}
+
+
+@media (max-width:800px) {
+  .main {
+    margin-bottom: 2rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .thanks {
+    padding: 2.5rem 0;
+  }
+
+  .thanks img {
+    margin-bottom: 1.5rem;
+  }
+
+  .thanks p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.3333333333;
+  }
+
+  .main button {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width:500px) {}

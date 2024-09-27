@@ -82,7 +82,7 @@ function MobileMenu() {
               </Link>
             </li>
             <li>
-              <Link to="contact">
+              <Link to="contacts">
                 <img src={contactsSvg} />
                 <span>Contact</span>
               </Link>
