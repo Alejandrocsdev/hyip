@@ -40,17 +40,6 @@ function ContactForm() {
           <div className={S.input}>
             <span>Phone</span>
             <CodeDrop />
-            {/* <div className={S.phoneContainer}>
-              <div className={S.codeContainer}>
-                <div className={S.selected}>
-                  <div className={S.flag}></div>
-                  <div className={S.code}></div>
-                  <img className={S.arrow} src="" />
-                </div>
-                <ul></ul>
-              </div>
-              <input type="text" />
-            </div> */}
           </div>
         </div>
         <div className={S.message}>

@@ -17,12 +17,12 @@ function Contact() {
       <main className={S.main}>
         <div className={S.container}>
           <div className={S.inner}>
-            <div className={S.content}>
+            {/* <div className={S.content}>
               <h1 className={S.title}>Contact us</h1>
               <p className={S.text}>We are happy to answer any of your questions</p>
-            </div>
+            </div> */}
             <ContactForm />
-            <address className={S.address}>
+            {/* <address className={S.address}>
               <a href="tel:+3726609010">
                 <i>
                   <img src={phoneSvg} />
@@ -49,7 +49,7 @@ function Contact() {
                   Pirita tee 20/4-219, Tallinn, 12011, Estonia
                 </p>
               </div>
-            </address>
+            </address> */}
           </div>
         </div>
       </main>
