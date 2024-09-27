@@ -92,14 +92,9 @@
 
 .main li .flag {
   margin-right: 6px;
-  vertical-align: middle;
-  display: inline-block;
-  width: 20px;
-  text-align: left;
-  line-height: 1.25 !important;
-  color: #3e345c;
-  pointer-events: auto;
-  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main li .flag:nth-child(1) {

@@ -1,12 +1,15 @@
 .flag {
-  width: 20px;
-  pointer-events: none;
+  /* width: 20px; */
+  /* pointer-events: none; */
   /* background-image: url(webp/flags-sprite-sheets.webp); */
-  background-repeat: no-repeat;
-  background-color: #dbdbdb;
+  /* background-repeat: no-repeat; */
+  /* background-color: #dbdbdb; */
 
-  background-image: url(webp/flags-sprite-sheets-mob.webp);
-  background-size: 5652px 15px;
+  /* background-image: url(webp/flags-sprite-sheets-mob.webp); */
+  /* background-size: 5652px 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* @media (-webkit-min-device-pixel-ratio: 2),
