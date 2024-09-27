@@ -5,16 +5,31 @@ import flagsData from '../../../../../components/Flag/flags.json'
 // 組件
 import Flag from '../../../../../components/Flag'
 // 鉤子函式
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 // 各國手機資訊列表
-function PhoneList({ show }) {
-  const listRef = useRef(null)
+function PhoneList({ show, selected, onSelect }) {
+  const itemRef = useRef(null)
+
+  useEffect(() => {
+    if (show && itemRef.current) {
+      itemRef.current.scrollIntoView({
+        behavior: 'auto',
+        block: 'center'
+      })
+    }
+  }, [show])
 
   return (
-    <ul ref={listRef} className={`${S.main} ${show ? S.show : ''}`}>
+    <ul className={`${S.main} ${show ? S.show : ''}`}>
       {/* 預設國家手機資訊 */}
-      <li>
+      <li
+        className={selected === 'lv' ? S.selected : ''}
+        onClick={(e) => {
+          e.stopPropagation()
+          onSelect('lv')
+        }}
+      >
         <div className={S.flag}>
           <Flag countryCode="lv" />
         </div>
@@ -25,7 +40,15 @@ function PhoneList({ show }) {
       <div className={S.separator}></div>
       {/* 各國手機資訊 */}
       {flagsData.flags.map(({ countryCode, dialingCode, englishName, originalName }) => (
-        <li key={countryCode}>
+        <li
+          key={countryCode}
+          ref={countryCode === selected ? itemRef : null}
+          className={countryCode === selected ? S.selected : ''}
+          onClick={(e) => {
+            e.stopPropagation()
+            onSelect(countryCode)
+          }}
+        >
           {/* 國旗 */}
           <div className={S.flag}>
             <Flag countryCode={countryCode} />

@@ -29,11 +29,10 @@ function useCountryCode() {
     fetchCountryCode()
   }, [])
 
-  return { countryCode, loading, error }
+  return { countryCode, setCountryCode, loading, error }
 }
 
 export default useCountryCode
-
 
 ////////////////////////////
 // ### 需要徵求用戶同意 ### //
@@ -73,4 +72,3 @@ export default useCountryCode
 // }
 
 // export default useCountryCode
-

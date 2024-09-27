@@ -1,7 +1,7 @@
 // 模組樣式
 import S from './style.module.css'
 // 鉤子函式
-import { useState, useRef } from 'react' // Import useState
+import { useState, useRef } from 'react'
 import useBodyClass from '../../../../hooks/useBodyClass.jsx'
 import useClickOutside from '../../../../hooks/useClickOutside.jsx'
 import useCountryCode from '../../../../hooks/useCountryCode.jsx'
@@ -11,36 +11,51 @@ import Flag from '../../../../components/Flag'
 import PhoneList from './PhoneList'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
-// 首頁
-function CodeDrop() {
-  const { countryCode } = useCountryCode()
-  const countryInfo = useCountryData(countryCode)
-  const dialingCode = countryInfo ? countryInfo.dialingCode : ''
-  const exampleNumber = countryInfo ? countryInfo.exampleNumber : ''
+// 下拉選單: 國碼
+function CodeDrop({ onBlur, inputError, value, onChange }) {
+  const { countryCode, setCountryCode } = useCountryCode()
+  const countryData = useCountryData(countryCode)
+  const dialingCode = countryData ? countryData.dialingCode : ''
+  const exampleNumber = countryData ? countryData.exampleNumber : ''
 
-  const [showFlags, setShowFlags] = useState(false)
-  const flagsRef = useRef(null)
-  const containerRef = useRef(null)
+  const [showList, setShowList] = useState(false)
+  const codeBtnRef = useRef(null)
+  const inputRef = useRef(null)
 
-  const toggleFlags = () => {
-    setShowFlags((prev) => !prev)
+  const toggleList = () => {
+    setShowList((prev) => !prev)
   }
 
-  useClickOutside(containerRef, () => setShowFlags(false), [flagsRef])
+  const handleSelect = (newCountryCode) => {
+    setCountryCode(newCountryCode)
+    setShowList(false)
+    inputRef.current?.focus()
+  }
 
-  useBodyClass(showFlags ? 'no-scroll' : '')
+  useClickOutside(codeBtnRef, () => setShowList(false))
+
+  useBodyClass(showList ? 'no-scroll' : '')
 
   return (
     <main className={S.main}>
-      <div className={S.codeContainer} onClick={toggleFlags} ref={containerRef}>
+      <div className={S.codeBtn} onClick={toggleList} ref={codeBtnRef}>
         <div className={S.selected}>
           <Flag countryCode={countryCode || 'lv'} />
           <div className={S.code}>+{dialingCode || '66'}</div>
-          <AngleDownSvg className={`${S.arrow} ${showFlags ? S.rotate : ''}`} />
+          <AngleDownSvg className={`${S.arrow} ${showList ? S.rotate : ''}`} />
         </div>
-        <PhoneList ref={flagsRef} show={showFlags} />
+        <PhoneList show={showList} selected={countryCode || 'lv'} onSelect={handleSelect} />
       </div>
-      <input type="text" placeholder={exampleNumber || '21 234 567'} />
+      <input
+        type="text"
+        name="phone"
+        placeholder={exampleNumber || '21 234 567'}
+        value={value}
+        onChange={onChange}
+        ref={inputRef}
+        onBlur={onBlur}
+        className={inputError ? S.error : ''}
+      />
     </main>
   )
 }

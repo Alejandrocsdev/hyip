@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem + 10px);
 }
 
 .main form .inputs .input>span {
@@ -37,6 +37,10 @@
 
 .main form .inputs .input:nth-child(3) {
   grid-column: span 2;
+}
+
+.error {
+  border-color: #e00909 !important;
 }
 
 /* .main form .message {} */
@@ -159,6 +163,10 @@
   background-color: #041d33;
 }
 
-.show {
+.hideForm {
+  display: none;
+}
+
+.showThanks {
   display: flex;
 }

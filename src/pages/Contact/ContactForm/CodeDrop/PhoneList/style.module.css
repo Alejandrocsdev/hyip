@@ -91,6 +91,10 @@
   background-color: #f1f3f9;
 }
 
+.selected {
+  background-color: #f1f3f9;
+}
+
 .main li .flag {
   margin-right: 6px;
   display: flex;

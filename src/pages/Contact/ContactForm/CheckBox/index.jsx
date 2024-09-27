@@ -1,13 +1,13 @@
 // 模組樣式
 import S from './style.module.css'
 // 鉤子函式
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 // 圖檔
 import checkboxSvg from '../../../../assets/img/icon/checkbox.svg'
 
 // 首頁
-function CheckBox({ isChecked, onChange }) {
-  const [isClicked, setIsClicked] = useState(false)
+function CheckBox({ isChecked, onChange, initial  }) {
+  const [isClicked, setIsClicked] = useState(initial)
 
   const toggleCheckbox = () => {
     if (!isClicked) {
@@ -22,6 +22,10 @@ function CheckBox({ isChecked, onChange }) {
     }
     return isChecked ? S.active : S.inactive
   }
+
+  useEffect(() => {
+    setIsClicked(initial);
+  }, [initial]);
 
   return (
     <main className={`${S.checkbox} ${checkboxClass()}`} onClick={toggleCheckbox}>

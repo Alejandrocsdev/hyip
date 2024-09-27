@@ -4,7 +4,7 @@
   display: inline-block;
 }
 
-.main .codeContainer {
+.main .codeBtn {
   padding: 0;
   position: absolute;
   top: 0;
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.main .codeContainer .selected {
+.main .codeBtn .selected {
   min-width: 7.125rem;
   font-size: 1rem;
   background-color: #0000000d;
@@ -35,7 +35,7 @@
   padding: 0 6px 0 1rem;
 }
 
-.main .codeContainer .selected .flag {
+.main .codeBtn .selected .flag {
   width: 20px;
   pointer-events: none;
   background-image: url(webp/flags-sprite-sheets.webp);
@@ -43,19 +43,17 @@
   background-color: #dbdbdb;
 }
 
-.main .codeContainer .selected .code {
+.main .codeBtn .selected .code {
   margin-left: 6px;
   pointer-events: none;
 }
 
-.main .codeContainer .selected .arrow {
-  width: 24px;
-  height: 24px;
+.main .codeBtn .selected .arrow {
   margin-left: 6px;
   transition: all .3s ease 0s;
 }
 
-.main .codeContainer .selected .arrow path {
+.main .codeBtn .selected .arrow path {
   stroke: #3e345c;
 }
 
@@ -90,4 +88,19 @@
   color: #878199;
   font-size: 1rem;
   line-height: 1.25rem;
+
+  /* padding: 1rem;
+  padding-left: 8.125rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  color: #878199;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  position: relative; */
+}
+
+.error {
+  border-color: #e00909 !important;
 }
