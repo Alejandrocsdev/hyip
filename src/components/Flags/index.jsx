@@ -4,12 +4,21 @@ import S from './style.module.css'
 import flagsData from '../Flag/flags.json'
 // 組件
 import Flag from '../Flag'
+// 鉤子函式
+import { forwardRef } from 'react';
 
 // 首頁
-function Flags({ countryCode }) {
-  const { exampleNumber } = useExampleNumber('vn')
+const Flags = forwardRef(({ show }, ref) => { // Forward ref
   return (
-    <ul className={S.main}>
+    <ul ref={ref} className={`${S.main} ${show ? S.show : ''}`}> {/* Apply the passed class */}
+      <li>
+        <div className={S.flag}>
+          <Flag countryCode="lv" />
+        </div>
+        <span className={S.country}>Latvia (Latvija)</span>
+        <span className={S.code}>+371</span>
+      </li>
+      <div className={S.separator}></div>
       {flagsData.flags.map(({ countryCode, dialingCode, englishName, originalName }) => (
         <li key={countryCode}>
           <div className={S.flag}>
@@ -24,6 +33,6 @@ function Flags({ countryCode }) {
       ))}
     </ul>
   )
-}
+});
 
 export default Flags

@@ -12,17 +12,63 @@
   color: #3e345c;
   overflow: hidden;
   overflow-y: auto;
-  pointer-events: auto;
   z-index: 20;
   width: 28.75rem;
   height: 80vh;
   max-height: 37rem;
-  animation: show .5s ease both;
   box-shadow: 0 1.5rem 1rem -.75rem #655d7a0a, 0 .75rem 2rem #655d7a0a;
   list-style: none;
   text-align: left;
   padding: 0;
   white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  animation: hide .5s ease both;
+}
+
+.main::-webkit-scrollbar {
+  width: .625rem;
+}
+
+.main::-webkit-scrollbar-thumb {
+  border: .25rem solid rgba(0, 0, 0, 0);
+  border-left: none;
+  background-clip: padding-box;
+  background-color: #f3f2f5;
+  border-radius: 3.125rem;
+}
+
+.show {
+  pointer-events: auto;
+  animation: show .5s ease both;
+  opacity: 1;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(100vw);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(100vw);
+  }
+}
+
+.main .separator {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
 }
 
 .main li {

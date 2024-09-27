@@ -8,8 +8,8 @@ const useCountryData = (countryCode) => {
     const flag = flagsData.flags.find((flag) => flag.countryCode === countryCode)
 
     if (flag) {
-      const { dialingCode, englishName, originalName } = flag
-      setCountryInfo({ dialingCode, englishName, originalName })
+      const { dialingCode, englishName, originalName, exampleNumber } = flag
+      setCountryInfo({ dialingCode, englishName, originalName, exampleNumber })
     } else {
       setCountryInfo(null)
     }
