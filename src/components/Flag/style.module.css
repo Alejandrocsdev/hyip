@@ -1,7 +1,8 @@
 .flag {
   width: 20px;
   pointer-events: none;
-  background-image: url(webp/flags-sprite-sheets.webp);
+  /* background-image: url(webp/flags-sprite-sheets.webp); */
+  background-image: url(webp/flags-sprite-sheets-mob.webp);
   background-repeat: no-repeat;
   background-color: #dbdbdb;
 }
