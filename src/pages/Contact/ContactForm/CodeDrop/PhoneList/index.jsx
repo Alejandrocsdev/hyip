@@ -1,16 +1,19 @@
 // 模組樣式
 import S from './style.module.css'
 // json檔
-import flagsData from '../Flag/flags.json'
+import flagsData from '../../../../../components/Flag/flags.json'
 // 組件
-import Flag from '../Flag'
+import Flag from '../../../../../components/Flag'
 // 鉤子函式
-import { forwardRef } from 'react';
+import { useRef } from 'react'
 
-// 首頁
-const Flags = forwardRef(({ show }, ref) => { // Forward ref
+// 各國手機資訊列表
+function PhoneList({ show }) {
+  const listRef = useRef(null)
+
   return (
-    <ul ref={ref} className={`${S.main} ${show ? S.show : ''}`}> {/* Apply the passed class */}
+    <ul ref={listRef} className={`${S.main} ${show ? S.show : ''}`}>
+      {/* 預設國家手機資訊 */}
       <li>
         <div className={S.flag}>
           <Flag countryCode="lv" />
@@ -18,21 +21,26 @@ const Flags = forwardRef(({ show }, ref) => { // Forward ref
         <span className={S.country}>Latvia (Latvija)</span>
         <span className={S.code}>+371</span>
       </li>
+      {/* 分隔線 */}
       <div className={S.separator}></div>
+      {/* 各國手機資訊 */}
       {flagsData.flags.map(({ countryCode, dialingCode, englishName, originalName }) => (
         <li key={countryCode}>
+          {/* 國旗 */}
           <div className={S.flag}>
             <Flag countryCode={countryCode} />
           </div>
+          {/* 國家名稱 */}
           <span className={S.country}>
             {englishName}
             {originalName ? ` (${originalName})` : ''}
           </span>
+          {/* 國碼 */}
           <span className={S.code}>+{dialingCode}</span>
         </li>
       ))}
     </ul>
   )
-});
+}
 
-export default Flags
+export default PhoneList

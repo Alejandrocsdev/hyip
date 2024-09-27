@@ -8,7 +8,7 @@ import useClickOutside from '../../../hooks/useClickOutside'
 // 圖檔
 import signInSvg from '../../../assets/img/icon/sign-in.svg'
 import signUpSvg from '../../../assets/img/icon/sign-up.svg'
-import aboutUsSvg from '../../../assets/img/icon/about_us.svg'
+import aboutUsSvg from '../../../assets/img/icon/about-us.svg'
 import contactsSvg from '../../../assets/img/icon/contacts.svg'
 import globeSvg from '../../../assets/img/icon/globe.svg'
 import usSvg from '../../../assets/img/flag/us.svg'
@@ -26,13 +26,12 @@ function MobileMenu() {
 
   useBodyClass(isOpened ? 'no-scroll' : '')
 
-  // 使用自定義鉤子來處理點擊外部事件
   useClickOutside(
     bodyRef,
     () => {
       setIsOpened(false)
     },
-    [menuRef] // 忽略menuRef的點擊
+    [menuRef]
   )
 
   const toggleMenu = () => {

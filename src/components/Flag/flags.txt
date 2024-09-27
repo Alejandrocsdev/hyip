@@ -1,3 +1,14 @@
 excel to json
 
 https://bfotool.com/excel-to-json
+
+json to excel
+
+1. Data
+2. Get Data > From File > From JSON > Import (json file)
+3. Into Table
+4. Expand Colum > Expand to New Rows
+5. Expand Colum > disabled "Use original column name as prefix"
+6. Close & Load > Close & Load
+7. Update
+8. File > Save As

@@ -32,18 +32,11 @@
   gap: 1.5rem;
 }
 
-.body .social .icons a svg {
-  width: 24px;
-  height: 24px;
-}
-
-.body .social .icons a svg path {
-  fill: white;
-  fill-opacity: 0.32;
+.body .social .icons a .icon path {
   transition: all .3s ease 0s;
 }
 
-.body .social .icons a svg:hover path {
+.body .social .icons a .icon:hover path {
   fill-opacity: 0.7;
 }
 

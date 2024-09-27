@@ -4,7 +4,6 @@ import S from './style.module.css'
 import { Link } from 'react-router-dom'
 import { useState, useRef, useMemo } from 'react'
 // 圖檔
-import formBgWebp from '../../../../assets/img/webp/form-bg.webp'
 import usdtSvg from '../../../../assets/img/element/usdt.svg'
 
 const plans = {
@@ -95,7 +94,7 @@ function Calculator() {
   }
 
   return (
-    <div className={S.container} style={{ backgroundImage: `url(${formBgWebp})` }}>
+    <div className={S.container}>
       {/* 投資計劃 */}
       <div className={S.plans}>
         <div

@@ -1,15 +1,18 @@
 import { useEffect } from 'react'
 
-export default function useBodyClass(className) {
+// 主體樣式
+function useBodyClass(className) {
   useEffect(() => {
-    if (className) { // Check if className is not empty
+    if (className) {
       document.body.classList.add(className)
     }
 
     return () => {
-      if (className) { // Check if className is not empty for cleanup
+      if (className) {
         document.body.classList.remove(className)
       }
     }
   }, [className])
 }
+
+export default useBodyClass

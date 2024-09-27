@@ -44,7 +44,7 @@ function LangDrop() {
         {/* 語言按鈕 */}
         <button>
           <span>{activeLang}</span>
-          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} stroke="white" />
+          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} />
         </button>
         {/* 語言列表 */}
         <ul className={`${isOpened ? S.showDrop : ''}`} onClick={(e) => e.stopPropagation()}>

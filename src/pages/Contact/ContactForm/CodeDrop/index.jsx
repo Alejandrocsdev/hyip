@@ -8,7 +8,7 @@ import useCountryCode from '../../../../hooks/useCountryCode.jsx'
 import useCountryData from '../../../../hooks/useCountryData.jsx'
 // 組件
 import Flag from '../../../../components/Flag'
-import Flags from '../../../../components/Flags'
+import PhoneList from './PhoneList'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
 // 首頁
@@ -19,18 +19,16 @@ function CodeDrop() {
   const exampleNumber = countryInfo ? countryInfo.exampleNumber : ''
 
   const [showFlags, setShowFlags] = useState(false)
-  const flagsRef = useRef(null); // Create a ref for Flags component
-  const containerRef = useRef(null); // Create a ref for codeContainer
+  const flagsRef = useRef(null)
+  const containerRef = useRef(null)
 
   const toggleFlags = () => {
     setShowFlags((prev) => !prev)
   }
 
-    // Handle clicks outside the Flags component
-    useClickOutside(containerRef, () => setShowFlags(false), [flagsRef]);
+  useClickOutside(containerRef, () => setShowFlags(false), [flagsRef])
 
-    // Apply 'no-scroll' class when flags are shown
-    useBodyClass(showFlags ? 'no-scroll' : '');
+  useBodyClass(showFlags ? 'no-scroll' : '')
 
   return (
     <main className={S.main}>
@@ -38,9 +36,9 @@ function CodeDrop() {
         <div className={S.selected}>
           <Flag countryCode={countryCode || 'lv'} />
           <div className={S.code}>+{dialingCode || '66'}</div>
-          <AngleDownSvg className={`${S.arrow} ${showFlags ? S.rotate : ''}`} stroke="#3e345c" />
+          <AngleDownSvg className={`${S.arrow} ${showFlags ? S.rotate : ''}`} />
         </div>
-        <Flags ref={flagsRef} show={showFlags} /> {/* Pass the ref and show class */}
+        <PhoneList ref={flagsRef} show={showFlags} />
       </div>
       <input type="text" placeholder={exampleNumber || '21 234 567'} />
     </main>

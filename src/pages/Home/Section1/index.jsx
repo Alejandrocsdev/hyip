@@ -1,7 +1,6 @@
 // 模組樣式
 import S from './style.module.css'
 // 圖檔
-import bgWebp from '../../../assets/img/webp/bg.webp'
 import usdtTrc20Png from '../../../assets/img/element/usdt-trc20.png'
 // 組件
 import Calculator from './Calculator'
@@ -9,7 +8,7 @@ import Calculator from './Calculator'
 // (第一區: 獎勵計算)組件
 function Section1() {
   return (
-    <section className={S.section} style={{ backgroundImage: `url(${bgWebp})` }}>
+    <section className={S.section}>
       <div className={S.container}>
         {/* 登陸文字 */}
         <div className={S.content}>

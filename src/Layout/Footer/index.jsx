@@ -21,14 +21,14 @@ function Footer() {
               <Logo type="crypto" color="white" />
               <Logo type="origin" color="white" />
               <div className={S.icons}>
-                <Link to="https://www.facebook.com/moneyexpresslv" target="blank">
-                  <FacebookSvg />
+                <Link to="https://www.facebook.com/moneyexpresslv" target="_blank">
+                  <FacebookSvg className={S.icon} />
                 </Link>
-                <Link to="https://x.com/MONEYEXPRESSLV" target="blank">
-                  <TwitterSvg />
+                <Link to="https://x.com/MONEYEXPRESSLV" target="_blank">
+                  <TwitterSvg className={S.icon} />
                 </Link>
-                <Link to="https://www.instagram.com/moneyexpress.lv/" target="blank">
-                  <InstagramSvg />
+                <Link to="https://www.instagram.com/moneyexpress.lv/" target="_blank">
+                  <InstagramSvg className={S.icon} />
                 </Link>
               </div>
             </div>

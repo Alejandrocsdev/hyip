@@ -52,9 +52,14 @@
   width: 24px;
   height: 24px;
   margin-left: 6px;
-
   transition: all .3s ease 0s;
 }
+
+.main .codeContainer .selected .arrow path {
+  stroke: #3e345c;
+}
+
+
 
 .rotate {
   transform: rotateX(180deg);

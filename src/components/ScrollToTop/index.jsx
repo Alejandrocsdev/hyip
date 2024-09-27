@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
+// 導向置頂
 const ScrollToTop = () => {
   const { pathname } = useLocation()
 
@@ -8,7 +9,7 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0)
   }, [pathname])
 
-  return null // This component doesn't render anything
+  return null
 }
 
 export default ScrollToTop

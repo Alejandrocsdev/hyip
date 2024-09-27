@@ -1,3 +1,29 @@
+//////////////////////////
+// 方法1: 模組分別導入國旗 //
+//////////////////////////
+
+// 模組
+import CountryFlag from 'react-country-flag'
+
+// 單一國旗
+function Flag({ countryCode }) {
+  return (
+    <CountryFlag
+      countryCode={countryCode.toUpperCase()}
+      svg
+      style={{
+        width: '20px'
+      }}
+    />
+  )
+}
+
+export default Flag
+
+///////////////////////////////////////
+// 方法2: 單一圖檔切割國旗 (手機無法顯示) //
+///////////////////////////////////////
+
 // // 模組樣式
 // import S from './style.module.css'
 // // json檔
@@ -30,23 +56,3 @@
 // }
 
 // export default Flag
-
-// 模組樣式
-import S from './style.module.css'
-// library
-import CountryFlag from 'react-country-flag'
-
-// 首頁
-function Flag({ countryCode }) {
-  return (
-    <CountryFlag
-      countryCode={countryCode.toUpperCase()}
-      svg
-      style={{
-        width: '20px'
-      }}
-    />
-  )
-}
-
-export default Flag
