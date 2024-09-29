@@ -1,6 +1,8 @@
+// 函式庫 (library)
 import { useState, useEffect } from 'react'
 import flagsData from '../components/Flag/flags.json'
 
+// 國家資訊
 const useCountryData = (countryCode) => {
   const [countryInfo, setCountryInfo] = useState(null)
 

@@ -2,7 +2,7 @@
 // 方法1: 模組分別導入國旗 //
 //////////////////////////
 
-// 模組
+// 函式庫 (library)
 import CountryFlag from 'react-country-flag'
 
 // 單一國旗

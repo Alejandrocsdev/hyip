@@ -1,10 +1,10 @@
-// 鉤子函式
+// 函式庫 (library)
 import { Outlet } from 'react-router-dom'
-// 組件
+// 組件 (component)
 import Header from './Header'
 import Footer from './Footer'
 
-// 樣式組件
+// 佈局樣式組件
 function Layout() {
   return (
     <>

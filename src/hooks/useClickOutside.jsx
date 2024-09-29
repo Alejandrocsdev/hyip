@@ -1,3 +1,4 @@
+// 函式庫 (library)
 import { useEffect } from 'react'
 
 // 監聽事件: 點擊外部

@@ -2,8 +2,10 @@
 // ### 無須徵求用戶同意 ### //
 ///////////////////////////
 
+// 函式庫 (library)
 import { useState, useEffect } from 'react'
 
+// 國碼
 function useCountryCode() {
   const [countryCode, setCountryCode] = useState(null)
   const [loading, setLoading] = useState(true)

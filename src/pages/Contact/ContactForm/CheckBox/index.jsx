@@ -1,8 +1,8 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { useState, useEffect } from 'react'
-// 圖檔
+// 圖檔 (image)
 import checkboxSvg from '../../../../assets/img/icon/checkbox.svg'
 
 // 首頁

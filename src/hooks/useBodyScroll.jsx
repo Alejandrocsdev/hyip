@@ -1,3 +1,4 @@
+// 函式庫 (library)
 import { useEffect } from 'react'
 
 // 主體卷軸

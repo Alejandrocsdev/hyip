@@ -1,12 +1,12 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { useState, useRef } from 'react'
 import useBodyScroll from '../../../../hooks/useBodyScroll.jsx'
 import useClickOutside from '../../../../hooks/useClickOutside.jsx'
 import useCountryCode from '../../../../hooks/useCountryCode.jsx'
 import useCountryData from '../../../../hooks/useCountryData.jsx'
-// 組件
+// 組件 (component)
 import Flag from '../../../../components/Flag'
 import PhoneList from './PhoneList'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'

@@ -1,16 +1,16 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-// 圖檔
+// 圖檔 (image)
 import phoneSvg from '../../assets/img/icon/phone.svg'
 import mailSvg from '../../assets/img/icon/mail.svg'
 import mapSvg from '../../assets/img/icon/map.svg'
-// 組件
+// 組件 (component)
 import ContactForm from './ContactForm'
 
-// 首頁
+// 聯繫
 function Contact() {
   return (
     <>

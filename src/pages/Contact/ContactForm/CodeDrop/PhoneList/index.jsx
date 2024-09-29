@@ -1,11 +1,11 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// json檔
-import flagsData from '../../../../../components/Flag/flags.json'
-// 組件
-import Flag from '../../../../../components/Flag'
-// 鉤子函式
+// 函式庫 (library)
 import { useEffect, useRef } from 'react'
+// 資料 (json)
+import flagsData from '../../../../../components/Flag/flags.json'
+// 組件 (component)
+import Flag from '../../../../../components/Flag'
 
 // 各國手機資訊列表
 function PhoneList({ show, selected, onSelect }) {

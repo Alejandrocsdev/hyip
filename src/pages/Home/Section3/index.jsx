@@ -1,6 +1,6 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 圖檔
+// 圖檔 (image)
 import competitiveProfitPng from '../../../assets/img/info/competitive-profit.png'
 import checkMarkSvg from '../../../assets/img/icon/check-mark.svg'
 import reliablePartnerSvg from '../../../assets/img/organization/mkm.svg'

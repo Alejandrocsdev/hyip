@@ -1,6 +1,6 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 組件
+// 組件 (component)
 import Section1 from './Section1'
 import Section2 from './Section2'
 import Section3 from './Section3'

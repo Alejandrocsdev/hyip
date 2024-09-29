@@ -1,8 +1,8 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 圖檔
+// 圖檔 (image)
 import usdtTrc20Png from '../../../assets/img/element/usdt-trc20.png'
-// 組件
+// 組件 (component)
 import Calculator from './Calculator'
 
 // (第一區: 獎勵計算)組件

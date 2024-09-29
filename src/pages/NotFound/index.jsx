@@ -1,4 +1,4 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
 
 // 錯誤頁面
