@@ -1,56 +1,50 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { Link } from 'react-router-dom'
-import { useState, useRef } from 'react'
-import useBodyClass from '../../../hooks/useBodyClass'
+import { useState, useRef, useEffect } from 'react'
+import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
-// 圖檔
+// 圖檔 (image)
 import signInSvg from '../../../assets/img/icon/sign-in.svg'
 import signUpSvg from '../../../assets/img/icon/sign-up.svg'
 import aboutUsSvg from '../../../assets/img/icon/about-us.svg'
 import contactsSvg from '../../../assets/img/icon/contacts.svg'
 import globeSvg from '../../../assets/img/icon/globe.svg'
-import usSvg from '../../../assets/img/flag/us.svg'
-import ruSvg from '../../../assets/img/flag/ru.svg'
-import eeSvg from '../../../assets/img/flag/ee.svg'
 import mkmSvg from '../../../assets/img/organization/mkm.svg'
-// 組件
+// 組件 (component)
 import Logo from '../../../components/Logo'
+import LangFlag from '../../../components/LangFlag'
+
 // 選單組件
-function MobileMenu() {
+function MobMenu({ onBackdropToggle }) {
   const [isOpened, setIsOpened] = useState(false)
   const [activeLang, setActiveLang] = useState('en')
-  const bodyRef = useRef(null)
+  const containerRef = useRef(null)
   const menuRef = useRef(null)
 
-  useBodyClass(isOpened ? 'no-scroll' : '')
+  const toggleMenu = () => setIsOpened((prev) => !prev)
 
-  useClickOutside(
-    bodyRef,
-    () => {
-      setIsOpened(false)
-    },
-    [menuRef]
-  )
+  const switchLang = (lang) => setActiveLang(lang)
 
-  const toggleMenu = () => {
-    setIsOpened((prev) => !prev)
-  }
+  useBodyScroll(isOpened)
 
-  const switchLang = (lang) => {
-    setActiveLang(lang)
-  }
+  useClickOutside(containerRef, () => setIsOpened(false), menuRef)
+
+  useEffect(() => onBackdropToggle(isOpened), [isOpened, onBackdropToggle])
 
   return (
-    <>
+    <div className={S.container} ref={containerRef} onClick={toggleMenu}>
       {/* 手機列表按鈕 */}
-      <button className={`${S.menu} ${isOpened ? S.open : ''}`} onClick={toggleMenu} ref={menuRef}>
+      <button className={`${S.menuBtn} ${isOpened ? S.btnOpen : ''}`} ref={menuRef}>
         <span></span>
       </button>
       {/* 手機列表 */}
-      <div className={`${S.body} ${isOpened ? S.bodyOpen : ''}`} ref={bodyRef}>
-        {/* 抬頭 */}
+      <div
+        className={`${S.menuBody} ${isOpened ? S.bodyOpen : ''}`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* 上方 */}
         <div className={S.top}>
           <Logo type="crypto" color="black" />
         </div>
@@ -97,33 +91,32 @@ function MobileMenu() {
             <ul>
               <li>
                 <button onClick={() => switchLang('en')}>
-                  <img src={usSvg} />
-                  <p className={activeLang === 'en' ? S.active : ''}>English</p>
+                  <LangFlag className={S.langFlag} type="us" />
+                  <p className={activeLang === 'en' ? S.langActive : ''}>English</p>
                 </button>
               </li>
               <li>
                 <button onClick={() => switchLang('ru')}>
-                  <img src={ruSvg} />
-                  <p className={activeLang === 'ru' ? S.active : ''}>Русский</p>
+                  <LangFlag className={S.langFlag} type="ru" />
+                  <p className={activeLang === 'ru' ? S.langActive : ''}>Русский</p>
                 </button>
               </li>
               <li>
                 <button onClick={() => switchLang('et')}>
-                  <img src={eeSvg} />
-                  <p className={activeLang === 'et' ? S.active : ''}>Eesti</p>
+                  <LangFlag className={S.langFlag} type="ee" />
+                  <p className={activeLang === 'et' ? S.langActive : ''}>Eesti</p>
                 </button>
               </li>
             </ul>
           </div>
         </div>
-        {/* MKM圖 */}
-        <div className={S.mkm}>
+        {/* 下方 */}
+        <div className={S.bottom}>
           <img src={mkmSvg} />
         </div>
       </div>
-      <div className={`${S.backdrop} ${isOpened ? S.openBack : ''}`}></div>
-    </>
+    </div>
   )
 }
 
-export default MobileMenu
+export default MobMenu

@@ -1,4 +1,4 @@
-.menu {
+.menuBtn {
   width: 2.625rem;
   height: 2.25rem;
   background-color: #ffffff1f;
@@ -8,9 +8,9 @@
   cursor: pointer;
 }
 
-.menu::before,
-.menu span,
-.menu::after {
+.menuBtn::before,
+.menuBtn span,
+.menuBtn::after {
   content: "";
   height: .125rem;
   width: 1.375rem;
@@ -22,40 +22,44 @@
   pointer-events: none;
 }
 
-.menu::before {
+.menuBtn::before {
   top: .625rem;
 }
 
-.menu span {
+.menuBtn span {
   top: calc(50% - .0625rem);
 }
 
-.menu::after {
+.menuBtn::after {
   bottom: .625rem;
 }
 
-.open {
+/* 切換樣式 */
+.btnOpen {
   background-color: transparent;
   z-index: 1000;
 }
 
-.open::before {
+/* 切換樣式 */
+.btnOpen::before {
   top: calc(50% - .0625rem);
   transform: rotate(45deg);
   background-color: #111b29;
 }
 
-.open span {
+/* 切換樣式 */
+.btnOpen span {
   transform: scale(0);
 }
 
-.open::after {
+/* 切換樣式 */
+.btnOpen::after {
   bottom: calc(50% - .0625rem);
   transform: rotate(-45deg);
   background-color: #111b29;
 }
 
-.body {
+.menuBody {
   max-width: 23.4375rem;
   width: 100%;
   height: 100vh;
@@ -73,30 +77,31 @@
   overflow: hidden;
 }
 
+/* 切換樣式 */
 .bodyOpen {
   pointer-events: all;
   opacity: 1;
   right: 0vw;
 }
 
-.body .top {
+.menuBody .top {
   padding: 1.5rem;
   border-bottom: .0625rem solid #e3e7ef;
   display: block;
 }
 
-.body .top .logo {
+.menuBody .top .logo {
   display: flex;
 }
 
-.body .top .logo img {
+.menuBody .top .logo img {
   margin-right: 5px;
   pointer-events: none;
   aspect-ratio: 194 / 20;
   object-fit: cover;
 }
 
-.body .top .logo span {
+.menuBody .top .logo span {
   color: #FFD45A;
   font-weight: 700;
   position: relative;
@@ -104,19 +109,19 @@
   user-select: none;
 }
 
-.body .inner {
+.menuBody .inner {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.body .inner .service {
+.menuBody .inner .service {
   padding: 1rem 1.25rem 1.25rem;
   background-color: #fff;
   border-bottom: .0625rem solid #e3e7ef;
 }
 
-.body .inner .service p {
+.menuBody .inner .service p {
   margin-bottom: 1rem;
   color: #97a3b7;
   font-size: .75rem;
@@ -124,13 +129,13 @@
   text-transform: uppercase;
 }
 
-.body .inner .service ul {
+.menuBody .inner .service ul {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem 2rem;
 }
 
-.body .inner .service ul li a {
+.menuBody .inner .service ul li a {
   padding: .5rem .75rem;
   color: #677489;
   font-size: .75rem;
@@ -141,16 +146,16 @@
   transition: background-color .3s ease 0s;
 }
 
-.body .inner .service ul li a:hover {
+.menuBody .inner .service ul li a:hover {
   background-color: #f1f3f9;
 }
 
-.body .inner .service ul li a img {
+.menuBody .inner .service ul li a img {
   width: 24px;
   height: 24px;
 }
 
-.body .inner .service ul li a span {
+.menuBody .inner .service ul li a span {
   color: #677489;
   font-size: .75rem;
   line-height: 1.5;
@@ -162,13 +167,13 @@
   margin-bottom: .125rem;
 }
 
-.body .inner .info {
+.menuBody .inner .info {
   padding: 1.25rem 0;
   border-bottom: .0625rem solid #e3e7ef;
   display: block;
 }
 
-.body .inner .info li a {
+.menuBody .inner .info li a {
   padding: .5625rem 1.5rem;
   width: 100%;
   font-weight: 700;
@@ -180,15 +185,15 @@
   transition: background-color .3s ease 0s;
 }
 
-.body .inner .info li a span {
+.menuBody .inner .info li a span {
   color: rgb(17, 27, 41);
 }
 
-.body .inner .language {
+.menuBody .inner .language {
   position: relative;
 }
 
-.body .inner .language>button {
+.menuBody .inner .language>button {
   padding: 1rem 1.5rem;
   width: 100%;
   display: flex;
@@ -201,11 +206,11 @@
   color: inherit;
 }
 
-.body .inner .language button span {
+.menuBody .inner .language button span {
   text-transform: uppercase;
 }
 
-.body .inner .language ul {
+.menuBody .inner .language ul {
   width: 100%;
   padding: 1rem 0;
   max-height: 12.5rem;
@@ -215,11 +220,11 @@
   border-bottom: .0625rem solid #e3e7ef;
 }
 
-.body .inner .language ul li {
+.menuBody .inner .language ul li {
   margin-top: .875rem;
 }
 
-.body .inner .language ul li button {
+.menuBody .inner .language ul li button {
   padding: 0 1.5rem;
   width: 100%;
   display: flex;
@@ -231,58 +236,41 @@
   line-height: 1.375rem;
 }
 
-.body .inner .language ul li button img {
+.menuBody .inner .language ul li button .langFlag {
   width: 24px;
   height: 24px;
 }
 
-.active {
+/* 切換樣式 */
+.langActive {
   font-weight: 700;
   color: #ff5f45;
 }
 
-.mkm {
+.bottom {
   margin: auto;
   padding: 10px 15px;
 }
 
-.mkm img {
+.bottom img {
   height: 100%;
   background-size: contain;
 }
 
-.backdrop {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #041632;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1;
-  transition: opacity .3s ease 0s;
-}
-
-.openBack {
-  opacity: .5;
-  pointer-events: all;
-}
-
 @media (max-width: 1000px) {
-  .menu {
+  .menuBtn {
     display: block;
   }
 
-  .body {
+  .menuBody {
     display: flex;
   }
 }
 
 @media (max-width: 440px) {
-  .body {
+  .menuBody {
     max-width: 100%;
-    /* height: 100vh; */
+    min-width: 100%;
     min-height: 100%;
     max-height: 100%;
   }

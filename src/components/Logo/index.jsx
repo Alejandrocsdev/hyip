@@ -1,8 +1,8 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { Link } from 'react-router-dom'
-// 圖檔
+// 圖檔 (image)
 import logoSvg from '../../assets/img/logo/logo.svg'
 import logoBlackSvg from '../../assets/img/logo/logo-black.svg'
 import logoOriginSvg from '../../assets/img/logo/logo-origin.svg'
@@ -26,7 +26,7 @@ function Logo({ type, color }) {
   const src = getSrc()
 
   return (
-    <div className={S.container}>
+    <div className={S.logo}>
       <Link to={to} target={target}>
         <img src={src} />
         {isCrypto && <span>Crypto</span>}

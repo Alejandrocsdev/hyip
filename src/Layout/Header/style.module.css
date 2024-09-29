@@ -6,6 +6,26 @@
   z-index: 100;
 }
 
+.header::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: #041632;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity .3s ease 0s;
+
+  pointer-events: none;
+  opacity: 0;
+}
+
+.showBackdrop::before {
+  pointer-events: all;
+  opacity: 0.5;
+}
+
 .nav {
   height: 62px;
   max-width: 75rem;
@@ -36,16 +56,12 @@
 }
 
 @media (max-width: 1000px) {
-  .menu .signIn {
+  .signIn {
     display: none;
   }
 }
 
 @media (max-width: 800px) {
-  .menu .signIn {
-    display: none;
-  }
-
   .nav {
     padding: 0 1.25rem;
   }

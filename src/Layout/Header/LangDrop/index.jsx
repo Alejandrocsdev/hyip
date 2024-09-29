@@ -1,76 +1,67 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
-import { useState, useRef } from 'react'
-import useBodyClass from '../../../hooks/useBodyClass'
+// 函式庫 (library)
+import { useState, useRef, useEffect } from 'react'
+// 自訂函式 (custom function)
+import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
-// 圖檔
-import usSvg from '../../../assets/img/flag/us.svg'
-import ruSvg from '../../../assets/img/flag/ru.svg'
-import eeSvg from '../../../assets/img/flag/ee.svg'
-import triangleSvg from '../../../assets/img/element/triangle.svg'
-// 組件
+// 組件 (component)
 import AngleDownSvg from '../../../components/Svg/AngleDownSvg'
+import TriangleSvg from '../../../components/Svg/TriangleSvg'
+import LangFlag from '../../../components/LangFlag'
 
 // 選單組件
-function LangDrop() {
+function LangDrop({ onBackdropToggle }) {
   const [isOpened, setIsOpened] = useState(false)
   const [activeLang, setActiveLang] = useState('en')
-  const dropdownRef = useRef(null)
+  const containerRef = useRef(null)
 
-  useBodyClass(isOpened ? 'no-scroll' : '')
+  const toggleDropdown = () => setIsOpened((prev) => !prev)
 
-  const toggleDropdown = () => {
-    setIsOpened((prev) => !prev)
-  }
+  const switchLang = (lang) => setActiveLang(lang)
 
-  const closeDropdown = () => {
-    setIsOpened(false)
-  }
+  useBodyScroll(isOpened)
 
-  useClickOutside(dropdownRef, () => {
-    if (isOpened) {
-      closeDropdown()
-    }
+  useClickOutside(containerRef, () => {
+    if (isOpened) toggleDropdown()
   })
 
-  const switchLang = (lang) => {
-    setActiveLang(lang)
-  }
+  useEffect(() => onBackdropToggle(isOpened), [isOpened, onBackdropToggle])
 
   return (
     <>
-      <main className={S.container} ref={dropdownRef} onClick={toggleDropdown}>
+      <div className={S.container} ref={containerRef} onClick={toggleDropdown}>
         {/* 語言按鈕 */}
-        <button>
+        <button className={S.langBtn}>
           <span>{activeLang}</span>
-          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.rotate : ''}`} />
+          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.arrowRotate : ''}`} />
         </button>
         {/* 語言列表 */}
-        <ul className={`${isOpened ? S.showDrop : ''}`} onClick={(e) => e.stopPropagation()}>
+        <ul
+          className={`${S.langList} ${isOpened ? S.showList : ''}`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <li>
             <button onClick={() => switchLang('en')}>
-              <img src={usSvg} />
-              <span className={activeLang === 'en' ? S.active : ''}>English</span>
+              <LangFlag className={S.langFlag} type="us" />
+              <span className={activeLang === 'en' ? S.langActive : ''}>English</span>
             </button>
           </li>
           <li>
             <button onClick={() => switchLang('ru')}>
-              <img src={ruSvg} />
-              <span className={activeLang === 'ru' ? S.active : ''}>Русский</span>
+              <LangFlag className={S.langFlag} type="ru" />
+              <span className={activeLang === 'ru' ? S.langActive : ''}>Русский</span>
             </button>
           </li>
           <li>
             <button onClick={() => switchLang('et')}>
-              <img src={eeSvg} />
-              <span className={activeLang === 'et' ? S.active : ''}>Eesti</span>
+              <LangFlag className={S.langFlag} type="ee" />
+              <span className={activeLang === 'et' ? S.langActive : ''}>Eesti</span>
             </button>
           </li>
-          <img className={S.triangle} src={triangleSvg} />
+          <TriangleSvg className={S.triangle} />
         </ul>
-        {/* 詼諧背景 */}
-        <div className={`${S.backdrop} ${isOpened ? S.showBack : ''}`}></div>
-      </main>
+      </div>
     </>
   )
 }

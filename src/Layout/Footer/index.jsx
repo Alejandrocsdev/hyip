@@ -1,8 +1,8 @@
-// 模組樣式
+// 樣式模組 (css module)
 import S from './style.module.css'
-// 鉤子函式
+// 函式庫 (library)
 import { Link } from 'react-router-dom'
-// 組件
+// 組件 (component)
 import Logo from '../../components/Logo'
 import FacebookSvg from '../../components/Svg/FacebookSvg'
 import TwitterSvg from '../../components/Svg/TwitterSvg'

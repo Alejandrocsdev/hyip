@@ -1,14 +1,14 @@
-.container>a {
+.logo a {
   display: flex;
 }
 
-.container>a>img {
+.logo a img {
   margin-right: 5px;
   object-fit: cover;
   aspect-ratio: 194 / 20;
 }
 
-.container>a>span {
+.logo a span {
   color: #FFD45A;
   text-transform: uppercase;
   font-weight: 700;

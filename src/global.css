@@ -13,7 +13,7 @@ body {
   background-color: #F1F3F9;
 }
 
-.no-scroll {
+.hideScroll {
   overflow-y: hidden;
 }
 

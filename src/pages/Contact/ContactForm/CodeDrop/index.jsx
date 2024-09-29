@@ -2,7 +2,7 @@
 import S from './style.module.css'
 // 鉤子函式
 import { useState, useRef } from 'react'
-import useBodyClass from '../../../../hooks/useBodyClass.jsx'
+import useBodyScroll from '../../../../hooks/useBodyScroll.jsx'
 import useClickOutside from '../../../../hooks/useClickOutside.jsx'
 import useCountryCode from '../../../../hooks/useCountryCode.jsx'
 import useCountryData from '../../../../hooks/useCountryData.jsx'
@@ -34,7 +34,7 @@ function CodeDrop({ onBlur, inputError, value, onChange }) {
 
   useClickOutside(codeBtnRef, () => setShowList(false))
 
-  useBodyClass(showList ? 'no-scroll' : '')
+  useBodyScroll(showList ? 'no-scroll' : '')
 
   return (
     <main className={S.main}>
