@@ -1,8 +1,10 @@
+// 函式庫 (library)
 import { useState } from 'react'
 import libphonenumber from 'google-libphonenumber'
 
 const phoneUtil = libphonenumber.PhoneNumberUtil.getInstance()
 
+// 驗證手機格式
 const usePhoneValidate = () => {
   const [isValid, setIsValid] = useState(false)
   const [isPossible, setIsPossible] = useState(false)

@@ -9,20 +9,14 @@ import useCountryData from '../../../../hooks/useCountryData.jsx'
 // 組件 (component)
 import Flag from '../../../../components/Flag'
 import PhoneList from './PhoneList'
+import FormField from '../../../../components/FormField'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
-// import { useForm } from 'react-hook-form'
-import FormField from '../../../../components/FormField'
+import { useFormContext } from 'react-hook-form'; // Import useFormContext
 
 // 下拉選單: 國碼
-function CodeDrop(
-  {
-    // onBlur, inputError,
-    // value, onChange
-    control
-  }
-) {
-  // const { control } = useForm()
+function CodeDrop() {
+  const { setFocus, control } = useFormContext()
 
   const { countryCode, setCountryCode } = useCountryCode()
   const countryData = useCountryData(countryCode)
@@ -31,7 +25,7 @@ function CodeDrop(
 
   const [showList, setShowList] = useState(false)
   const codeBtnRef = useRef(null)
-  const inputRef = useRef(null)
+  // const inputRef = useRef(null)
 
   const toggleList = () => {
     setShowList((prev) => !prev)
@@ -40,7 +34,7 @@ function CodeDrop(
   const handleSelect = (newCountryCode) => {
     setCountryCode(newCountryCode)
     setShowList(false)
-    inputRef.current?.focus()
+    setFocus('phone')
   }
 
   useClickOutside(codeBtnRef, () => setShowList(false))
@@ -57,22 +51,12 @@ function CodeDrop(
         </div>
         <PhoneList show={showList} selected={countryCode || 'lv'} onSelect={handleSelect} />
       </div>
-      {/* <input
-        type="text"
-        name="phone"
-        placeholder={exampleNumber || '21 234 567'}
-        value={value}
-        onChange={onChange}
-        ref={inputRef}
-        onBlur={onBlur}
-        className={inputError ? S.error : ''}
-      /> */}
       <FormField
         name="phone"
-        control={control}
         type="tel"
-        countryCode="tw"
+        countryCode={countryCode}
         placeholder={exampleNumber || '21 234 567'}
+        control={control}
         // ref={inputRef}
       />
     </main>

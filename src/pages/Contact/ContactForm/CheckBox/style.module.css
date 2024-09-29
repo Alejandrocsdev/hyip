@@ -21,11 +21,17 @@
 }
 
 .active {
-  border-color: #ff5f45;
-  background-color: #ff5f45;
+  border-color: #ff5f45!important;
+  background-color: #ff5f45!important;
 }
 
 .inactive {
-  background-color: #ffebeb;
-  border-color: #e00909;
+  background-color: #ffebeb!important;
+  border-color: #e00909!important;
+}
+
+.check {
+  /* position: relative;
+  top: 150px; */
+  display: none;
 }

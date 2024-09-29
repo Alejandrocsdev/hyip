@@ -9,6 +9,7 @@ import { getValidationRules } from './validation';
 function FormField({
   name,
   control,
+  id,
   defaultValue = '',
   className = '',
   type = 'text',
@@ -27,6 +28,8 @@ function FormField({
     rules: getValidationRules(isTextarea ? 'textarea' : type, countryCode)
   })
 
+  console.log(`${name}: `, error)
+
   return (
     <>
       {isTextarea ? (
@@ -34,6 +37,7 @@ function FormField({
           {...field}
           className={`${className} ${error ? S.error : ''}`}
           placeholder={placeholder}
+          id={id}
         />
       ) : (
         <input
@@ -41,6 +45,7 @@ function FormField({
           className={`${className} ${error ? S.error : ''}`}
           type={type}
           placeholder={placeholder}
+          id={id}
         />
       )}
       {/* {error && <p>{error.message}</p>} */}
