@@ -11,10 +11,19 @@ import Flag from '../../../../components/Flag'
 import PhoneList from './PhoneList'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
+// import { useForm } from 'react-hook-form'
+import FormField from '../../../../components/FormField'
+
 // 下拉選單: 國碼
-function CodeDrop({ 
-  // onBlur, inputError, 
-  value, onChange }) {
+function CodeDrop(
+  {
+    // onBlur, inputError,
+    // value, onChange
+    control
+  }
+) {
+  // const { control } = useForm()
+
   const { countryCode, setCountryCode } = useCountryCode()
   const countryData = useCountryData(countryCode)
   const dialingCode = countryData ? countryData.dialingCode : ''
@@ -48,15 +57,23 @@ function CodeDrop({
         </div>
         <PhoneList show={showList} selected={countryCode || 'lv'} onSelect={handleSelect} />
       </div>
-      <input
+      {/* <input
         type="text"
         name="phone"
         placeholder={exampleNumber || '21 234 567'}
         value={value}
         onChange={onChange}
         ref={inputRef}
-        // onBlur={onBlur}
-        // className={inputError ? S.error : ''}
+        onBlur={onBlur}
+        className={inputError ? S.error : ''}
+      /> */}
+      <FormField
+        name="phone"
+        control={control}
+        type="tel"
+        countryCode="tw"
+        placeholder={exampleNumber || '21 234 567'}
+        // ref={inputRef}
       />
     </main>
   )

@@ -16,6 +16,9 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CustomerData from './pages/CustomerData'
 import Complaints from './pages/Complaints'
+
+import FormTest from './pages/FormTest'
+
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -39,6 +42,8 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/customer-data-processing" element={<CustomerData />} />
             <Route path="/complaints" element={<Complaints />} />
+
+            <Route path="/form-test" element={<FormTest />} />
             
             {/* 錯誤路由 */}
             <Route path="*" element={<NotFound />} />
