@@ -12,7 +12,9 @@ import PhoneList from './PhoneList'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
 // 下拉選單: 國碼
-function CodeDrop({ onBlur, inputError, value, onChange }) {
+function CodeDrop({ 
+  // onBlur, inputError, 
+  value, onChange }) {
   const { countryCode, setCountryCode } = useCountryCode()
   const countryData = useCountryData(countryCode)
   const dialingCode = countryData ? countryData.dialingCode : ''
@@ -34,7 +36,7 @@ function CodeDrop({ onBlur, inputError, value, onChange }) {
 
   useClickOutside(codeBtnRef, () => setShowList(false))
 
-  useBodyScroll(showList ? 'no-scroll' : '')
+  useBodyScroll(showList)
 
   return (
     <main className={S.main}>
@@ -53,8 +55,8 @@ function CodeDrop({ onBlur, inputError, value, onChange }) {
         value={value}
         onChange={onChange}
         ref={inputRef}
-        onBlur={onBlur}
-        className={inputError ? S.error : ''}
+        // onBlur={onBlur}
+        // className={inputError ? S.error : ''}
       />
     </main>
   )

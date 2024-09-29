@@ -7,7 +7,7 @@ import checkboxSvg from '../../../../assets/img/icon/checkbox.svg'
 
 // 首頁
 function CheckBox({ isChecked, onChange, initial  }) {
-  const [isClicked, setIsClicked] = useState(initial)
+  const [isClicked, setIsClicked] = useState(false)
 
   const toggleCheckbox = () => {
     if (!isClicked) {
@@ -23,12 +23,16 @@ function CheckBox({ isChecked, onChange, initial  }) {
     return isChecked ? S.active : S.inactive
   }
 
+  // useEffect(() => {
+  //   setIsClicked(initial);
+  // }, [initial]);
+
   useEffect(() => {
-    setIsClicked(initial);
-  }, [initial]);
+    onChange(initial);
+  }, [initial, onChange]);
 
   return (
-    <main className={`${S.checkbox} ${checkboxClass()}`} onClick={toggleCheckbox}>
+    <main className={`${S.checkbox} ${checkboxClass}`} onClick={toggleCheckbox}>
       <img src={checkboxSvg} className={isChecked ? S.show : ''} />
     </main>
   )

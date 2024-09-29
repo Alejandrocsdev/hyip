@@ -21,17 +21,17 @@ function ContactForm() {
     message: ''
   })
 
-  const [inputError, setInputError] = useState({
-    name: false,
-    email: false,
-    phone: false,
-    message: false
-  })
+  // const [inputError, setInputError] = useState({
+  //   name: false,
+  //   email: false,
+  //   phone: false,
+  //   message: false
+  // })
 
-  const validateName = (name) => name.trim() !== ''
-  const validateEmail = (email) => /^\S+@\S+\.\S+$/.test(email)
-  const validatePhone = (phone) => phone.trim() !== ''
-  const validateMessage = (message) => message.trim() !== ''
+  // const validateName = (name) => name.trim() !== ''
+  // const validateEmail = (email) => /^\S+@\S+\.\S+$/.test(email)
+  // const validatePhone = (phone) => phone.trim() !== ''
+  // const validateMessage = (message) => message.trim() !== ''
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -41,32 +41,32 @@ function ContactForm() {
     }))
   }
 
-  const handleBlur = (field) => {
-    const value = formValues[field]
-    let isValid = false
+  // const handleBlur = (field) => {
+  //   const value = formValues[field]
+  //   let isValid = false
 
-    switch (field) {
-      case 'name':
-        isValid = validateName(value)
-        break
-      case 'email':
-        isValid = validateEmail(value)
-        break
-      case 'phone':
-        isValid = validatePhone(value)
-        break
-      case 'message':
-        isValid = validateMessage(value)
-        break
-      default:
-        break
-    }
+  //   switch (field) {
+  //     case 'name':
+  //       isValid = validateName(value)
+  //       break
+  //     case 'email':
+  //       isValid = validateEmail(value)
+  //       break
+  //     case 'phone':
+  //       isValid = validatePhone(value)
+  //       break
+  //     case 'message':
+  //       isValid = validateMessage(value)
+  //       break
+  //     default:
+  //       break
+  //   }
 
-    setInputError((prev) => ({
-      ...prev,
-      [field]: !isValid
-    }))
-  }
+  //   setInputError((prev) => ({
+  //     ...prev,
+  //     [field]: !isValid
+  //   }))
+  // }
 
   const handleCheckboxChange = (checked) => {
     setIsChecked(checked)
@@ -75,11 +75,11 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const isFormValid = Object.values(inputError).every((error) => !error) && isChecked
+    // const isFormValid = Object.values(inputError).every((error) => !error) && isChecked
 
-    if (isFormValid) {
+    // if (isFormValid) {
       setIsSubmitted(true)
-    }
+    // }
   }
 
   const handleDoneClick = () => {
@@ -90,12 +90,12 @@ function ContactForm() {
       phone: '',
       message: ''
     })
-    setInputError({
-      name: false,
-      email: false,
-      phone: false,
-      message: false
-    })
+    // setInputError({
+    //   name: false,
+    //   email: false,
+    //   phone: false,
+    //   message: false
+    // })
     setIsChecked(false)
     setIsSubmitted(false)
   }
@@ -112,8 +112,8 @@ function ContactForm() {
               name="name"
               value={formValues.name}
               onChange={handleInputChange}
-              className={inputError.name ? S.error : ''}
-              onBlur={() => handleBlur('name')}
+              // className={inputError.name ? S.error : ''}
+              // onBlur={() => handleBlur('name')}
             />
           </div>
           {/* 信箱 */}
@@ -124,16 +124,16 @@ function ContactForm() {
               name="email"
               value={formValues.email}
               onChange={handleInputChange}
-              className={inputError.email ? S.error : ''}
-              onBlur={() => handleBlur('email')}
+              // className={inputError.email ? S.error : ''}
+              // onBlur={() => handleBlur('email')}
             />
           </div>
           {/* 電話 */}
           <div className={S.input}>
             <span>Phone</span>
             <CodeDrop
-              onBlur={() => handleBlur('phone')}
-              inputError={inputError.phone}
+              // onBlur={() => handleBlur('phone')}
+              // inputError={inputError.phone}
               value={formValues.phone}
               onChange={handleInputChange}
             />
@@ -147,8 +147,8 @@ function ContactForm() {
             placeholder="Write your question"
             value={formValues.message}
             onChange={handleInputChange}
-            className={inputError.message ? S.error : ''}
-            onBlur={() => handleBlur('message')}
+            // className={inputError.message ? S.error : ''}
+            // onBlur={() => handleBlur('message')}
           ></textarea>
         </div>
         <div className={S.agreements}>
