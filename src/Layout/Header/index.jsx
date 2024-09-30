@@ -7,13 +7,16 @@ import { useState } from 'react'
 import Logo from '../../components/Logo'
 import LangDrop from './LangDrop'
 import MobMenu from './MobMenu'
+// 自訂函式 (custom function)
+import { useShowList } from '../../context/useShowList'
 
 // 頁首組件
 function Header() {
   const [hasBackdrop, setHasBackdrop] = useState(false)
+  const { showList } = useShowList()
 
   return (
-    <header className={`${S.header} ${hasBackdrop ? S.showBackdrop : ''}`}>
+    <header className={`${S.header} ${hasBackdrop ? S.showBackdrop : ''} ${showList ? S.hideHeader : ''}`}>
       <nav className={S.nav}>
         {/* Logo */}
         <Logo type="crypto" color="white" />

@@ -123,7 +123,7 @@
 
 .mobListTitle {
   display: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media (max-width:1000px) {
@@ -138,7 +138,8 @@
   }
 
   .showMobListTitle {
-    padding: 2rem 0 5px 1rem;
+    width: 100%;
+    padding: 2rem 1rem 5px;
     margin-bottom: .25rem;
     color: #3e345c;
     font-size: 1.25rem;
@@ -146,7 +147,9 @@
     line-height: 1.5;
     background-color: #fff;
     display: block;
-    pointer-events: all;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .mobListTitle>span {
