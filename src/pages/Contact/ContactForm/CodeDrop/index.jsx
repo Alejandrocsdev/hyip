@@ -2,6 +2,8 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { useState, useRef } from 'react'
+import { useFormContext } from 'react-hook-form'
+// 自訂函式 (custom function)
 import useBodyScroll from '../../../../hooks/useBodyScroll.jsx'
 import useClickOutside from '../../../../hooks/useClickOutside.jsx'
 import useCountryCode from '../../../../hooks/useCountryCode.jsx'
@@ -12,20 +14,16 @@ import PhoneList from './PhoneList'
 import FormField from '../../../../components/FormField'
 import AngleDownSvg from '../../../../components/Svg/AngleDownSvg'
 
-import { useFormContext } from 'react-hook-form'; // Import useFormContext
-
 // 下拉選單: 國碼
 function CodeDrop() {
   const { setFocus, control } = useFormContext()
 
   const { countryCode, setCountryCode } = useCountryCode()
-  const countryData = useCountryData(countryCode)
-  const dialingCode = countryData ? countryData.dialingCode : ''
-  const exampleNumber = countryData ? countryData.exampleNumber : ''
+  const countryData = useCountryData(countryCode) || {}
+  const { dialingCode = '66', exampleNumber = '21 234 567' } = countryData
 
   const [showList, setShowList] = useState(false)
   const codeBtnRef = useRef(null)
-  // const inputRef = useRef(null)
 
   const toggleList = () => {
     setShowList((prev) => !prev)
@@ -46,7 +44,7 @@ function CodeDrop() {
       <div className={S.codeBtn} onClick={toggleList} ref={codeBtnRef}>
         <div className={S.selected}>
           <Flag countryCode={countryCode || 'lv'} />
-          <div className={S.code}>+{dialingCode || '66'}</div>
+          <div className={S.code}>+{dialingCode}</div>
           <AngleDownSvg className={`${S.arrow} ${showList ? S.rotate : ''}`} />
         </div>
         <PhoneList show={showList} selected={countryCode || 'lv'} onSelect={handleSelect} />
@@ -55,9 +53,8 @@ function CodeDrop() {
         name="phone"
         type="tel"
         countryCode={countryCode}
-        placeholder={exampleNumber || '21 234 567'}
+        placeholder={exampleNumber}
         control={control}
-        // ref={inputRef}
       />
     </main>
   )

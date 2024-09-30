@@ -3,7 +3,7 @@ import S from './style.module.css'
 // 函式庫 (library)
 import { useEffect, useRef } from 'react'
 // 資料 (json)
-import flagsData from '../../../../../components/Flag/flags.json'
+import flagsData from '../../../../../assets/flags/flags.json'
 // 組件 (component)
 import Flag from '../../../../../components/Flag'
 

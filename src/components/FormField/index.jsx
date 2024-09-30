@@ -3,52 +3,48 @@ import S from './style.module.css'
 // 函式庫 (library)
 import { useController } from 'react-hook-form'
 // 自訂函式 (custom function)
-import { getValidationRules } from './validation';
+import { getFieldRules } from './fieldRules'
 
 // 輸入欄
-function FormField({
-  name,
-  control,
-  id,
-  defaultValue = '',
-  className = '',
-  type = 'text',
-  isTextarea = false,
-  placeholder = '',
-  countryCode
-}) {
+function FormField(props) {
+  const {
+    // default attributes
+    id,
+    type = 'text',
+    className = '',
+    placeholder = '',
+    // controller attributes
+    name,
+    control,
+    defaultValue = '',
+    // Other attributes
+    countryCode
+  } = props
+
   const {
     field,
-    // fieldState: { isTouched, error }
     fieldState: { error }
   } = useController({
     name,
     control,
     defaultValue,
-    rules: getValidationRules(isTextarea ? 'textarea' : type, countryCode)
+    rules: getFieldRules(type, countryCode)
   })
 
-  console.log(`${name}: `, error)
+  const defaultAttributes = {
+    id,
+    type,
+    className: `${className} ${error ? S.error : ''}`,
+    placeholder
+  }
 
   return (
     <>
-      {isTextarea ? (
-        <textarea
-          {...field}
-          className={`${className} ${error ? S.error : ''}`}
-          placeholder={placeholder}
-          id={id}
-        />
+      {type === 'textarea' ? (
+        <textarea {...field} {...defaultAttributes} />
       ) : (
-        <input
-          {...field}
-          className={`${className} ${error ? S.error : ''}`}
-          type={type}
-          placeholder={placeholder}
-          id={id}
-        />
+        <input {...field} {...defaultAttributes} />
       )}
-      {/* {error && <p>{error.message}</p>} */}
     </>
   )
 }

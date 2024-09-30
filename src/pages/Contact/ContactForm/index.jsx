@@ -2,7 +2,7 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { Link } from 'react-router-dom'
-// import { useState } from 'react'
+import { useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
 // 圖檔 (image)
 import greenCheckSvg from '../../../assets/img/icon/green-check.svg'
@@ -13,24 +13,27 @@ import FormField from '../../../components/FormField'
 
 // 首頁
 function ContactForm() {
-  // const { control, handleSubmit } = useForm({
-  //   mode: 'onTouched',
-  //   shouldFocusError: false
-  // })
-
   const methods = useForm({
     mode: 'onTouched',
     shouldFocusError: false
   })
 
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
   const onSubmit = (formData) => {
-    console.log('Form submitted', formData)
+    console.log(formData)
+    setIsSubmitted(true)
+  }
+
+  const handleDoneClick = () => {
+    setIsSubmitted(false)
+    methods.reset()
   }
 
   return (
     <div className={S.main}>
       <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onSubmit)}>
+        <form onSubmit={methods.handleSubmit(onSubmit)} className={isSubmitted ? S.hideForm : ''}>
           <div className={S.inputs}>
             {/* 名稱 */}
             <div className={S.input}>
@@ -51,8 +54,9 @@ function ContactForm() {
           {/* 訊息 */}
           <div className={S.message}>
             <span>How can we help?</span>
-            <FormField name="message" isTextarea={true} placeholder="Write your question" />
+            <FormField name="message" type="textarea" placeholder="Write your question" />
           </div>
+          {/* 同意 */}
           <div className={S.agreements}>
             <CheckBox />
             <p>
@@ -61,17 +65,21 @@ function ContactForm() {
               <Link>Complaints resolution procedure</Link>
             </p>
           </div>
+          {/* 提交按鈕 */}
           <button className={S.submit} type="submit">
             Send
           </button>
         </form>
       </FormProvider>
-      <div className={S.thanks}>
+      {/* 表單發送成功畫面 */}
+      <div className={`${S.thanks} ${isSubmitted ? S.showThanks : ''}`}>
         <img src={greenCheckSvg} />
         <p>
           <b>Thank you! Your message has been sent.</b>
         </p>
-        <button type="button">Done</button>
+        <button type="button" onClick={handleDoneClick}>
+          Done
+        </button>
       </div>
     </div>
   )

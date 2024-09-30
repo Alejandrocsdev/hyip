@@ -1,8 +1,5 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
-// 函式庫 (library)
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
 // 圖檔 (image)
 import phoneSvg from '../../assets/img/icon/phone.svg'
 import mailSvg from '../../assets/img/icon/mail.svg'
