@@ -1,7 +1,8 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 // 組件 (component)
 import Logo from '../../components/Logo'
 import FacebookSvg from '../../components/Svg/FacebookSvg'
@@ -10,6 +11,10 @@ import InstagramSvg from '../../components/Svg/InstagramSvg'
 
 // 頁尾組件
 function Footer() {
+  const { t } = useTranslation()
+
+  const { lang } = useParams()
+
   return (
     <>
       <footer className={S.footer}>
@@ -39,10 +44,10 @@ function Footer() {
                 <h5 className={S.title}>About us</h5>
                 <ul>
                   <li>
-                    <Link to="/about-us">Money Express Crypto</Link>
+                    <Link to={`/${lang}/about-us`}>Money Express Crypto</Link>
                   </li>
                   <li>
-                    <Link to="/contacts">Contacts</Link>
+                    <Link to={`/${lang}/contacts`}>{t('contacts')}</Link>
                   </li>
                 </ul>
               </div>

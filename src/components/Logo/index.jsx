@@ -1,7 +1,7 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom';
 // 圖檔 (image)
 import logoSvg from '../../assets/img/logo/logo.svg'
 import logoBlackSvg from '../../assets/img/logo/logo-black.svg'
@@ -10,6 +10,8 @@ import logoBlackOriginSvg from '../../assets/img/logo/logo-black-origin.svg'
 
 // Logo
 function Logo({ type, color, onClick }) {
+  const { lang } = useParams()
+
   const isCrypto = type === 'crypto' // 'origin'
   const isWhite = color === 'white' // 'black'
 
@@ -21,7 +23,7 @@ function Logo({ type, color, onClick }) {
     }
   }
 
-  const to = isCrypto ? '/' : 'https://moneyexpress.ee/en'
+  const to = isCrypto ? `/` : 'https://moneyexpress.ee/en'
   const target = isCrypto ? '_self' : '_blank'
   const src = getSrc()
 

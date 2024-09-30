@@ -2,6 +2,7 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
@@ -13,12 +14,14 @@ import LangFlag from '../../../components/LangFlag'
 // 選單組件
 function LangDrop({ onBackdropToggle }) {
   const [isOpened, setIsOpened] = useState(false)
-  const [activeLang, setActiveLang] = useState('en')
   const containerRef = useRef(null)
+
+  const { i18n } = useTranslation()
+  const activeLang = i18n.language
 
   const toggleDropdown = () => setIsOpened((prev) => !prev)
 
-  const switchLang = (lang) => setActiveLang(lang)
+  const switchLang = (lang) => i18n.changeLanguage(lang)
 
   useBodyScroll(isOpened)
 
