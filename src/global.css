@@ -28,3 +28,11 @@ ul {
 button {
   background-color: transparent;
 }
+
+#fullscreen {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  z-index: 200;
+}

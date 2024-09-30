@@ -9,6 +9,7 @@ function Layout() {
   return (
     <>
       <Header />
+      <div id="fullscreen"></div>
       <Outlet />
       <Footer />
     </>

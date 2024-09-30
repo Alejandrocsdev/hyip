@@ -6,7 +6,7 @@
             "countryCode": "af",
             "dialingCode": "93",
             "englishName": "Afghanistan ",
-            "origianlName": "‫افغانستان‬‎",
+            "originalName": "‫افغانستان‬‎",
             "exampleNumber": "70 123 4567"
         },
         {
@@ -15,7 +15,7 @@
             "countryCode": "al",
             "dialingCode": "355",
             "englishName": "Albania ",
-            "origianlName": "Shqipëri",
+            "originalName": "Shqipëri",
             "exampleNumber": "67 212 3456"
         },
         {
@@ -24,7 +24,7 @@
             "countryCode": "dz",
             "dialingCode": "213",
             "englishName": "Algeria ",
-            "origianlName": "‫الجزائر‬‎",
+            "originalName": "‫الجزائر‬‎",
             "exampleNumber": "551 23 45 67"
         },
         {
@@ -81,7 +81,7 @@
             "countryCode": "am",
             "dialingCode": "374",
             "englishName": "Armenia ",
-            "origianlName": "Հայաստան",
+            "originalName": "Հայաստան",
             "exampleNumber": "77 123456"
         },
         {
@@ -114,7 +114,7 @@
             "countryCode": "at",
             "dialingCode": "43",
             "englishName": "Austria ",
-            "origianlName": "Österreich",
+            "originalName": "Österreich",
             "exampleNumber": "664 123456"
         },
         {
@@ -123,7 +123,7 @@
             "countryCode": "az",
             "dialingCode": "994",
             "englishName": "Azerbaijan ",
-            "origianlName": "Azərbaycan",
+            "originalName": "Azərbaycan",
             "exampleNumber": "40 123 45 67"
         },
         {
@@ -140,7 +140,7 @@
             "countryCode": "bh",
             "dialingCode": "973",
             "englishName": "Bahrain ",
-            "origianlName": "‫البحرين‬‎",
+            "originalName": "‫البحرين‬‎",
             "exampleNumber": "3600 1234"
         },
         {
@@ -149,7 +149,7 @@
             "countryCode": "bd",
             "dialingCode": "880",
             "englishName": "Bangladesh ",
-            "origianlName": "বাংলাদেশ",
+            "originalName": "বাংলাদেশ",
             "exampleNumber": "1812-345678"
         },
         {
@@ -166,7 +166,7 @@
             "countryCode": "by",
             "dialingCode": "375",
             "englishName": "Belarus ",
-            "origianlName": "Беларусь",
+            "originalName": "Беларусь",
             "exampleNumber": "29 491-19-11"
         },
         {
@@ -175,7 +175,7 @@
             "countryCode": "be",
             "dialingCode": "32",
             "englishName": "Belgium ",
-            "origianlName": "België",
+            "originalName": "België",
             "exampleNumber": "470 12 34 56"
         },
         {
@@ -192,7 +192,7 @@
             "countryCode": "bj",
             "dialingCode": "229",
             "englishName": "Benin ",
-            "origianlName": "Bénin",
+            "originalName": "Bénin",
             "exampleNumber": "90 01 12 34"
         },
         {
@@ -209,7 +209,7 @@
             "countryCode": "bt",
             "dialingCode": "975",
             "englishName": "Bhutan ",
-            "origianlName": "འབྲུག",
+            "originalName": "འབྲུག",
             "exampleNumber": "17 12 34 56"
         },
         {
@@ -226,7 +226,7 @@
             "countryCode": "ba",
             "dialingCode": "387",
             "englishName": "Bosnia and Herzegovina ",
-            "origianlName": "Босна и Херцеговина",
+            "originalName": "Босна и Херцеговина",
             "exampleNumber": "61 123 456"
         },
         {
@@ -243,7 +243,7 @@
             "countryCode": "br",
             "dialingCode": "55",
             "englishName": "Brazil ",
-            "origianlName": "Brasil",
+            "originalName": "Brasil",
             "exampleNumber": "11 96123-4567"
         },
         {
@@ -276,7 +276,7 @@
             "countryCode": "bg",
             "dialingCode": "359",
             "englishName": "Bulgaria ",
-            "origianlName": "България",
+            "originalName": "България",
             "exampleNumber": "48 123 456"
         },
         {
@@ -293,7 +293,7 @@
             "countryCode": "bi",
             "dialingCode": "257",
             "englishName": "Burundi ",
-            "origianlName": "Uburundi",
+            "originalName": "Uburundi",
             "exampleNumber": "79 56 12 34"
         },
         {
@@ -302,7 +302,7 @@
             "countryCode": "kh",
             "dialingCode": "855",
             "englishName": "Cambodia ",
-            "origianlName": "កម្ពុជា",
+            "originalName": "កម្ពុជា",
             "exampleNumber": "91 234 567"
         },
         {
@@ -311,7 +311,7 @@
             "countryCode": "cm",
             "dialingCode": "237",
             "englishName": "Cameroon ",
-            "origianlName": "Cameroun",
+            "originalName": "Cameroun",
             "exampleNumber": "6 71 23 45 67"
         },
         {
@@ -328,7 +328,7 @@
             "countryCode": "cv",
             "dialingCode": "238",
             "englishName": "Cape Verde ",
-            "origianlName": "Kabu Verdi",
+            "originalName": "Kabu Verdi",
             "exampleNumber": "991 12 34"
         },
         {
@@ -353,7 +353,7 @@
             "countryCode": "cf",
             "dialingCode": "236",
             "englishName": "Central African Republic ",
-            "origianlName": "République centrafricaine",
+            "originalName": "République centrafricaine",
             "exampleNumber": "70 01 23 45"
         },
         {
@@ -362,7 +362,7 @@
             "countryCode": "td",
             "dialingCode": "235",
             "englishName": "Chad ",
-            "origianlName": "Tchad",
+            "originalName": "Tchad",
             "exampleNumber": "63 01 23 45"
         },
         {
@@ -379,7 +379,7 @@
             "countryCode": "cn",
             "dialingCode": "86",
             "englishName": "China ",
-            "origianlName": "中国",
+            "originalName": "中国",
             "exampleNumber": "131 2345 6789"
         },
         {
@@ -396,7 +396,7 @@
             "countryCode": "cc",
             "dialingCode": "61",
             "englishName": "Cocos ",
-            "origianlName": "Keeling Islands",
+            "originalName": "Keeling Islands",
             "exampleNumber": "412 345 678"
         },
         {
@@ -413,7 +413,7 @@
             "countryCode": "km",
             "dialingCode": "269",
             "englishName": "Comoros ",
-            "origianlName": "‫جزر القمر‬‎",
+            "originalName": "‫جزر القمر‬‎",
             "exampleNumber": "321 23 45"
         },
         {
@@ -422,7 +422,7 @@
             "countryCode": "cd",
             "dialingCode": "243",
             "englishName": "Congo ",
-            "origianlName": "DRC Jamhuri ya Kidemokrasia ya Kongo",
+            "originalName": "DRC Jamhuri ya Kidemokrasia ya Kongo",
             "exampleNumber": "991 234 567"
         },
         {
@@ -431,7 +431,7 @@
             "countryCode": "cg",
             "dialingCode": "242",
             "englishName": "Congo ",
-            "origianlName": "Republic Congo-Brazzaville",
+            "originalName": "Republic Congo-Brazzaville",
             "exampleNumber": "06 123 4567"
         },
         {
@@ -464,7 +464,7 @@
             "countryCode": "hr",
             "dialingCode": "385",
             "englishName": "Croatia ",
-            "origianlName": "Hrvatska",
+            "originalName": "Hrvatska",
             "exampleNumber": "92 123 4567"
         },
         {
@@ -489,7 +489,7 @@
             "countryCode": "cy",
             "dialingCode": "357",
             "englishName": "Cyprus ",
-            "origianlName": "Κύπρος",
+            "originalName": "Κύπρος",
             "exampleNumber": "96 123456"
         },
         {
@@ -498,7 +498,7 @@
             "countryCode": "cz",
             "dialingCode": "420",
             "englishName": "Czech Republic ",
-            "origianlName": "Česká republika",
+            "originalName": "Česká republika",
             "exampleNumber": "601 123 456"
         },
         {
@@ -507,7 +507,7 @@
             "countryCode": "dk",
             "dialingCode": "45",
             "englishName": "Denmark ",
-            "origianlName": "Danmark",
+            "originalName": "Danmark",
             "exampleNumber": "32 12 34 56"
         },
         {
@@ -532,7 +532,7 @@
             "countryCode": "do",
             "dialingCode": "1",
             "englishName": "Dominican Republic ",
-            "origianlName": "República Dominicana",
+            "originalName": "República Dominicana",
             "exampleNumber": "809-234-5678"
         },
         {
@@ -549,7 +549,7 @@
             "countryCode": "eg",
             "dialingCode": "20",
             "englishName": "Egypt ",
-            "origianlName": "‫مصر‬‎",
+            "originalName": "‫مصر‬‎",
             "exampleNumber": "100 123 4567"
         },
         {
@@ -566,7 +566,7 @@
             "countryCode": "gq",
             "dialingCode": "240",
             "englishName": "Equatorial Guinea ",
-            "origianlName": "Guinea Ecuatorial",
+            "originalName": "Guinea Ecuatorial",
             "exampleNumber": "222 123 456"
         },
         {
@@ -583,7 +583,7 @@
             "countryCode": "ee",
             "dialingCode": "372",
             "englishName": "Estonia ",
-            "origianlName": "Eesti",
+            "originalName": "Eesti",
             "exampleNumber": "5123 4567"
         },
         {
@@ -608,7 +608,7 @@
             "countryCode": "fk",
             "dialingCode": "500",
             "englishName": "Falkland Islands ",
-            "origianlName": "Islas Malvinas",
+            "originalName": "Islas Malvinas",
             "exampleNumber": "51234"
         },
         {
@@ -617,7 +617,7 @@
             "countryCode": "fo",
             "dialingCode": "298",
             "englishName": "Faroe Islands ",
-            "origianlName": "Føroyar",
+            "originalName": "Føroyar",
             "exampleNumber": "211234"
         },
         {
@@ -634,7 +634,7 @@
             "countryCode": "fi",
             "dialingCode": "358",
             "englishName": "Finland ",
-            "origianlName": "Suomi",
+            "originalName": "Suomi",
             "exampleNumber": "41 2345678"
         },
         {
@@ -651,7 +651,7 @@
             "countryCode": "gf",
             "dialingCode": "594",
             "englishName": "French Guiana ",
-            "origianlName": "Guyane française",
+            "originalName": "Guyane française",
             "exampleNumber": "694 20 12 34"
         },
         {
@@ -660,7 +660,7 @@
             "countryCode": "pf",
             "dialingCode": "689",
             "englishName": "French Polynesia ",
-            "origianlName": "Polynésie française",
+            "originalName": "Polynésie française",
             "exampleNumber": "87 12 34 56"
         },
         {
@@ -685,7 +685,7 @@
             "countryCode": "ge",
             "dialingCode": "995",
             "englishName": "Georgia ",
-            "origianlName": "საქართველო",
+            "originalName": "საქართველო",
             "exampleNumber": "555 12 34 56"
         },
         {
@@ -694,7 +694,7 @@
             "countryCode": "de",
             "dialingCode": "49",
             "englishName": "Germany ",
-            "origianlName": "Deutschland",
+            "originalName": "Deutschland",
             "exampleNumber": "1512 3456789"
         },
         {
@@ -703,7 +703,7 @@
             "countryCode": "gh",
             "dialingCode": "233",
             "englishName": "Ghana ",
-            "origianlName": "Gaana",
+            "originalName": "Gaana",
             "exampleNumber": "23 123 4567"
         },
         {
@@ -720,7 +720,7 @@
             "countryCode": "gr",
             "dialingCode": "30",
             "englishName": "Greece ",
-            "origianlName": "Ελλάδα",
+            "originalName": "Ελλάδα",
             "exampleNumber": "691 234 5678"
         },
         {
@@ -729,7 +729,7 @@
             "countryCode": "gl",
             "dialingCode": "299",
             "englishName": "Greenland ",
-            "origianlName": "Kalaallit Nunaat",
+            "originalName": "Kalaallit Nunaat",
             "exampleNumber": "22 12 34"
         },
         {
@@ -778,7 +778,7 @@
             "countryCode": "gn",
             "dialingCode": "224",
             "englishName": "Guinea ",
-            "origianlName": "Guinée",
+            "originalName": "Guinée",
             "exampleNumber": "601 12 34 56"
         },
         {
@@ -787,7 +787,7 @@
             "countryCode": "gw",
             "dialingCode": "245",
             "englishName": "Guinea-Bissau ",
-            "origianlName": "Guiné Bissau",
+            "originalName": "Guiné Bissau",
             "exampleNumber": "955 012 345"
         },
         {
@@ -820,7 +820,7 @@
             "countryCode": "hk",
             "dialingCode": "852",
             "englishName": "Hong Kong ",
-            "origianlName": "香港",
+            "originalName": "香港",
             "exampleNumber": "5123 4567"
         },
         {
@@ -829,7 +829,7 @@
             "countryCode": "hu",
             "dialingCode": "36",
             "englishName": "Hungary ",
-            "origianlName": "Magyarország",
+            "originalName": "Magyarország",
             "exampleNumber": "20 123 4567"
         },
         {
@@ -838,7 +838,7 @@
             "countryCode": "is",
             "dialingCode": "354",
             "englishName": "Iceland ",
-            "origianlName": "Ísland",
+            "originalName": "Ísland",
             "exampleNumber": "611 1234"
         },
         {
@@ -847,7 +847,7 @@
             "countryCode": "in",
             "dialingCode": "91",
             "englishName": "India ",
-            "origianlName": "भारत",
+            "originalName": "भारत",
             "exampleNumber": "81234 56789"
         },
         {
@@ -864,7 +864,7 @@
             "countryCode": "ir",
             "dialingCode": "98",
             "englishName": "Iran ",
-            "origianlName": "‫ایران‬‎",
+            "originalName": "‫ایران‬‎",
             "exampleNumber": "912 345 6789"
         },
         {
@@ -873,7 +873,7 @@
             "countryCode": "iq",
             "dialingCode": "964",
             "englishName": "Iraq ",
-            "origianlName": "‫العراق‬‎",
+            "originalName": "‫العراق‬‎",
             "exampleNumber": "791 234 5678"
         },
         {
@@ -898,7 +898,7 @@
             "countryCode": "il",
             "dialingCode": "972",
             "englishName": "Israel ",
-            "origianlName": "‫ישראל‬‎",
+            "originalName": "‫ישראל‬‎",
             "exampleNumber": "50-234-5678"
         },
         {
@@ -907,7 +907,7 @@
             "countryCode": "it",
             "dialingCode": "39",
             "englishName": "Italy ",
-            "origianlName": "Italia",
+            "originalName": "Italia",
             "exampleNumber": "312 345 6789"
         },
         {
@@ -924,7 +924,7 @@
             "countryCode": "jp",
             "dialingCode": "81",
             "englishName": "Japan ",
-            "origianlName": "日本",
+            "originalName": "日本",
             "exampleNumber": "90-1234-5678"
         },
         {
@@ -941,7 +941,7 @@
             "countryCode": "jo",
             "dialingCode": "962",
             "englishName": "Jordan ",
-            "origianlName": "‫الأردن‬‎",
+            "originalName": "‫الأردن‬‎",
             "exampleNumber": "7 9012 3456"
         },
         {
@@ -950,7 +950,7 @@
             "countryCode": "kz",
             "dialingCode": "7",
             "englishName": "Kazakhstan ",
-            "origianlName": "Казахстан",
+            "originalName": "Казахстан",
             "exampleNumber": "771 000 9998"
         },
         {
@@ -983,7 +983,7 @@
             "countryCode": "kw",
             "dialingCode": "965",
             "englishName": "Kuwait ",
-            "origianlName": "‫الكويت‬‎",
+            "originalName": "‫الكويت‬‎",
             "exampleNumber": "500 12345"
         },
         {
@@ -992,7 +992,7 @@
             "countryCode": "kg",
             "dialingCode": "996",
             "englishName": "Kyrgyzstan ",
-            "origianlName": "Кыргызстан",
+            "originalName": "Кыргызстан",
             "exampleNumber": "700 123 456"
         },
         {
@@ -1001,7 +1001,7 @@
             "countryCode": "la",
             "dialingCode": "856",
             "englishName": "Laos ",
-            "origianlName": "ລາວ",
+            "originalName": "ລາວ",
             "exampleNumber": "20 23 123 456"
         },
         {
@@ -1010,7 +1010,7 @@
             "countryCode": "lv",
             "dialingCode": "371",
             "englishName": "Latvia ",
-            "origianlName": "Latvija",
+            "originalName": "Latvija",
             "exampleNumber": "21 234 567"
         },
         {
@@ -1019,7 +1019,7 @@
             "countryCode": "lb",
             "dialingCode": "961",
             "englishName": "Lebanon ",
-            "origianlName": "‫لبنان‬‎",
+            "originalName": "‫لبنان‬‎",
             "exampleNumber": "71 123 456"
         },
         {
@@ -1044,7 +1044,7 @@
             "countryCode": "ly",
             "dialingCode": "218",
             "englishName": "Libya ",
-            "origianlName": "‫ليبيا‬‎",
+            "originalName": "‫ليبيا‬‎",
             "exampleNumber": "91-2345678"
         },
         {
@@ -1061,7 +1061,7 @@
             "countryCode": "lt",
             "dialingCode": "370",
             "englishName": "Lithuania ",
-            "origianlName": "Lietuva",
+            "originalName": "Lietuva",
             "exampleNumber": "612 34567"
         },
         {
@@ -1078,7 +1078,7 @@
             "countryCode": "mo",
             "dialingCode": "853",
             "englishName": "Macau ",
-            "origianlName": "澳門",
+            "originalName": "澳門",
             "exampleNumber": "6612 3456"
         },
         {
@@ -1087,7 +1087,7 @@
             "countryCode": "mg",
             "dialingCode": "261",
             "englishName": "Madagascar ",
-            "origianlName": "Madagasikara",
+            "originalName": "Madagasikara",
             "exampleNumber": "32 12 345 67"
         },
         {
@@ -1152,7 +1152,7 @@
             "countryCode": "mr",
             "dialingCode": "222",
             "englishName": "Mauritania ",
-            "origianlName": "‫موريتانيا‬‎",
+            "originalName": "‫موريتانيا‬‎",
             "exampleNumber": "22 12 34 56"
         },
         {
@@ -1161,7 +1161,7 @@
             "countryCode": "mu",
             "dialingCode": "230",
             "englishName": "Mauritius ",
-            "origianlName": "Moris",
+            "originalName": "Moris",
             "exampleNumber": "5251 2345"
         },
         {
@@ -1178,7 +1178,7 @@
             "countryCode": "mx",
             "dialingCode": "52",
             "englishName": "Mexico ",
-            "origianlName": "México",
+            "originalName": "México",
             "exampleNumber": "222 123 4567"
         },
         {
@@ -1195,7 +1195,7 @@
             "countryCode": "md",
             "dialingCode": "373",
             "englishName": "Moldova ",
-            "origianlName": "Republica Moldova",
+            "originalName": "Republica Moldova",
             "exampleNumber": "621 12 345"
         },
         {
@@ -1212,7 +1212,7 @@
             "countryCode": "mn",
             "dialingCode": "976",
             "englishName": "Mongolia ",
-            "origianlName": "Монгол",
+            "originalName": "Монгол",
             "exampleNumber": "8812 3456"
         },
         {
@@ -1221,7 +1221,7 @@
             "countryCode": "me",
             "dialingCode": "382",
             "englishName": "Montenegro ",
-            "origianlName": "Crna Gora",
+            "originalName": "Crna Gora",
             "exampleNumber": "67 622 901"
         },
         {
@@ -1238,7 +1238,7 @@
             "countryCode": "ma",
             "dialingCode": "212",
             "englishName": "Morocco ",
-            "origianlName": "‫المغرب‬‎",
+            "originalName": "‫المغرب‬‎",
             "exampleNumber": "650-123456"
         },
         {
@@ -1247,7 +1247,7 @@
             "countryCode": "mz",
             "dialingCode": "258",
             "englishName": "Mozambique ",
-            "origianlName": "Moçambique",
+            "originalName": "Moçambique",
             "exampleNumber": "82 123 4567"
         },
         {
@@ -1256,7 +1256,7 @@
             "countryCode": "mm",
             "dialingCode": "95",
             "englishName": "Myanmar ",
-            "origianlName": "Burma မြန်မာ",
+            "originalName": "Burma မြန်မာ",
             "exampleNumber": "9 212 3456"
         },
         {
@@ -1265,7 +1265,7 @@
             "countryCode": "na",
             "dialingCode": "264",
             "englishName": "Namibia ",
-            "origianlName": "Namibië",
+            "originalName": "Namibië",
             "exampleNumber": "81 123 4567"
         },
         {
@@ -1282,7 +1282,7 @@
             "countryCode": "np",
             "dialingCode": "977",
             "englishName": "Nepal ",
-            "origianlName": "नेपाल",
+            "originalName": "नेपाल",
             "exampleNumber": "984-1234567"
         },
         {
@@ -1291,7 +1291,7 @@
             "countryCode": "nl",
             "dialingCode": "31",
             "englishName": "Netherlands ",
-            "origianlName": "Nederland",
+            "originalName": "Nederland",
             "exampleNumber": "6 12345678"
         },
         {
@@ -1300,7 +1300,7 @@
             "countryCode": "nc",
             "dialingCode": "687",
             "englishName": "New Caledonia ",
-            "origianlName": "Nouvelle-Calédonie",
+            "originalName": "Nouvelle-Calédonie",
             "exampleNumber": "75.12.34"
         },
         {
@@ -1325,7 +1325,7 @@
             "countryCode": "ne",
             "dialingCode": "227",
             "englishName": "Niger ",
-            "origianlName": "Nijar",
+            "originalName": "Nijar",
             "exampleNumber": "93 12 34 56"
         },
         {
@@ -1358,7 +1358,7 @@
             "countryCode": "kp",
             "dialingCode": "850",
             "englishName": "North Korea ",
-            "origianlName": "조선 민주주의 인민 공화국",
+            "originalName": "조선 민주주의 인민 공화국",
             "exampleNumber": "192 123 4567"
         },
         {
@@ -1367,7 +1367,7 @@
             "countryCode": "mk",
             "dialingCode": "389",
             "englishName": "North Macedonia ",
-            "origianlName": "Северна Македонија",
+            "originalName": "Северна Македонија",
             "exampleNumber": "72 345 678"
         },
         {
@@ -1384,7 +1384,7 @@
             "countryCode": "no",
             "dialingCode": "47",
             "englishName": "Norway ",
-            "origianlName": "Norge",
+            "originalName": "Norge",
             "exampleNumber": "406 12 345"
         },
         {
@@ -1393,7 +1393,7 @@
             "countryCode": "om",
             "dialingCode": "968",
             "englishName": "Oman ",
-            "origianlName": "‫عُمان‬‎",
+            "originalName": "‫عُمان‬‎",
             "exampleNumber": "9212 3456"
         },
         {
@@ -1402,7 +1402,7 @@
             "countryCode": "pk",
             "dialingCode": "92",
             "englishName": "Pakistan ",
-            "origianlName": "‫پاکستان‬‎",
+            "originalName": "‫پاکستان‬‎",
             "exampleNumber": "301 2345678"
         },
         {
@@ -1419,7 +1419,7 @@
             "countryCode": "ps",
             "dialingCode": "970",
             "englishName": "Palestine ",
-            "origianlName": "‫فلسطين‬‎",
+            "originalName": "‫فلسطين‬‎",
             "exampleNumber": "599 123 456"
         },
         {
@@ -1428,7 +1428,7 @@
             "countryCode": "pa",
             "dialingCode": "507",
             "englishName": "Panama ",
-            "origianlName": "Panamá",
+            "originalName": "Panamá",
             "exampleNumber": "6123-4567"
         },
         {
@@ -1453,7 +1453,7 @@
             "countryCode": "pe",
             "dialingCode": "51",
             "englishName": "Peru ",
-            "origianlName": "Perú",
+            "originalName": "Perú",
             "exampleNumber": "912 345 678"
         },
         {
@@ -1470,7 +1470,7 @@
             "countryCode": "pl",
             "dialingCode": "48",
             "englishName": "Poland ",
-            "origianlName": "Polska",
+            "originalName": "Polska",
             "exampleNumber": "512 345 678"
         },
         {
@@ -1495,7 +1495,7 @@
             "countryCode": "qa",
             "dialingCode": "974",
             "englishName": "Qatar ",
-            "origianlName": "‫قطر‬‎",
+            "originalName": "‫قطر‬‎",
             "exampleNumber": "3312 3456"
         },
         {
@@ -1504,7 +1504,7 @@
             "countryCode": "re",
             "dialingCode": "262",
             "englishName": "Réunion ",
-            "origianlName": "La Réunion",
+            "originalName": "La Réunion",
             "exampleNumber": "692 12 34 56"
         },
         {
@@ -1513,7 +1513,7 @@
             "countryCode": "ro",
             "dialingCode": "40",
             "englishName": "Romania ",
-            "origianlName": "România",
+            "originalName": "România",
             "exampleNumber": "712 034 567"
         },
         {
@@ -1522,7 +1522,7 @@
             "countryCode": "ru",
             "dialingCode": "7",
             "englishName": "Russia ",
-            "origianlName": "Россия",
+            "originalName": "Россия",
             "exampleNumber": "912 345-67-89"
         },
         {
@@ -1571,7 +1571,7 @@
             "countryCode": "mf",
             "dialingCode": "590",
             "englishName": "Saint Martin ",
-            "origianlName": "Saint-Martin partie française",
+            "originalName": "Saint-Martin partie française",
             "exampleNumber": "690 00 12 34"
         },
         {
@@ -1580,7 +1580,7 @@
             "countryCode": "pm",
             "dialingCode": "508",
             "englishName": "Saint Pierre and Miquelon ",
-            "origianlName": "Saint-Pierre-et-Miquelon",
+            "originalName": "Saint-Pierre-et-Miquelon",
             "exampleNumber": "55 12 34"
         },
         {
@@ -1613,7 +1613,7 @@
             "countryCode": "st",
             "dialingCode": "239",
             "englishName": "São Tomé and Príncipe ",
-            "origianlName": "São Tomé e Príncipe",
+            "originalName": "São Tomé e Príncipe",
             "exampleNumber": "981 2345"
         },
         {
@@ -1622,7 +1622,7 @@
             "countryCode": "sa",
             "dialingCode": "966",
             "englishName": "Saudi Arabia ",
-            "origianlName": "‫المملكة العربية السعودية‬‎",
+            "originalName": "‫المملكة العربية السعودية‬‎",
             "exampleNumber": "51 234 5678"
         },
         {
@@ -1631,7 +1631,7 @@
             "countryCode": "sn",
             "dialingCode": "221",
             "englishName": "Senegal ",
-            "origianlName": "Sénégal",
+            "originalName": "Sénégal",
             "exampleNumber": "70 123 45 67"
         },
         {
@@ -1640,7 +1640,7 @@
             "countryCode": "rs",
             "dialingCode": "381",
             "englishName": "Serbia ",
-            "origianlName": "Србија",
+            "originalName": "Србија",
             "exampleNumber": "60 1234567"
         },
         {
@@ -1681,7 +1681,7 @@
             "countryCode": "sk",
             "dialingCode": "421",
             "englishName": "Slovakia ",
-            "origianlName": "Slovensko",
+            "originalName": "Slovensko",
             "exampleNumber": "912 123 456"
         },
         {
@@ -1690,7 +1690,7 @@
             "countryCode": "si",
             "dialingCode": "386",
             "englishName": "Slovenia ",
-            "origianlName": "Slovenija",
+            "originalName": "Slovenija",
             "exampleNumber": "31 234 567"
         },
         {
@@ -1707,7 +1707,7 @@
             "countryCode": "so",
             "dialingCode": "252",
             "englishName": "Somalia ",
-            "origianlName": "Soomaaliya",
+            "originalName": "Soomaaliya",
             "exampleNumber": "7 1123456"
         },
         {
@@ -1724,7 +1724,7 @@
             "countryCode": "kr",
             "dialingCode": "82",
             "englishName": "South Korea ",
-            "origianlName": "대한민국",
+            "originalName": "대한민국",
             "exampleNumber": "10-2000-0000"
         },
         {
@@ -1733,7 +1733,7 @@
             "countryCode": "ss",
             "dialingCode": "211",
             "englishName": "South Sudan ",
-            "origianlName": "‫جنوب السودان‬‎",
+            "originalName": "‫جنوب السودان‬‎",
             "exampleNumber": "977 123 456"
         },
         {
@@ -1742,7 +1742,7 @@
             "countryCode": "es",
             "dialingCode": "34",
             "englishName": "Spain ",
-            "origianlName": "España",
+            "originalName": "España",
             "exampleNumber": "612 34 56 78"
         },
         {
@@ -1751,7 +1751,7 @@
             "countryCode": "lk",
             "dialingCode": "94",
             "englishName": "Sri Lanka ",
-            "origianlName": "ශ්‍රී ලංකාව",
+            "originalName": "ශ්‍රී ලංකාව",
             "exampleNumber": "71 234 5678"
         },
         {
@@ -1760,7 +1760,7 @@
             "countryCode": "sd",
             "dialingCode": "249",
             "englishName": "Sudan ",
-            "origianlName": "‫السودان‬‎",
+            "originalName": "‫السودان‬‎",
             "exampleNumber": "91 123 1234"
         },
         {
@@ -1785,7 +1785,7 @@
             "countryCode": "se",
             "dialingCode": "46",
             "englishName": "Sweden ",
-            "origianlName": "Sverige",
+            "originalName": "Sverige",
             "exampleNumber": "70 123 45 67"
         },
         {
@@ -1794,7 +1794,7 @@
             "countryCode": "ch",
             "dialingCode": "41",
             "englishName": "Switzerland ",
-            "origianlName": "Schweiz",
+            "originalName": "Schweiz",
             "exampleNumber": "78 123 45 67"
         },
         {
@@ -1803,7 +1803,7 @@
             "countryCode": "sy",
             "dialingCode": "963",
             "englishName": "Syria ",
-            "origianlName": "‫سوريا‬‎",
+            "originalName": "‫سوريا‬‎",
             "exampleNumber": "944 567 890"
         },
         {
@@ -1812,7 +1812,7 @@
             "countryCode": "tw",
             "dialingCode": "886",
             "englishName": "Taiwan ",
-            "origianlName": "台灣",
+            "originalName": "台灣",
             "exampleNumber": "912 345 678"
         },
         {
@@ -1837,7 +1837,7 @@
             "countryCode": "th",
             "dialingCode": "66",
             "englishName": "Thailand ",
-            "origianlName": "ไทย",
+            "originalName": "ไทย",
             "exampleNumber": "81 234 5678"
         },
         {
@@ -1886,7 +1886,7 @@
             "countryCode": "tn",
             "dialingCode": "216",
             "englishName": "Tunisia ",
-            "origianlName": "‫تونس‬‎",
+            "originalName": "‫تونس‬‎",
             "exampleNumber": "20 123 456"
         },
         {
@@ -1895,7 +1895,7 @@
             "countryCode": "tr",
             "dialingCode": "90",
             "englishName": "Turkey ",
-            "origianlName": "Türkiye",
+            "originalName": "Türkiye",
             "exampleNumber": "501 234 56 78"
         },
         {
@@ -1944,7 +1944,7 @@
             "countryCode": "ua",
             "dialingCode": "380",
             "englishName": "Ukraine ",
-            "origianlName": "Україна",
+            "originalName": "Україна",
             "exampleNumber": "50 123 4567"
         },
         {
@@ -1953,7 +1953,7 @@
             "countryCode": "ae",
             "dialingCode": "971",
             "englishName": "United Arab Emirates ",
-            "origianlName": "‫الإمارات العربية المتحدة‬‎",
+            "originalName": "‫الإمارات العربية المتحدة‬‎",
             "exampleNumber": "50 123 4567"
         },
         {
@@ -1986,7 +1986,7 @@
             "countryCode": "uz",
             "dialingCode": "998",
             "englishName": "Uzbekistan ",
-            "origianlName": "Oʻzbekiston",
+            "originalName": "Oʻzbekiston",
             "exampleNumber": "91 234 56 78"
         },
         {
@@ -2003,7 +2003,7 @@
             "countryCode": "va",
             "dialingCode": "39",
             "englishName": "Vatican City ",
-            "origianlName": "Città del Vaticano",
+            "originalName": "Città del Vaticano",
             "exampleNumber": "312 345 6789"
         },
         {
@@ -2020,7 +2020,7 @@
             "countryCode": "vn",
             "dialingCode": "84",
             "englishName": "Vietnam ",
-            "origianlName": "Việt Nam",
+            "originalName": "Việt Nam",
             "exampleNumber": "91 234 56 78"
         },
         {
@@ -2029,7 +2029,7 @@
             "countryCode": "wf",
             "dialingCode": "681",
             "englishName": "Wallis and Futuna ",
-            "origianlName": "Wallis-et-Futuna",
+            "originalName": "Wallis-et-Futuna",
             "exampleNumber": "50 12 34"
         },
         {
@@ -2038,7 +2038,7 @@
             "countryCode": "eh",
             "dialingCode": "212",
             "englishName": "Western Sahara ",
-            "origianlName": "‫الصحراء الغربية‬‎",
+            "originalName": "‫الصحراء الغربية‬‎",
             "exampleNumber": "650-123456"
         },
         {
@@ -2047,7 +2047,7 @@
             "countryCode": "ye",
             "dialingCode": "967",
             "englishName": "Yemen ",
-            "origianlName": "‫اليمن‬‎",
+            "originalName": "‫اليمن‬‎",
             "exampleNumber": "712 345 678"
         },
         {

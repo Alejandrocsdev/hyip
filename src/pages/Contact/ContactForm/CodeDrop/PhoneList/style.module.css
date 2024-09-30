@@ -120,3 +120,51 @@
   color: #999;
   display: inline-block;
 }
+
+.mobListTitle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width:1000px) {
+  .main {
+    width: 100%;
+    max-height: none;
+    height: calc(100% - 4.125rem);
+    border-radius: 0;
+    left: 0;
+    inset: auto 0 0;
+    font-size: 1.125rem;
+  }
+
+  .showMobListTitle {
+    padding: 2rem 0 5px 1rem;
+    margin-bottom: .25rem;
+    color: #3e345c;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: #fff;
+    display: block;
+    pointer-events: all;
+  }
+
+  .mobListTitle>span {
+    height: 1.75rem;
+    width: 1.75rem;
+    font-size: 1.25rem;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  .mobListTitle>span>svg {
+    width: 18px;
+    fill: #111b29;
+  }
+}
