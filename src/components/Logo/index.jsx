@@ -9,7 +9,7 @@ import logoOriginSvg from '../../assets/img/logo/logo-origin.svg'
 import logoBlackOriginSvg from '../../assets/img/logo/logo-black-origin.svg'
 
 // Logo
-function Logo({ type, color }) {
+function Logo({ type, color, onClick }) {
   const isCrypto = type === 'crypto' // 'origin'
   const isWhite = color === 'white' // 'black'
 
@@ -27,7 +27,7 @@ function Logo({ type, color }) {
 
   return (
     <div className={S.logo}>
-      <Link to={to} target={target}>
+      <Link to={to} target={target} onClick={onClick}>
         <img src={src} />
         {isCrypto && <span>Crypto</span>}
       </Link>

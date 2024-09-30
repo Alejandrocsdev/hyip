@@ -20,7 +20,7 @@ function Header() {
         {/* 電腦版: 選單 */}
         <div className={S.menu}>
           {/* 登入 */}
-          <Link className={S.signIn} to="/sign-in">
+          <Link className={S.signIn} to="https://client.newlean14.store/sign-in" target="_blank">
             Sign In
           </Link>
           {/* 語言: 下拉選單 */}

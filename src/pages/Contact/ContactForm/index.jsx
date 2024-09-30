@@ -4,6 +4,7 @@ import S from './style.module.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
+import axios from 'axios'
 // 圖檔 (image)
 import greenCheckSvg from '../../../assets/img/icon/green-check.svg'
 // 組件 (component)
@@ -24,6 +25,22 @@ function ContactForm() {
     console.log(formData)
     setIsSubmitted(true)
   }
+
+  // const onSubmit = async (formData) => {
+  //   try {
+  //     const apiUrl = 'https://your-backend-api.com/contact'
+
+  //     const response = await axios.post(apiUrl, formData)
+
+  //     if (response.status === 200) {
+  //       setIsSubmitted(true)
+  //     } else {
+  //       console.error('Failed to send message:', response.status)
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error)
+  //   }
+  // }
 
   const handleDoneClick = () => {
     setIsSubmitted(false)

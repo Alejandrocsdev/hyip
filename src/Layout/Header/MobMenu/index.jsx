@@ -33,6 +33,8 @@ function MobMenu({ onBackdropToggle }) {
 
   useEffect(() => onBackdropToggle(isOpened), [isOpened, onBackdropToggle])
 
+  const handleLinkClick = () => setIsOpened(false)
+
   return (
     <div className={S.container} ref={containerRef} onClick={toggleMenu}>
       {/* 手機列表按鈕 */}
@@ -46,7 +48,7 @@ function MobMenu({ onBackdropToggle }) {
       >
         {/* 上方 */}
         <div className={S.top}>
-          <Logo type="crypto" color="black" />
+          <Logo type="crypto" color="black" onClick={handleLinkClick} />
         </div>
         <div className={S.inner}>
           {/* 登入 & 登出 */}
@@ -54,13 +56,13 @@ function MobMenu({ onBackdropToggle }) {
             <p className={S.title}>User</p>
             <ul>
               <li>
-                <Link to="/sign-in">
+              <Link to="https://client.newlean14.store/sign-in" target="_blank">
                   <img src={signInSvg} />
                   <span>Sign In</span>
                 </Link>
               </li>
               <li>
-                <Link to="/sign-up">
+              <Link to="https://client.newlean14.store/sign-up" target="_blank">
                   <img src={signUpSvg} />
                   <span>Sign Up</span>
                 </Link>
@@ -70,13 +72,13 @@ function MobMenu({ onBackdropToggle }) {
           {/* 公司資訊 */}
           <ul className={S.info}>
             <li>
-              <Link to="about-us">
+              <Link to="about-us" onClick={handleLinkClick}>
                 <img src={aboutUsSvg} />
                 <span>About Us</span>
               </Link>
             </li>
             <li>
-              <Link to="contacts">
+              <Link to="contacts" onClick={handleLinkClick}>
                 <img src={contactsSvg} />
                 <span>Contact</span>
               </Link>

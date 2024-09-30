@@ -4,11 +4,11 @@ import { useLocation } from 'react-router-dom'
 
 // 導向置頂
 const ScrollToTop = () => {
-  const { pathname } = useLocation()
+  const { pathname, key } = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [pathname])
+  }, [pathname, key])
 
   return null
 }

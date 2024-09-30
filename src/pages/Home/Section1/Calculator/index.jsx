@@ -144,7 +144,7 @@ function Calculator() {
         </p>
       </div>
       {/* 註冊按鈕 */}
-      <Link className={S.signUp} to="sign-up">
+      <Link className={S.signUp} to="https://client.newlean14.store/sign-up" target="_blank">
         Sign Up
       </Link>
     </div>
