@@ -2,7 +2,6 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { useTranslation } from 'react-i18next'
-import { useNavigate, useParams } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
@@ -17,38 +16,23 @@ import mkmSvg from '../../../assets/img/organization/mkm.svg'
 // 組件 (component)
 import Logo from '../../../components/Logo'
 import Anchor from '../../../components/Anchor'
-import LangFlag from '../../../components/LangFlag'
+import LangSwitch from '../../../components/LangSwitch'
 
 // 選單組件
 function MobMenu({ onBackdropToggle }) {
-  // 語言
-  const { t } = useTranslation()
+  // 語言翻譯 / 語言設定
+  const { t, i18n } = useTranslation()
+  // 當前語言
+  const currentLang = i18n.language
 
+  // 狀態控制
   const [isOpened, setIsOpened] = useState(false)
+  const states = { isOpened, setIsOpened }
+  // 元素引用
   const containerRef = useRef(null)
   const menuRef = useRef(null)
 
-  const { i18n } = useTranslation()
-  const activeLang = i18n.language
-
-  const navigate = useNavigate()
-  const { lang } = useParams()
-
   const toggleMenu = () => setIsOpened((prev) => !prev)
-
-  const switchLang = (newLang) => {
-    // Change language in i18n
-    i18n.changeLanguage(newLang)
-
-    // Get the current path
-    const currentPath = window.location.pathname
-
-    // Replace the language in the current path (if it's present)
-    const newPath = currentPath.replace(`/${lang}`, `/${newLang}`)
-
-    // Navigate to the new path with the updated language
-    navigate(newPath)
-  }
 
   useBodyScroll(isOpened)
 
@@ -111,28 +95,9 @@ function MobMenu({ onBackdropToggle }) {
           <div className={S.language}>
             <button>
               <img src={globeSvg} />
-              <span>{activeLang}</span>
+              <span>{currentLang}</span>
             </button>
-            <ul>
-              <li>
-                <button onClick={() => switchLang('en')}>
-                  <LangFlag className={S.langFlag} type="us" />
-                  <p className={activeLang === 'en' ? S.langActive : ''}>English</p>
-                </button>
-              </li>
-              <li>
-                <button onClick={() => switchLang('ru')}>
-                  <LangFlag className={S.langFlag} type="ru" />
-                  <p className={activeLang === 'ru' ? S.langActive : ''}>Русский</p>
-                </button>
-              </li>
-              <li>
-                <button onClick={() => switchLang('et')}>
-                  <LangFlag className={S.langFlag} type="ee" />
-                  <p className={activeLang === 'et' ? S.langActive : ''}>Eesti</p>
-                </button>
-              </li>
-            </ul>
+            <LangSwitch type="mob" states={states} currentLang={currentLang} />
           </div>
         </div>
         {/* 下方 */}

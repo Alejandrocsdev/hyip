@@ -1,46 +1,27 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { useState, useRef, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useState, useRef, useEffect } from 'react'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
 // 組件 (component)
+import LangSwitch from '../../../components/LangSwitch'
 import AngleDownSvg from '../../../components/Svg/AngleDownSvg'
-import TriangleSvg from '../../../components/Svg/TriangleSvg'
-import LangFlag from '../../../components/LangFlag'
 
 // 選單組件
 function LangDrop({ onBackdropToggle }) {
+  // 語言設定
+  const { t, i18n } = useTranslation()
+  // 當前語言
+  const currentLang = i18n.language
+
   const [isOpened, setIsOpened] = useState(false)
+  const states = { isOpened, setIsOpened }
   const containerRef = useRef(null)
 
-  const { i18n } = useTranslation()
-  const activeLang = i18n.language
-
-  const navigate = useNavigate()
-  const { lang } = useParams()
-
   const toggleDropdown = () => setIsOpened((prev) => !prev)
-
-  const switchLang = (newLang) => {
-    // Change language in i18n
-    i18n.changeLanguage(newLang)
-    
-    // Get the current path
-    const currentPath = window.location.pathname
-    
-    // Replace the language in the current path (if it's present)
-    const newPath = currentPath.replace(`/${lang}`, `/${newLang}`)
-    
-    // Navigate to the new path with the updated language
-    navigate(newPath)
-
-    setIsOpened(false)
-  }
-
 
   useBodyScroll(isOpened)
 
@@ -55,34 +36,11 @@ function LangDrop({ onBackdropToggle }) {
       <div className={S.container} ref={containerRef} onClick={toggleDropdown}>
         {/* 語言按鈕 */}
         <button className={S.langBtn}>
-          <span>{activeLang}</span>
+          <span>{currentLang}</span>
           <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.arrowRotate : ''}`} />
         </button>
         {/* 語言列表 */}
-        <ul
-          className={`${S.langList} ${isOpened ? S.showList : ''}`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <li>
-            <button onClick={() => switchLang('en')}>
-              <LangFlag className={S.langFlag} type="us" />
-              <span className={activeLang === 'en' ? S.langActive : ''}>English</span>
-            </button>
-          </li>
-          <li>
-            <button onClick={() => switchLang('ru')}>
-              <LangFlag className={S.langFlag} type="ru" />
-              <span className={activeLang === 'ru' ? S.langActive : ''}>Русский</span>
-            </button>
-          </li>
-          <li>
-            <button onClick={() => switchLang('et')}>
-              <LangFlag className={S.langFlag} type="ee" />
-              <span className={activeLang === 'et' ? S.langActive : ''}>Eesti</span>
-            </button>
-          </li>
-          <TriangleSvg className={S.triangle} />
-        </ul>
+        <LangSwitch type="pc" states={states} currentLang={currentLang} />
       </div>
     </>
   )

@@ -1,0 +1,104 @@
+/* MobMenu */
+.MobMenu {
+  width: 100%;
+  padding: 1rem 0;
+  max-height: 12.5rem;
+  color: #1e1e1e;
+  background-color: #fff;
+  border-top: .0625rem solid #e3e7ef;
+  border-bottom: .0625rem solid #e3e7ef;
+}
+
+.MobMenu li {
+  margin-top: .875rem;
+}
+
+.MobMenu li button {
+  padding: 0 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: .4375rem;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+.MobMenu li button .langFlag {
+  width: 24px;
+  height: 24px;
+}
+
+/* LangDrop */
+.LangDrop {
+  max-height: 12.5rem;
+  padding: 1.0625rem 1.5rem 1.5rem;
+  color: #1e1e1e;
+  position: absolute;
+  top: 3.125rem;
+  right: -.625rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .5s ease-in-out;
+}
+
+.LangDrop::before {
+  content: "";
+  background-color: #fff;
+  border-radius: .5rem;
+  position: absolute;
+  top: .4375rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.LangDrop li {
+  margin-top: .875rem;
+}
+
+.LangDrop .triangle {
+  position: absolute;
+  right: 1.8125rem;
+  top: 0;
+  z-index: 200;
+}
+
+.LangDrop li button {
+  display: flex;
+  align-items: center;
+  gap: .4375rem;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+.LangDrop li button .langFlag {
+  width: 24px;
+  height: 24px;
+}
+
+.LangDrop li button span {
+  color: rgb(30, 30, 30);
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+/* 切換樣式(LangDrop) */
+.showList {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+/* 切換樣式(共用) */
+.active {
+  font-weight: 700;
+  color: #ff5f45!important;
+}
