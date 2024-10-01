@@ -3,15 +3,27 @@ import S from './style.module.css'
 // 函式庫 (library)
 import { useTranslation } from 'react-i18next'
 // 圖檔 (image)
-import competitiveProfitPng from '../../../assets/img/info/competitive-profit.png'
+import competitiveProfitEnPng from '../../../assets/img/info/competitive-profit-en.png'
+import competitiveProfitRuPng from '../../../assets/img/info/competitive-profit-ru.png'
+import competitiveProfitEtPng from '../../../assets/img/info/competitive-profit-et.png'
 import checkMarkSvg from '../../../assets/img/icon/check-mark.svg'
 import reliablePartnerSvg from '../../../assets/img/organization/mkm.svg'
 import affiliateProgramSvg from '../../../assets/img/icon/binary-system.svg'
 
 // (第三區: 投資優勢)組件
 function Section3() {
-  // 語言
-  const { t } = useTranslation()
+  // 語言翻譯 / 語言設定
+  const { t, i18n } = useTranslation()
+  // 當前語言
+  const currentLang = i18n.language
+
+  const competitiveProfitMap = {
+    en: competitiveProfitEnPng,
+    ru: competitiveProfitRuPng,
+    et: competitiveProfitEtPng
+  }
+  const competitiveProfitPng = competitiveProfitMap[currentLang]
+
   return (
     <section className={S.section}>
       <div className={S.container}>

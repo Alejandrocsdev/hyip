@@ -16,9 +16,6 @@ function LangSwitch({ type, states, currentLang }) {
   const navigate = useNavigate()
   const location = useLocation()
 
-  // 二語言選單狀態控制
-  const { isOpened, setIsOpened } = states
-
   const switchLang = (newLang) => {
     i18n.changeLanguage(newLang)
     const currentPath = location.pathname
@@ -28,13 +25,16 @@ function LangSwitch({ type, states, currentLang }) {
     setIsOpened(false)
   }
 
+  // 二語言選單狀態控制
+  const { isOpened, setIsOpened } = states
+
   // MobMenu: (無動畫)
   const mobMenuStyle = S.MobMenu
 
   // LangDrop: (動畫: smooth open)
   const langDropStyle = `${S.LangDrop} ${isOpened ? S.showList : ''}`
   // 避免點擊 LangDrop 選單外側關閉選單
-  const langDropClick = (e) => e.stopPropagation()
+  const langDropClick = type === 'pc' ? (e) => e.stopPropagation() : undefined
 
   return (
     <ul className={type === 'mob' ? mobMenuStyle : langDropStyle} onClick={langDropClick}>

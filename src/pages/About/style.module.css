@@ -50,10 +50,6 @@
   text-underline-offset: .25rem;
 }
 
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 1000px) {
   .main {
     padding: 7.5rem 0;
@@ -77,8 +73,4 @@
   .title h1 {
     font-size: 1.75rem;
   }
-}
-
-@media (max-width: 500px) {
-
 }
