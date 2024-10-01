@@ -1,3 +1,5 @@
+// 函式庫 (library)
+import axios from 'axios'
 import { useState, useEffect } from 'react'
 
 // 國碼
@@ -7,13 +9,9 @@ function useCountryCode() {
   useEffect(() => {
     async function fetchCountryCode() {
       try {
-        const response = await fetch('https://ipinfo.io/json')
-        if (!response.ok) {
-          throw new Error('Failed to fetch country code')
-        }
-        const data = await response.json()
-        setCountryCode(data.country.toLowerCase())
-      } catch {
+        const response = await axios.get('https://ipinfo.io/json')
+        setCountryCode(response.data.country.toLowerCase())
+      } catch (error) {
         setCountryCode(null)
       }
     }

@@ -17,6 +17,7 @@ function FormField(props) {
     name,
     control,
     defaultValue = '',
+    rules = {},
     // Other attributes
     countryCode
   } = props

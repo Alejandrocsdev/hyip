@@ -1,10 +1,11 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
-
+// 函式庫 (library)
 import { useTranslation } from 'react-i18next'
 
 // (第二區: 如何投資)組件
 function Section2() {
+  // 語言
   const { t } = useTranslation()
   return (
     <section className={S.section}>

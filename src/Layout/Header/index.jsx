@@ -1,8 +1,8 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 // 組件 (component)
 import Logo from '../../components/Logo'
 import Anchor from '../../components/Anchor'
@@ -11,15 +11,13 @@ import MobMenu from './MobMenu'
 // 自訂函式 (custom function)
 import { useShowList } from '../../context/useShowList'
 
-import { useTranslation } from 'react-i18next'
-
-
 // 頁首組件
 function Header() {
+  // 語言
+  const { t } = useTranslation()
+
   const [hasBackdrop, setHasBackdrop] = useState(false)
   const { showList } = useShowList()
-
-  const { t } = useTranslation()
 
   return (
     <header
@@ -32,7 +30,7 @@ function Header() {
         <div className={S.menu}>
           {/* 登入 */}
           <Anchor style={S.signIn} ext="https://client.newlean14.store/sign-in">
-          {t('signIn')}
+            {t('signIn')}
           </Anchor>
           {/* 語言: 下拉選單 */}
           <LangDrop onBackdropToggle={setHasBackdrop} />

@@ -12,7 +12,7 @@ function Anchor({ int, ext, style, onClick, children }) {
   )
 
   const externalLink = (
-    <a href={ext} class={style} target="_blank" onClick={onClick}>
+    <a href={ext} className={style} target="_blank" onClick={onClick}>
       {children}
     </a>
   )

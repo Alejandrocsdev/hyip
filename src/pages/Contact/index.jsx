@@ -1,5 +1,7 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
+// 函式庫 (library)
+import { useTranslation } from 'react-i18next'
 // 圖檔 (image)
 import phoneSvg from '../../assets/img/icon/phone.svg'
 import mailSvg from '../../assets/img/icon/mail.svg'
@@ -7,11 +9,9 @@ import mapSvg from '../../assets/img/icon/map.svg'
 // 組件 (component)
 import ContactForm from './ContactForm'
 
-import { useTranslation } from 'react-i18next'
-
-
 // 聯繫
 function Contact() {
+  // 語言
   const { t } = useTranslation()
   return (
     <>

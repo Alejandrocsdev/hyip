@@ -1,6 +1,5 @@
 excel to json
 
-https://bfotool.com/excel-to-json
 https://tableconvert.com/excel-to-json
 
 json to excel

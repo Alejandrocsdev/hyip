@@ -2,16 +2,16 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 // 資料 (json)
 import flagsData from '../../../../../assets/flags/flags.json'
 // 組件 (component)
 import Flag from '../../../../../components/Flag'
 import CrossSvg from '../../../../../components/Svg/CrossSvg'
 
-import { useTranslation } from 'react-i18next'
-
 // 各國手機資訊列表
 function PhoneList({ show, selected, onSelect }) {
+  // 語言
   const { t } = useTranslation()
 
   const itemRef = useRef(null)

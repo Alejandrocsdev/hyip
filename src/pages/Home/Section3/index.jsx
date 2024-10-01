@@ -1,15 +1,16 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
+// 函式庫 (library)
+import { useTranslation } from 'react-i18next'
 // 圖檔 (image)
 import competitiveProfitPng from '../../../assets/img/info/competitive-profit.png'
 import checkMarkSvg from '../../../assets/img/icon/check-mark.svg'
 import reliablePartnerSvg from '../../../assets/img/organization/mkm.svg'
 import affiliateProgramSvg from '../../../assets/img/icon/binary-system.svg'
 
-import { useTranslation } from 'react-i18next'
-
 // (第三區: 投資優勢)組件
 function Section3() {
+  // 語言
   const { t } = useTranslation()
   return (
     <section className={S.section}>

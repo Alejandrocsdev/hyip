@@ -1,15 +1,16 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
+// 函式庫 (library)
+import { useTranslation } from 'react-i18next'
 // 圖檔 (image)
 import usdtTrc20Png from '../../../assets/img/element/usdt-trc20.png'
 // 組件 (component)
 import Calculator from './Calculator'
 
-import { useTranslation } from 'react-i18next'
-
 
 // (第一區: 獎勵計算)組件
 function Section1() {
+  // 語言
   const { t } = useTranslation()
   return (
     <section className={S.section}>

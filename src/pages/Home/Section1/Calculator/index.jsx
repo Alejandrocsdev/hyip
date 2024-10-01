@@ -1,14 +1,12 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 // 組件 (component)
 import Anchor from '../../../../components/Anchor'
 import { useState, useRef, useMemo } from 'react'
 // 圖檔 (image)
 import usdtSvg from '../../../../assets/img/element/usdt.svg'
-
-import { useTranslation } from 'react-i18next'
 
 const plans = {
   basic: { min: 100, max: 900, input: '100.00', ratio: '0.5' },
@@ -17,6 +15,7 @@ const plans = {
 
 // 計算機組件
 function Calculator() {
+  // 語言
   const { t } = useTranslation()
 
   // 狀態變數

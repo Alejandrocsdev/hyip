@@ -17,6 +17,9 @@ i18n.use(initReactI18next).init({
   lng: 'en',
   fallbackLng: 'en',
   interpolation: { escapeValue: false }
+  // if { escapeValue: true }:
+  // "Welcome <strong>John</strong>!"
+  // Welcome &lt;strong&gt;John&lt;/strong&gt;!
 })
 
 export default i18n

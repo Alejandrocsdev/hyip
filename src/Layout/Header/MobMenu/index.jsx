@@ -1,10 +1,9 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
-import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate, useParams } from 'react-router-dom'
+import { useState, useRef, useEffect } from 'react'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
@@ -17,11 +16,12 @@ import globeSvg from '../../../assets/img/icon/globe.svg'
 import mkmSvg from '../../../assets/img/organization/mkm.svg'
 // 組件 (component)
 import Logo from '../../../components/Logo'
+import Anchor from '../../../components/Anchor'
 import LangFlag from '../../../components/LangFlag'
-
 
 // 選單組件
 function MobMenu({ onBackdropToggle }) {
+  // 語言
   const { t } = useTranslation()
 
   const [isOpened, setIsOpened] = useState(false)
@@ -39,13 +39,13 @@ function MobMenu({ onBackdropToggle }) {
   const switchLang = (newLang) => {
     // Change language in i18n
     i18n.changeLanguage(newLang)
-    
+
     // Get the current path
     const currentPath = window.location.pathname
-    
+
     // Replace the language in the current path (if it's present)
     const newPath = currentPath.replace(`/${lang}`, `/${newLang}`)
-    
+
     // Navigate to the new path with the updated language
     navigate(newPath)
   }
@@ -79,32 +79,32 @@ function MobMenu({ onBackdropToggle }) {
             <p className={S.title}>{t('user')}</p>
             <ul>
               <li>
-              <Link to="https://client.newlean14.store/sign-in" target="_blank">
+                <Anchor ext="https://client.newlean14.store/sign-in">
                   <img src={signInSvg} />
                   <span>{t('signIn')}</span>
-                </Link>
+                </Anchor>
               </li>
               <li>
-              <Link to="https://client.newlean14.store/sign-up" target="_blank">
+                <Anchor ext="https://client.newlean14.store/sign-up">
                   <img src={signUpSvg} />
                   <span>{t('signUp')}</span>
-                </Link>
+                </Anchor>
               </li>
             </ul>
           </div>
           {/* 公司資訊 */}
           <ul className={S.info}>
             <li>
-              <Link to="about-us" onClick={handleLinkClick}>
+              <Anchor int="/about-us" onClick={handleLinkClick}>
                 <img src={aboutUsSvg} />
                 <span>{t('aboutUs')}</span>
-              </Link>
+              </Anchor>
             </li>
             <li>
-              <Link to="contacts" onClick={handleLinkClick}>
+              <Anchor int="/contacts" onClick={handleLinkClick}>
                 <img src={contactsSvg} />
                 <span>{t('contacts')}</span>
-              </Link>
+              </Anchor>
             </li>
           </ul>
           {/* 語言 */}

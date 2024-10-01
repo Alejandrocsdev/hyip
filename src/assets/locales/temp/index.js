@@ -1,39 +1,39 @@
-// Import required libraries using ES module syntax
-import { promises as fs } from 'fs'
+// 內建模組 (Node.js built-in module)
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { promises as fs } from 'fs'
 
-// Handle __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// File paths
+// 原始資料檔案路徑
 const rawFilePath = path.join(__dirname, 'raw.json')
+// 轉換後的資料檔案路徑
 const newLangFilePath = path.join(__dirname, 'newLang.json')
 
-// Function to transform the raw data format to the required lang.json format
 async function transformRawToLang() {
   try {
-    // Read raw.json
+    // 讀取 raw.json
     const data = await fs.readFile(rawFilePath, 'utf8')
     const rawData = JSON.parse(data)
     const transformedData = {}
 
-    // Iterate through the array and transform the structure
+    // 遍歷陣列並轉換結構
     rawData.forEach((item) => {
       const langCode = item.Name
-      const translationData = { ...item } // Copy all fields
+      // 複製所有欄位
+      const translationData = { ...item }
 
-      // Remove the Name field since it's the language code
+      // 移除 Name 欄位，因為它是語言代碼
       delete translationData.Name
 
-      // Add the rest of the fields dynamically under translation
+      // 將剩下的欄位動態加入 translation
       transformedData[langCode] = {
         translation: translationData
       }
     })
 
-    // Write the newLang.json file
+    // 寫入 newLang.json 檔案
     await fs.writeFile(newLangFilePath, JSON.stringify(transformedData, null, 2))
     console.log('newLang.json has been successfully created!')
   } catch (error) {
@@ -41,5 +41,4 @@ async function transformRawToLang() {
   }
 }
 
-// Execute the transformation
 transformRawToLang()

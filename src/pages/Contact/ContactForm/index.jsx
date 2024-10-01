@@ -1,21 +1,21 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useForm, FormProvider } from 'react-hook-form'
 import axios from 'axios'
 // 圖檔 (image)
 import greenCheckSvg from '../../../assets/img/icon/green-check.svg'
 // 組件 (component)
+import Anchor from '../../../components/Anchor'
 import CheckBox from './CheckBox'
 import CodeDrop from './CodeDrop'
 import FormField from '../../../components/FormField'
 
-import { useTranslation } from 'react-i18next'
-
 // 首頁
 function ContactForm() {
+  // 語言
   const { t } = useTranslation()
 
   const methods = useForm({
@@ -81,9 +81,9 @@ function ContactForm() {
           <div className={S.agreements}>
             <CheckBox />
             <p>
-              {t('messageAggreement')} <Link>Terms and conditions</Link>,{' '}
-              <Link>Customer data processing procedure</Link> {t('and')}{' '}
-              <Link>Complaints resolution procedure</Link>
+              {t('messageAggreement')} <Anchor int="/privacy-policy">{t('privacyPolicy')}</Anchor>,{' '}
+              <Anchor int="/customer-data-processing">{t('customerDataProcessing')}</Anchor>{' '}
+              {t('and')} <Anchor int="/complaints">{t('complaints')}</Anchor>
             </p>
           </div>
           {/* 提交按鈕 */}

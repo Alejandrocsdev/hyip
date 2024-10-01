@@ -1,12 +1,13 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link } from 'react-router-dom'
-
 import { useTranslation } from 'react-i18next'
+// 組件 (component)
+import Anchor from '../../components/Anchor'
 
 // 首頁
 function About() {
+  // 語言
   const { t } = useTranslation()
   return (
     <>
@@ -27,22 +28,16 @@ function About() {
             </ul>
             <p>
               {t('aboutP003_1')}{' '}
-              <Link
-                to="https://mtr.ttja.ee/juriidiline_isik/83251?backurl=%2Fjuriidiline_isik"
-                target="_blank"
-              >
+              <Anchor ext="https://mtr.ttja.ee/juriidiline_isik/83251?backurl=%2Fjuriidiline_isik">
                 {t('aboutP003_2')}
-              </Link>{' '}
+              </Anchor>{' '}
               {t('aboutP003_3')}
             </p>
             <p>
               {t('aboutP004_1')}{' '}
-              <Link
-                to="https://fi.ee/en/payment-services/payment-institutions/payment-agents-providers-cross-border-payment-services/moneyexpress-ou"
-                target="_blank"
-              >
+              <Anchor ext="https://fi.ee/en/payment-services/payment-institutions/payment-agents-providers-cross-border-payment-services/moneyexpress-ou">
                 {t('aboutP004_2')}
-              </Link>
+              </Anchor>
               .
             </p>
             <p>{t('aboutP005')}</p>

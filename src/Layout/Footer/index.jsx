@@ -1,7 +1,7 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
 // 函式庫 (library)
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 // 組件 (component)
 import Logo from '../../components/Logo'
@@ -12,6 +12,7 @@ import InstagramSvg from '../../components/Svg/InstagramSvg'
 
 // 頁尾組件
 function Footer() {
+  // 語言
   const { t } = useTranslation()
 
   const { lang } = useParams()
