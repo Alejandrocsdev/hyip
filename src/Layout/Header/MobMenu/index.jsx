@@ -4,6 +4,7 @@ import S from './style.module.css'
 import { Link } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate, useParams } from 'react-router-dom'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
 import useClickOutside from '../../../hooks/useClickOutside'
@@ -27,9 +28,18 @@ function MobMenu({ onBackdropToggle }) {
   const { i18n } = useTranslation()
   const activeLang = i18n.language
 
+  const navigate = useNavigate()
+  const { lang } = useParams()
+
   const toggleMenu = () => setIsOpened((prev) => !prev)
 
-  const switchLang = (lang) =>  i18n.changeLanguage(lang)
+  const switchLang = (newLang) => {
+    // Change language in i18n
+    i18n.changeLanguage(newLang)
+    
+    // Change the URL to reflect the new language
+    navigate(`/${newLang}`)
+  }
 
   useBodyScroll(isOpened)
 
@@ -52,7 +62,7 @@ function MobMenu({ onBackdropToggle }) {
       >
         {/* 上方 */}
         <div className={S.top}>
-          <Logo type="crypto" color="black" onClick={handleLinkClick} />
+          <Logo site="crypto" color="black" onClick={handleLinkClick} />
         </div>
         <div className={S.inner}>
           {/* 登入 & 登出 */}

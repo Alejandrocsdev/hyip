@@ -1,7 +1,7 @@
 // 樣式模組 (css module)
 import S from './style.module.css'
-// 函式庫 (library)
-import { Link, useParams } from 'react-router-dom';
+// 組件 (component)
+import Anchor from '../Anchor'
 // 圖檔 (image)
 import logoSvg from '../../assets/img/logo/logo.svg'
 import logoBlackSvg from '../../assets/img/logo/logo-black.svg'
@@ -9,33 +9,24 @@ import logoOriginSvg from '../../assets/img/logo/logo-origin.svg'
 import logoBlackOriginSvg from '../../assets/img/logo/logo-black-origin.svg'
 
 // Logo
-function Logo({ type, color, onClick }) {
-  const { lang } = useParams()
-
-  const isCrypto = type === 'crypto' // 'origin'
+function Logo({ site, color, onClick }) {
+  const isCrypto = site === 'crypto' // 'origin'
   const isWhite = color === 'white' // 'black'
 
-  const getSrc = () => {
-    if (isCrypto) {
-      return isWhite ? logoSvg : logoBlackSvg
-    } else {
-      return isWhite ? logoOriginSvg : logoBlackOriginSvg
-    }
-  }
-
-  const to = isCrypto ? `/` : 'https://moneyexpress.ee/en'
-  const target = isCrypto ? '_self' : '_blank'
-  const src = getSrc()
-
-  return (
-    <div className={S.logo}>
-      <Link to={to} target={target} onClick={onClick}>
-        <img src={src} />
-        {isCrypto && <span>Crypto</span>}
-      </Link>
-    </div>
-    
+  const cryptoLink = (
+    <Anchor int="/" onClick={onClick}>
+      <img src={isWhite ? logoSvg : logoBlackSvg} />
+      <span>Crypto</span>
+    </Anchor>
   )
+
+  const originLink = (
+    <Anchor ext="https://moneyexpress.ee/en" onClick={onClick}>
+      <img src={isWhite ? logoOriginSvg : logoBlackOriginSvg} />
+    </Anchor>
+  )
+
+  return <div className={S.logo}>{isCrypto ? cryptoLink : originLink}</div>
 }
 
 export default Logo

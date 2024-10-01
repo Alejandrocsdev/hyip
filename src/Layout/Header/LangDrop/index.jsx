@@ -2,6 +2,7 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { useState, useRef, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 // 自訂函式 (custom function)
 import useBodyScroll from '../../../hooks/useBodyScroll'
@@ -19,9 +20,18 @@ function LangDrop({ onBackdropToggle }) {
   const { i18n } = useTranslation()
   const activeLang = i18n.language
 
+  const navigate = useNavigate()
+  const { lang } = useParams()
+
   const toggleDropdown = () => setIsOpened((prev) => !prev)
 
-  const switchLang = (lang) => i18n.changeLanguage(lang)
+  const switchLang = (newLang) => {
+    // Change language in i18n
+    i18n.changeLanguage(newLang)
+    
+    // Change the URL to reflect the new language
+    navigate(`/${newLang}`)
+  }
 
   useBodyScroll(isOpened)
 

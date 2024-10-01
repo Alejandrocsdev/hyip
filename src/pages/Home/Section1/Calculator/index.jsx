@@ -2,6 +2,8 @@
 import S from './style.module.css'
 // 函式庫 (library)
 import { Link } from 'react-router-dom'
+// 組件 (component)
+import Anchor from '../../../../components/Anchor'
 import { useState, useRef, useMemo } from 'react'
 // 圖檔 (image)
 import usdtSvg from '../../../../assets/img/element/usdt.svg'
@@ -144,9 +146,9 @@ function Calculator() {
         </p>
       </div>
       {/* 註冊按鈕 */}
-      <Link className={S.signUp} to="https://client.newlean14.store/sign-up" target="_blank">
+      <Anchor style={S.signUp} ext="https://client.newlean14.store/sign-up">
         Sign Up
-      </Link>
+      </Anchor>
     </div>
   )
 }

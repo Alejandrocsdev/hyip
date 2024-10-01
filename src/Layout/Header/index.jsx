@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 // 組件 (component)
 import Logo from '../../components/Logo'
+import Anchor from '../../components/Anchor'
 import LangDrop from './LangDrop'
 import MobMenu from './MobMenu'
 // 自訂函式 (custom function)
@@ -16,16 +17,18 @@ function Header() {
   const { showList } = useShowList()
 
   return (
-    <header className={`${S.header} ${hasBackdrop ? S.showBackdrop : ''} ${showList ? S.hideHeader : ''}`}>
+    <header
+      className={`${S.header} ${hasBackdrop ? S.showBackdrop : ''} ${showList ? S.hideHeader : ''}`}
+    >
       <nav className={S.nav}>
         {/* Logo */}
-        <Logo type="crypto" color="white" />
+        <Logo site="crypto" color="white" />
         {/* 電腦版: 選單 */}
         <div className={S.menu}>
           {/* 登入 */}
-          <Link className={S.signIn} to="https://client.newlean14.store/sign-in" target="_blank">
+          <Anchor style={S.signIn} ext="https://client.newlean14.store/sign-in">
             Sign In
-          </Link>
+          </Anchor>
           {/* 語言: 下拉選單 */}
           <LangDrop onBackdropToggle={setHasBackdrop} />
           {/* 手機版: 選單 */}
