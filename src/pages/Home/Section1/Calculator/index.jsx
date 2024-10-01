@@ -8,6 +8,9 @@ import { useState, useRef, useMemo } from 'react'
 // 圖檔 (image)
 import usdtSvg from '../../../../assets/img/element/usdt.svg'
 
+import { useTranslation } from 'react-i18next'
+
+
 const plans = {
   basic: { min: 100, max: 900, input: '100.00', ratio: '0.5' },
   elite: { min: 1000, max: 100000, input: '1 000.00', ratio: '1.0' }
@@ -15,6 +18,8 @@ const plans = {
 
 // 計算機組件
 function Calculator() {
+  const { t } = useTranslation()
+
   // 狀態變數
   const [activePlan, setActivePlan] = useState('basic')
   const [inputValue, setInputValue] = useState(plans[activePlan].input)
@@ -147,7 +152,7 @@ function Calculator() {
       </div>
       {/* 註冊按鈕 */}
       <Anchor style={S.signUp} ext="https://client.newlean14.store/sign-up">
-        Sign Up
+        {t('signUp')}
       </Anchor>
     </div>
   )

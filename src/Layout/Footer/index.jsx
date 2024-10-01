@@ -42,7 +42,7 @@ function Footer() {
             <div className={S.info}>
               {/* 關於 */}
               <div className={S.item}>
-                <h5 className={S.title}>About us</h5>
+                <h5 className={S.title}>{t('aboutUs')}</h5>
                 <ul>
                   <li>
                     <Anchor int="/about-us">Money Express Crypto</Anchor>

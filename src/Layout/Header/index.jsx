@@ -11,10 +11,15 @@ import MobMenu from './MobMenu'
 // 自訂函式 (custom function)
 import { useShowList } from '../../context/useShowList'
 
+import { useTranslation } from 'react-i18next'
+
+
 // 頁首組件
 function Header() {
   const [hasBackdrop, setHasBackdrop] = useState(false)
   const { showList } = useShowList()
+
+  const { t } = useTranslation()
 
   return (
     <header
@@ -27,7 +32,7 @@ function Header() {
         <div className={S.menu}>
           {/* 登入 */}
           <Anchor style={S.signIn} ext="https://client.newlean14.store/sign-in">
-            Sign In
+          {t('signIn')}
           </Anchor>
           {/* 語言: 下拉選單 */}
           <LangDrop onBackdropToggle={setHasBackdrop} />

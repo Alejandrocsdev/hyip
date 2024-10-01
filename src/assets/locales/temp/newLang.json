@@ -1,30 +1,26 @@
 {
   "en": {
     "translation": {
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
       "contacts": "Contacts",
-      "aboutUs": "About Us",
-      "lastName": "1"
+      "aboutUs": "About us"
     }
   },
   "ru": {
     "translation": {
+      "signIn": "Войти",
+      "signUp": "Зарегистрироваться",
       "contacts": "Контакты",
-      "aboutUs": "О нас",
-      "lastName": "2"
+      "aboutUs": "О нас"
     }
   },
   "et": {
     "translation": {
+      "signIn": "Logi sisse",
+      "signUp": "Registreeru",
       "contacts": "Kontaktid",
-      "aboutUs": "Meist",
-      "lastName": "3"
-    }
-  },
-  "es": {
-    "translation": {
-      "contacts": "5",
-      "aboutUs": "6",
-      "lastName": "4"
+      "aboutUs": "Meist"
     }
   }
 }

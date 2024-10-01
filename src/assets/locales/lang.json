@@ -1,18 +1,24 @@
 {
   "en": {
     "translation": {
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
       "contacts": "Contacts",
-      "aboutUs": "About Us"
+      "aboutUs": "About us"
     }
   },
   "ru": {
     "translation": {
+      "signIn": "Войти",
+      "signUp": "Зарегистрироваться",
       "contacts": "Контакты",
       "aboutUs": "О нас"
     }
   },
   "et": {
     "translation": {
+      "signIn": "Logi sisse",
+      "signUp": "Registreeru",
       "contacts": "Kontaktid",
       "aboutUs": "Meist"
     }
