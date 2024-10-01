@@ -5,8 +5,12 @@ import usdtTrc20Png from '../../../assets/img/element/usdt-trc20.png'
 // 組件 (component)
 import Calculator from './Calculator'
 
+import { useTranslation } from 'react-i18next'
+
+
 // (第一區: 獎勵計算)組件
 function Section1() {
+  const { t } = useTranslation()
   return (
     <section className={S.section}>
       <div className={S.container}>
@@ -14,13 +18,10 @@ function Section1() {
         <div className={S.content}>
           {/* 主標題 */}
           <h1 className={S.title}>
-            Cryptocurrency investment <span>express</span>
+          {t('sec1Title')} <span>{t('express')}</span>
           </h1>
           {/* 副標題 */}
-          <p className={S.subtitle}>
-            Choose your investment amount, start earning profits, and receive your first payment by
-            next Monday
-          </p>
+          <p className={S.subtitle}>{t('sec1Subtitle')}</p>
           {/* 桌面板: USDT */}
           <div className={S.usdt}>
             <img src={usdtTrc20Png} />

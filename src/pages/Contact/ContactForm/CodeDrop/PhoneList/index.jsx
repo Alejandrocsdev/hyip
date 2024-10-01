@@ -8,8 +8,12 @@ import flagsData from '../../../../../assets/flags/flags.json'
 import Flag from '../../../../../components/Flag'
 import CrossSvg from '../../../../../components/Svg/CrossSvg'
 
+import { useTranslation } from 'react-i18next'
+
 // 各國手機資訊列表
 function PhoneList({ show, selected, onSelect }) {
+  const { t } = useTranslation()
+
   const itemRef = useRef(null)
 
   useEffect(() => {
@@ -24,7 +28,7 @@ function PhoneList({ show, selected, onSelect }) {
   return (
     <>
       <div className={`${S.mobListTitle} ${show ? S.showMobListTitle : ''}`}>
-        Select a phone code
+        {t('selectCode')}
         <span>
           <CrossSvg />
         </span>

@@ -7,16 +7,20 @@ import mapSvg from '../../assets/img/icon/map.svg'
 // 組件 (component)
 import ContactForm from './ContactForm'
 
+import { useTranslation } from 'react-i18next'
+
+
 // 聯繫
 function Contact() {
+  const { t } = useTranslation()
   return (
     <>
       <main className={S.main}>
         <div className={S.container}>
           <div className={S.inner}>
             <div className={S.content}>
-              <h1 className={S.title}>Contact us</h1>
-              <p className={S.text}>We are happy to answer any of your questions</p>
+              <h1 className={S.title}>{t('contactUs')}</h1>
+              <p className={S.text}>{t('contactUs_subtitle')}</p>
             </div>
             <ContactForm />
             <address className={S.address}>
@@ -39,7 +43,7 @@ function Contact() {
                 <p>
                   MoneyExpress OÜ
                   <br />
-                  Reg. number: 11557160
+                  {t('registerNumber')}: 11557160
                   <br />
                   KMKR: EE101342285
                   <br />

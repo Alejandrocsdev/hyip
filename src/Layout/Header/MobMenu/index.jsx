@@ -19,8 +19,11 @@ import mkmSvg from '../../../assets/img/organization/mkm.svg'
 import Logo from '../../../components/Logo'
 import LangFlag from '../../../components/LangFlag'
 
+
 // 選單組件
 function MobMenu({ onBackdropToggle }) {
+  const { t } = useTranslation()
+
   const [isOpened, setIsOpened] = useState(false)
   const containerRef = useRef(null)
   const menuRef = useRef(null)
@@ -37,8 +40,14 @@ function MobMenu({ onBackdropToggle }) {
     // Change language in i18n
     i18n.changeLanguage(newLang)
     
-    // Change the URL to reflect the new language
-    navigate(`/${newLang}`)
+    // Get the current path
+    const currentPath = window.location.pathname
+    
+    // Replace the language in the current path (if it's present)
+    const newPath = currentPath.replace(`/${lang}`, `/${newLang}`)
+    
+    // Navigate to the new path with the updated language
+    navigate(newPath)
   }
 
   useBodyScroll(isOpened)
@@ -67,18 +76,18 @@ function MobMenu({ onBackdropToggle }) {
         <div className={S.inner}>
           {/* 登入 & 登出 */}
           <div className={S.service}>
-            <p className={S.title}>User</p>
+            <p className={S.title}>{t('user')}</p>
             <ul>
               <li>
               <Link to="https://client.newlean14.store/sign-in" target="_blank">
                   <img src={signInSvg} />
-                  <span>Sign In</span>
+                  <span>{t('signIn')}</span>
                 </Link>
               </li>
               <li>
               <Link to="https://client.newlean14.store/sign-up" target="_blank">
                   <img src={signUpSvg} />
-                  <span>Sign Up</span>
+                  <span>{t('signUp')}</span>
                 </Link>
               </li>
             </ul>
@@ -88,13 +97,13 @@ function MobMenu({ onBackdropToggle }) {
             <li>
               <Link to="about-us" onClick={handleLinkClick}>
                 <img src={aboutUsSvg} />
-                <span>About Us</span>
+                <span>{t('aboutUs')}</span>
               </Link>
             </li>
             <li>
               <Link to="contacts" onClick={handleLinkClick}>
                 <img src={contactsSvg} />
-                <span>Contact</span>
+                <span>{t('contacts')}</span>
               </Link>
             </li>
           </ul>

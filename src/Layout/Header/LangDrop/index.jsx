@@ -29,9 +29,18 @@ function LangDrop({ onBackdropToggle }) {
     // Change language in i18n
     i18n.changeLanguage(newLang)
     
-    // Change the URL to reflect the new language
-    navigate(`/${newLang}`)
+    // Get the current path
+    const currentPath = window.location.pathname
+    
+    // Replace the language in the current path (if it's present)
+    const newPath = currentPath.replace(`/${lang}`, `/${newLang}`)
+    
+    // Navigate to the new path with the updated language
+    navigate(newPath)
+
+    setIsOpened(false)
   }
+
 
   useBodyScroll(isOpened)
 

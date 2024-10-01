@@ -45,7 +45,7 @@ function Footer() {
                 <h5 className={S.title}>{t('aboutUs')}</h5>
                 <ul>
                   <li>
-                    <Anchor int="/about-us">Money Express Crypto</Anchor>
+                    <Anchor int="/about-us">{t('aboutCompany')}</Anchor>
                   </li>
                   <li>
                     <Anchor int="/contacts">{t('contacts')}</Anchor>
@@ -54,7 +54,7 @@ function Footer() {
               </div>
               {/* 聯繫 */}
               <div className={S.item}>
-                <h5 className={S.title}>Contacts</h5>
+                <h5 className={S.title}>{t('contacts')}</h5>
                 <address>
                   <div className={S.contacts}>
                     <a href="tel:+3726609010">+372 6 609 010</a>
@@ -63,7 +63,7 @@ function Footer() {
                   <p>
                     MoneyExpress OÜ
                     <br />
-                    Reg. number: 11557160
+                    {t('registerNumber')}: 11557160
                     <br />
                     KMKR: EE101342285
                     <br />
@@ -77,11 +77,11 @@ function Footer() {
           <div className={S.bottom}>
             <p>© MONEY EXPRESS © All Rights Reserved</p>
             <div className={S.privacy}>
-              <Anchor int="/privacy-policy">Terms and conditions</Anchor>
+              <Anchor int="/privacy-policy">{t('privacyPolicy')}</Anchor>
               <span> | </span>
-              <Anchor int="/customer-data-processing">Customer data processing procedure</Anchor>
+              <Anchor int="/customer-data-processing">{t('customerDataProcessing')}</Anchor>
               <span> | </span>
-              <Anchor int="/complaints">Complaints resolution procedure</Anchor>
+              <Anchor int="/complaints">{t('complaints')}</Anchor>
             </div>
           </div>
         </div>

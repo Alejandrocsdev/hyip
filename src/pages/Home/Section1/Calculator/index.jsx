@@ -10,7 +10,6 @@ import usdtSvg from '../../../../assets/img/element/usdt.svg'
 
 import { useTranslation } from 'react-i18next'
 
-
 const plans = {
   basic: { min: 100, max: 900, input: '100.00', ratio: '0.5' },
   elite: { min: 1000, max: 100000, input: '1 000.00', ratio: '1.0' }
@@ -74,7 +73,7 @@ function Calculator() {
   // 處理變化更新
   const handleChange = (e) => {
     // 移除 '數字'
-    let value = e.target.value.replace(/[^0-9]/g, '') 
+    let value = e.target.value.replace(/[^0-9]/g, '')
     // 移除 '前導0'
     value = value.replace(/^0+(?!$)/, '')
 
@@ -96,7 +95,7 @@ function Calculator() {
     const clamped = clampedValue(inputValue)
     const rounded = roundedValue(clamped)
     const formatted = formattedValue(rounded, ' ')
-    
+
     setInputValue(formatted)
   }
 
@@ -108,18 +107,18 @@ function Calculator() {
           className={`${activePlan === 'basic' ? S.active : ''}`}
           onClick={() => togglePlan('basic')}
         >
-          Basic
+          {t('basic')}
         </div>
         <div
           className={`${activePlan === 'elite' ? S.active : ''}`}
           onClick={() => togglePlan('elite')}
         >
-          Elite
+          {t('elite')}
         </div>
       </div>
       {/* 收益轉換 */}
       <div className={S.converter}>
-        <div className={S.label}>Amount (X100)</div>
+        <div className={S.label}>{t('amount')} (X100)</div>
         <div className={S.main}>
           <div className={S.unit}>
             <img src={usdtSvg} />
@@ -142,11 +141,11 @@ function Calculator() {
       {/* 計算結果 */}
       <div className={S.result}>
         <p>
-          <span>Daily Profit (%):</span>
+          <span>{t('dailyProfit')} (%):</span>
           <span>{ratioValue}%</span>
         </p>
         <p>
-          <span>Total Profit (USDT):</span>
+          <span>{t('dailyProfit')} (USDT):</span>
           <span>{totalProfit} USDT</span>
         </p>
       </div>
