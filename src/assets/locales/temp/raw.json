@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "en",
+        "contacts": "Contacts",
+        "aboutUs": "About Us",
+        "lastName": "1"
+    },
+    {
+        "Name": "ru",
+        "contacts": "Контакты",
+        "aboutUs": "О нас",
+        "lastName": "2"
+    },
+    {
+        "Name": "et",
+        "contacts": "Kontaktid",
+        "aboutUs": "Meist",
+        "lastName": "3"
+    },
+    {
+        "Name": "es",
+        "contacts": "5",
+        "aboutUs": "6",
+        "lastName": "4"
+    }
+]

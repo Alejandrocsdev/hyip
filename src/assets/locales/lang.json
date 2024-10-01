@@ -1,0 +1,20 @@
+{
+  "en": {
+    "translation": {
+      "contacts": "Contacts",
+      "aboutUs": "About Us"
+    }
+  },
+  "ru": {
+    "translation": {
+      "contacts": "Контакты",
+      "aboutUs": "О нас"
+    }
+  },
+  "et": {
+    "translation": {
+      "contacts": "Kontaktid",
+      "aboutUs": "Meist"
+    }
+  }
+}
