@@ -615,8 +615,8 @@ function CustomerData() {
                     <li>
                       The data subject has the right to review the voice recording by e-mailing
                       relevant request to{' '}
-                      <Anchor ext="info@moneyexpresscrypto.ee">
-                        www.moneyexpresscrypto.ee
+                      <Anchor ext="info@moneyexpresscrypto.ee" email>
+                        info@moneyexpresscrypto.ee
                       </Anchor>
                     </li>
                   </ol>
@@ -770,9 +770,7 @@ function CustomerData() {
                       them in accordance with Article 15 of the GDPR and, among other things, to
                       exercise other rights outlined in this clause, by submitting a request to
                       Money Express by e-mailing{' '}
-                      <Anchor ext="info@moneyexpresscrypto.ee">
-                        www.moneyexpresscrypto.ee
-                      </Anchor>
+                      <Anchor ext="info@moneyexpresscrypto.ee" email>info@moneyexpresscrypto.ee</Anchor>
                     </li>
                     <li>
                       The data subject has the right to obtain from Money Express the rectification
@@ -872,18 +870,9 @@ function CustomerData() {
                       subject has the right to submit a complaint to the Republic of Estonia Data
                       Protection Inspectorate: <Anchor ext="https://www.aki.ee/">www.aki.ee</Anchor>
                       ; registered office Tatari 39, Tallinn; advice line{' '}
-                      <Anchor ext="+37256202341">
-                        +372 56202341
-                      </Anchor>
-                      , general contact{' '}
-                      <Anchor ext="+3726274135">
-                        +372 6274135
-                      </Anchor>
-                      , e-mail{' '}
-                      <Anchor ext="info@aki.ee">
-                        info@aki.ee
-                      </Anchor>
-                      .
+                      <Anchor ext="+37256202341" phone>+372 56202341</Anchor>, general contact{' '}
+                      <Anchor ext="+3726274135" phone>+372 6274135</Anchor>, e-mail{' '}
+                      <Anchor ext="info@aki.ee" email>info@aki.ee</Anchor>.
                     </li>
                   </ol>
                 </div>

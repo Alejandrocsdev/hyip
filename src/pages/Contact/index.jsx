@@ -25,13 +25,13 @@ function Contact() {
             </div>
             <ContactForm />
             <address className={S.address}>
-              <Anchor ext="+3726609010">
+              <Anchor ext="+3726609010" phone>
                 <i>
                   <img src={phoneSvg} />
                 </i>
                 +372 6 609 010
               </Anchor>
-              <Anchor ext="info@moneyexpresscrypto.ee">
+              <Anchor ext="info@moneyexpresscrypto.ee" email>
                 <i>
                   <img src={mailSvg} />
                 </i>

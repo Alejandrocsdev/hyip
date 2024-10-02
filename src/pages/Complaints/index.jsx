@@ -59,7 +59,7 @@ function Complaints() {
                     </li>
                     <li>
                       Complaints are to be submitted by e-mail to{' '}
-                      <Anchor ext="info@moneyexpresscrypto.ee">info@moneyexpresscrypto.ee</Anchor>, at the on-site
+                      <Anchor ext="info@moneyexpresscrypto.ee" email>info@moneyexpresscrypto.ee</Anchor>, at the on-site
                       service point, or by post to the Money Express’s office at Aia 5, 10111 Tallinn,
                       Estonia.
                     </li>
@@ -133,7 +133,7 @@ function Complaints() {
                       the Customer is a consumer) has the right to recourse to the Consumer Disputes
                       Committee of the Republic of Estonia Consumer Protection and Technical
                       Regulatory Authority (Pronksi 12, 10117 Tallinn; e-mail{' '}
-                      <Anchor ext="info@tarbijakaitseamet.ee">info@tarbijakaitseamet.ee</Anchor>) for
+                      <Anchor ext="info@tarbijakaitseamet.ee" email>info@tarbijakaitseamet.ee</Anchor>) for
                       an independent assessment and/or dispute resolution, or to file a claim to a
                       court of law.
                     </li>
@@ -141,7 +141,7 @@ function Complaints() {
                       In matters concerning the processing of personal data, the Customer, to
                       protect their rights and obtain an additional assessment, can also contact the
                       Republic of Estonia Data Protection Inspectorate (Väike-Ameerika 19, 10129
-                      Tallinn; e-mail <Anchor ext="info@aki.ee">info@aki.ee</Anchor>).
+                      Tallinn; e-mail <Anchor ext="info@aki.ee" email>info@aki.ee</Anchor>).
                     </li>
                   </ol>
                 </div>

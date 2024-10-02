@@ -1,11 +1,8 @@
 // 函式庫 (library)
 import { Link, useParams } from 'react-router-dom'
 
-const isEmail = (str) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str)
-const isPhone = (str) => /^\+\d+$/.test(str)
-
 // 錨點
-function Anchor({ int, ext, style, target, onClick, children }) {
+function Anchor({ int, ext, style, email, phone, target, onClick, children }) {
   const { lang } = useParams()
 
   const internalLink = (
@@ -16,9 +13,9 @@ function Anchor({ int, ext, style, target, onClick, children }) {
 
   const externalLink = (
     <a
-      href={isEmail(ext) ? `mailto:${ext}` : isPhone(ext) ? `tel:${ext}` : ext}
+      href={email ? `mailto:${ext}` : phone ? `tel:${ext}` : ext}
       className={style}
-      target={target || (isEmail(ext) || isPhone(ext) ? '_self' : '_blank')}
+      target={target || (email || phone ? '_self' : '_blank')}
       onClick={onClick}
     >
       {children}
