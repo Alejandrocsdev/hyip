@@ -685,8 +685,8 @@ function CustomerData() {
                           metal quality/value appraisers);
                         </li>
                         <li>
-                          authorized and co-responsible processors that provide services to ME
-                          Company (e.g. communication, IT, and postal service providers, archive) or
+                          authorized and co-responsible processors that provide services to Money
+                          Express (e.g. communication, IT, and postal service providers, archive) or
                           whose services Money Express uses to protect its own interests (e.g. legal
                           advisors, auditing and/or law firms, information security service
                           providers). The list of Money Express's authorized data processors is
@@ -768,8 +768,8 @@ function CustomerData() {
                     <li>
                       The data subject has the right to access the personal data processed about
                       them in accordance with Article 15 of the GDPR and, among other things, to
-                      exercise other rights outlined in this clause, by submitting a request to ME
-                      Company by e-mailing{' '}
+                      exercise other rights outlined in this clause, by submitting a request to
+                      Money Express by e-mailing{' '}
                       <Anchor ext="mailto:info@moneyexpresscrypto.ee" target="_self">
                         www.moneyexpresscrypto.ee
                       </Anchor>
