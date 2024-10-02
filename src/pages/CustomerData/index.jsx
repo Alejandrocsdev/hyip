@@ -615,7 +615,7 @@ function CustomerData() {
                     <li>
                       The data subject has the right to review the voice recording by e-mailing
                       relevant request to{' '}
-                      <Anchor ext="mailto:info@moneyexpresscrypto.ee" target="_self">
+                      <Anchor ext="info@moneyexpresscrypto.ee">
                         www.moneyexpresscrypto.ee
                       </Anchor>
                     </li>
@@ -770,7 +770,7 @@ function CustomerData() {
                       them in accordance with Article 15 of the GDPR and, among other things, to
                       exercise other rights outlined in this clause, by submitting a request to
                       Money Express by e-mailing{' '}
-                      <Anchor ext="mailto:info@moneyexpresscrypto.ee" target="_self">
+                      <Anchor ext="info@moneyexpresscrypto.ee">
                         www.moneyexpresscrypto.ee
                       </Anchor>
                     </li>
@@ -872,15 +872,15 @@ function CustomerData() {
                       subject has the right to submit a complaint to the Republic of Estonia Data
                       Protection Inspectorate: <Anchor ext="https://www.aki.ee/">www.aki.ee</Anchor>
                       ; registered office Tatari 39, Tallinn; advice line{' '}
-                      <Anchor ext="tel:+37256202341" target="_self">
+                      <Anchor ext="+37256202341">
                         +372 56202341
                       </Anchor>
                       , general contact{' '}
-                      <Anchor ext="tel:+3726274135" target="_self">
+                      <Anchor ext="+3726274135">
                         +372 6274135
                       </Anchor>
                       , e-mail{' '}
-                      <Anchor ext="mailto:info@aki.ee" target="_self">
+                      <Anchor ext="info@aki.ee">
                         info@aki.ee
                       </Anchor>
                       .

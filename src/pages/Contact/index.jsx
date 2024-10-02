@@ -7,6 +7,7 @@ import phoneSvg from '../../assets/img/icon/phone.svg'
 import mailSvg from '../../assets/img/icon/mail.svg'
 import mapSvg from '../../assets/img/icon/map.svg'
 // 組件 (component)
+import Anchor from '../../components/Anchor'
 import ContactForm from './ContactForm'
 
 // 聯繫
@@ -24,18 +25,18 @@ function Contact() {
             </div>
             <ContactForm />
             <address className={S.address}>
-              <a href="tel:+3726609010">
+              <Anchor ext="+3726609010">
                 <i>
                   <img src={phoneSvg} />
                 </i>
                 +372 6 609 010
-              </a>
-              <a href="mailto:info@moneyexpresscrypto.ee">
+              </Anchor>
+              <Anchor ext="info@moneyexpresscrypto.ee">
                 <i>
                   <img src={mailSvg} />
                 </i>
                 info@moneyexpresscrypto.ee
-              </a>
+              </Anchor>
               <div className={S.map}>
                 <i>
                   <img src={mapSvg} />

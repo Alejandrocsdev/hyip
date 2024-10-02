@@ -18,6 +18,7 @@ export const getFieldRules = (type, countryCode) => {
       return {
         ...rules,
         pattern: { value: /^\S+@\S+\.\S+$/ },
+        // pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
         maxLength: { value: 50 }
       }
 

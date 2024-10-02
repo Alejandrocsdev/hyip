@@ -58,8 +58,8 @@ function Footer() {
                 <h5 className={S.title}>{t('contacts')}</h5>
                 <address>
                   <div className={S.contacts}>
-                    <a href="tel:+3726609010">+372 6 609 010</a>
-                    <a href="mailto:info@moneyexpresscrypto.ee">info@moneyexpresscrypto.ee</a>
+                    <Anchor ext="+3726609010">+372 6 609 010</Anchor>
+                    <Anchor ext="info@moneyexpresscrypto.ee">info@moneyexpresscrypto.ee</Anchor>
                   </div>
                   <p>
                     MoneyExpress OÜ

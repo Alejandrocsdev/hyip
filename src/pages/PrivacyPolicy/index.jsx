@@ -168,7 +168,7 @@ function PrivacyPolicy() {
                     <li>
                       Any disputes arising from the use of the platform or related to the Buyer’s
                       investments are to be addressed to{' '}
-                      <Anchor ext="mailto:info@moneyexpresscrypto.ee" target="_self">
+                      <Anchor ext="info@moneyexpresscrypto.ee">
                         info@moneyexpresscrypto.ee
                       </Anchor>
                       . Dispute resolution is governed by the Seller’s internal procedures, which
