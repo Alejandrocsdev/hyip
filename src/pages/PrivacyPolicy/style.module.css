@@ -76,11 +76,6 @@
   text-underline-offset: .25rem;
 }
 
-.mt {
-  margin-top: 16px;
-  white-space: pre-line;
-}
-
 @media (max-width: 1000px) {
   .main {
     padding: 7.5rem 0;

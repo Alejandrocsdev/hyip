@@ -6,7 +6,7 @@
       "aboutUs": "About us",
       "contacts": "Contacts",
       "user": "User",
-      "aboutCompany": "Money Express Crypto",
+      "aboutCompany": "MONEY EXPRESS",
       "registerNumber": "Reg. number",
       "privacyPolicy": "Terms and conditions",
       "customerDataProcessing": "Customer data processing procedure",
@@ -49,7 +49,7 @@
       "done": "Done",
       "selectCode": "Select a phone code",
       "aboutUsTitle": "About us",
-      "aboutP001": "MONEY EXPRESS CRYPTO is a global financial institution that provides a comprehensive array of cash-related financial services in Estonia since 2008 and in Latvia since 2010. In Estonia, these services are delivered through MoneyExpress OÜ.",
+      "aboutP001": "MONEY EXPRESS is a global financial institution that provides a comprehensive array of cash-related financial services in Estonia since 2008 and in Latvia since 2010. In Estonia, these services are delivered through MoneyExpress OÜ.",
       "aboutP002": "These include:",
       "aboutLi001": "Competitive cryptocurrency exchange rates;",
       "aboutLi002": "Seamless cryptocurrency purchases and sales;",
@@ -66,8 +66,7 @@
       "aboutP007": "At MoneyExpress OÜ, we have a dedicated group of professionals ensuring that each client receives all the essential information regarding any financial transaction within our network.",
       "aboutP008": "We pride ourselves on our integrity and professionalism, guaranteeing confidentiality and security while consistently providing our clients with favorable transaction terms.",
       "aboutP009": "MoneyExpress OÜ - Your superior choice to a bank!",
-      "test": "MoneyExpress OÜ, registry code 11557160, registered office Pirita tee 20/4-219, Tallinn, 12011, Estonia, (hereinafter <1>Seller</1>) has prescribed these terms and conditions of use of their online store (hereinafter <3>Terms</3>) that serve as basis for selling goods in the online store operating at www.moneyexpresscrypto.ee (hereinafter <5>online store</5>) and apply to all natural persons and bodies corporate (hereinafter <7>Buyer</7>) wishing to use the services provided by and purchase goods in the online store.",
-      "test1": "MoneyExpress OÜ TERMS AND CONDITIONS OF SERVICE PROVISION IN ONLINE STORE"
+      "test": "MoneyExpress OÜ, registry code 11557160, registered office Pirita tee 20/4-219, Tallinn, 12011, Estonia, (hereinafter <strong>Seller</strong>) has established these terms and conditions for the use of their online platform (hereinafter <strong>Terms</strong>). These Terms form the basis for providing investment services related to cryptocurrency on the platform operating at www.moneyexpresscrypto.ee (hereinafter <strong>online platform</strong>) and apply to all natural persons and corporate bodies (hereinafter <strong>Buyer</strong>) wishing to invest in the Seller's cryptocurrency services."
     }
   },
   "ru": {
@@ -120,7 +119,7 @@
       "done": "Готово",
       "selectCode": "Выберите телефонный код",
       "aboutUsTitle": "О компании",
-      "aboutP001": "MONEY EXPRESS CRYPTO – это глобальное финансовое учреждение, предоставляющее полный спектр финансовых услуг, связанных с наличными, в Эстонии с 2008 года и в Латвии с 2010 года. В Эстонии эти услуги предоставляет компания MoneyExpress OÜ.",
+      "aboutP001": "MONEY EXPRESS – это глобальное финансовое учреждение, предоставляющее полный спектр финансовых услуг, связанных с наличными, в Эстонии с 2008 года и в Латвии с 2010 года. В Эстонии эти услуги предоставляет компания MoneyExpress OÜ.",
       "aboutP002": "Сюда входят:",
       "aboutLi001": "Конкурентные курсы обмена криптовалют;",
       "aboutLi002": "Беспроблемная покупка и продажа криптовалют;",
@@ -189,7 +188,7 @@
       "done": "Valmis",
       "selectCode": "Valige telefonikood",
       "aboutUsTitle": "Ettevõttest",
-      "aboutP001": "MONEY EXPRESS CRYPTO on globaalne finantsasutus, mis pakub laia valikut sularahaga seotud finantsteenuseid Eestis alates 2008. aastast ja Lätis alates 2010. aastast. Eestis osutab neid teenuseid MoneyExpress OÜ.",
+      "aboutP001": "MONEY EXPRESS on globaalne finantsasutus, mis pakub laia valikut sularahaga seotud finantsteenuseid Eestis alates 2008. aastast ja Lätis alates 2010. aastast. Eestis osutab neid teenuseid MoneyExpress OÜ.",
       "aboutP002": "Need teenused hõlmavad:",
       "aboutLi001": "Konkurentsivõimelisi krüptovaluuta vahetuskursse;",
       "aboutLi002": "Sujuvat krüptovaluutade ostmist ja müüki;",
