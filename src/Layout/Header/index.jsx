@@ -29,7 +29,7 @@ function Header() {
         {/* 電腦版: 選單 */}
         <div className={S.menu}>
           {/* 登入 */}
-          <Anchor style={S.signIn} ext="https://client.newlean14.store/sign-in">
+          <Anchor style={S.signIn} ext="https://client.newlean14.store/en/sign-in">
             {t('signIn')}
           </Anchor>
           {/* 語言: 下拉選單 */}

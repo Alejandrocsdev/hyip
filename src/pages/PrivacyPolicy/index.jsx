@@ -14,7 +14,7 @@ function PrivacyPolicy() {
       <main className={S.main}>
         <div className={S.container}>
           <h1 className={S.title}>
-            MoneyExpress OÜ TERMS AND CONDITIONS OF SERVICE PROVISION IN ONLINE STORE
+            MoneyExpress OÜ TERMS AND CONDITIONS OF SERVICE PROVISION IN ONLINE PLATFORM
           </h1>
           <ol className={S.list}>
             <li className={S.item}>

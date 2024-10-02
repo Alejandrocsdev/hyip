@@ -63,13 +63,13 @@ function MobMenu({ onBackdropToggle }) {
             <p className={S.title}>{t('user')}</p>
             <ul>
               <li>
-                <Anchor ext="https://client.newlean14.store/sign-in">
+                <Anchor ext="https://client.newlean14.store/en/sign-in">
                   <img src={signInSvg} />
                   <span>{t('signIn')}</span>
                 </Anchor>
               </li>
               <li>
-                <Anchor ext="https://client.newlean14.store/sign-up">
+                <Anchor ext="https://client.newlean14.store/en/sign-up">
                   <img src={signUpSvg} />
                   <span>{t('signUp')}</span>
                 </Anchor>

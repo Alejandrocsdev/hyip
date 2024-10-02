@@ -149,7 +149,7 @@ function Calculator() {
         </p>
       </div>
       {/* 註冊按鈕 */}
-      <Anchor style={S.signUp} ext="https://client.newlean14.store/sign-up">
+      <Anchor style={S.signUp} ext="https://client.newlean14.store/en/sign-up">
         {t('signUp')}
       </Anchor>
     </div>

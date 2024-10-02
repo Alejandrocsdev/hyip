@@ -15,8 +15,6 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CustomerData from './pages/CustomerData'
 import Complaints from './pages/Complaints'
-// 錯誤頁面
-import NotFound from './pages/NotFound'
 
 const LangRoutes = () => {
   // path="/:lang/*"
@@ -55,9 +53,6 @@ const LangRoutes = () => {
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="customer-data-processing" element={<CustomerData />} />
         <Route path="complaints" element={<Complaints />} />
-
-        {/* 錯誤頁面 */}
-        <Route path="*" element={<NotFound />} />
 
       </Route>
       

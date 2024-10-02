@@ -47,7 +47,6 @@ function About() {
             <p>{t('aboutP009')}</p>
           </div>
         </div>
-        <form action=""></form>
       </main>
     </>
   )
