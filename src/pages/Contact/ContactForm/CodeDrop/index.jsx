@@ -48,7 +48,7 @@ function CodeDrop() {
         <div className={S.selected}>
           <Flag countryCode={countryCode || 'lv'} />
           <div className={S.code}>+{dialingCode}</div>
-          <AngleDownSvg className={`${S.arrow} ${showList ? S.rotate : ''}`} />
+          <AngleDownSvg style={`${S.arrow} ${showList ? S.rotate : ''}`} />
         </div>
         <PhoneList show={showList} selected={countryCode || 'lv'} onSelect={handleSelect} />
       </div>

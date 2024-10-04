@@ -1,7 +1,7 @@
 .section {
   padding: 14.875rem 0 10rem 0;
   border-radius: 0 0 3.125rem 3.125rem;
-  background-image: url('/webp/bg.webp');
+  background-image: url('/bg.webp');
   background-size: cover;
   background-position: center;
 }

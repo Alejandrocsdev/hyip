@@ -1,5 +1,5 @@
 // SVG
-function AngleDownSvg({ className }) {
+function AngleDownSvg({ style }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,7 +7,7 @@ function AngleDownSvg({ className }) {
       height="20"
       viewBox="0 0 20 20"
       fill="none"
-      className={className}
+      className={style}
     >
       <path
         d="M6.66699 8.33594L10.0003 11.6693L13.3337 8.33594"

@@ -93,7 +93,7 @@
       "privacyTitle05": "Withdrawal from Contract and Resolution of Disputes",
       "privacy020": "Investments in cryptocurrency and blockchain assets are subject to the fluctuations of the global financial markets, which the Seller cannot control. Therefore, these services are not subject to a 14-day withdrawal right as per § 53 (4) 1¹) of the Republic of Estonia Law of Obligations Act.",
       "privacy021": "The Buyer may request a withdrawal of funds from their account balance at any time, subject to a fixed withdrawal fee of 5 USDT. The minimum withdrawal amount is 10 USDT.",
-      "privacy022": "Any disputes arising from the use of the platform or related to the Buyer’s investments are to be addressed to <1>info@moneyexpresscrypto.ee</1>. Dispute resolution is governed by the Seller’s internal procedures, which can be reviewed at <3>https://www.moneyexpresscrypto.ee/complaints</3>."
+      "privacy022": "Any disputes arising from the use of the platform or related to the Buyer’s investments are to be addressed to <Anchor ext=\"\"info@moneyexpresscrypto.ee\"\" email>info@moneyexpresscrypto.ee </Anchor>. Dispute resolution is governed by the Seller’s internal procedures, which can be reviewed at <Anchor int=\"\"/complaints\"\" target=\"\"_blank\"\">https://www.moneyexpresscrypto.ee/complaints</Anchor>."
     }
   },
   "ru": {
@@ -190,7 +190,7 @@
       "privacyTitle05": "Расторжение договора и разрешение споров",
       "privacy020": "Инвестиции в криптовалюту и блокчейн-активы подвержены колебаниям мировых финансовых рынков, которые Продавец не может контролировать. Таким образом, на эти услуги не распространяется 14-дневное право отказа согласно статье 53 (4) 1¹) Обязательственно-правового закона Эстонской Республики.",
       "privacy021": "Покупатель может запросить вывод средств с баланса своего счета в любое время при условии уплаты фиксированной комиссии за вывод средств в размере 5 долларов США. Минимальная сумма вывода составляет 10 USDT.",
-      "privacy022": "Любые споры, возникающие в результате использования платформы или связанные с инвестициями Покупателя, должны быть адресованы на <1>info@moneyexpresscrypto.ee</1>. Разрешение споров регулируется внутренними процедурами Продавца, с которыми можно ознакомиться на <3>https://www.moneyexpresscrypto.ee/complaints</3>."
+      "privacy022": "Любые споры, возникающие в результате использования платформы или связанные с инвестициями Покупателя, должны быть адресованы на <Anchor ext=\"\"info@moneyexpresscrypto.ee\"\" email>info@moneyexpresscrypto.ee</Anchor>. Разрешение споров регулируется внутренними процедурами Продавца, с которыми можно ознакомиться на <Anchor int=\"\"/complaints\"\" target=\"\"_blank\"\">https://www.moneyexpresscrypto.ee/complaints</Anchor>."
     }
   },
   "et": {
@@ -287,7 +287,7 @@
       "privacyTitle05": "Lepingust taganemine ja vaidluste lahendamine",
       "privacy020": "Investeeringud krüptovaluutasse ja plokiahela varadesse on allutatud globaalsete finantsturgude kõikumistele, mida Müüja ei saa kontrollida. Seetõttu ei kehti nendele teenustele Eesti Vabariigi võlaõigusseaduse § 53 lg 4 p 1¹ kohane 14-päevane taganemisõigus.",
       "privacy021": "Ostja võib igal ajal taotleda oma kontojäägilt raha väljavõtmist, võttes arvesse fikseeritud väljamaksetasu 5 USDT. Minimaalne väljamakse summa on 10 USDT.",
-      "privacy022": "Kõik vaidlused, mis tekivad platvormi kasutamise või ostja investeeringutega seoses, tuleb suunata aadressile <1>info@moneyexpresscrypto.ee</1>. Vaidluste lahendamine toimub müüja sisemiste protseduuride alusel, millega saab tutvuda aadressil <3>https://www.moneyexpresscrypto.ee/complaints</3>."
+      "privacy022": "Kõik vaidlused, mis tekivad platvormi kasutamise või ostja investeeringutega seoses, tuleb suunata aadressile <Anchor ext=\"\"info@moneyexpresscrypto.ee\"\" email>info@moneyexpresscrypto.ee</Anchor>. Vaidluste lahendamine toimub müüja sisemiste protseduuride alusel, millega saab tutvuda aadressil <Anchor int=\"\"/complaints\"\" target=\"\"_blank\"\">https://www.moneyexpresscrypto.ee/complaints</Anchor>."
     }
   }
 }

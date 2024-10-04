@@ -32,7 +32,7 @@ function CheckBox() {
     <label className={`${S.checkbox} ${getCheckboxClass()}`} id="agreement">
       <img src={checkboxSvg} className={isChecked ? S.show : ''} />
       <FormField
-        className={S.check}
+        style={S.check}
         id="agreement"
         name="agree"
         type="checkbox"

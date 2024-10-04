@@ -4,7 +4,7 @@ import ruSvg from '../../assets/img/flag/ru.svg'
 import eeSvg from '../../assets/img/flag/ee.svg'
 
 // 語言國旗
-function LangFlag({ className, type }) {
+function LangFlag({ style, type }) {
   let src
 
   switch (type) {
@@ -19,7 +19,7 @@ function LangFlag({ className, type }) {
       break
   }
 
-  return <img className={className} src={src} />
+  return <img className={style} src={src} />
 }
 
 export default LangFlag

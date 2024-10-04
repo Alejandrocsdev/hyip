@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename)
 // 原始資料檔案路徑
 const rawFilePath = path.join(__dirname, 'raw.json')
 // 轉換後的資料檔案路徑
-const newLangFilePath = path.join(__dirname, 'newLang.json')
+const newFilePath = path.join(__dirname, 'new.json')
 
 async function transformRawToLang() {
   try {
@@ -33,9 +33,9 @@ async function transformRawToLang() {
       }
     })
 
-    // 寫入 newLang.json 檔案
-    await fs.writeFile(newLangFilePath, JSON.stringify(transformedData, null, 2))
-    console.log('newLang.json has been successfully created!')
+    // 寫入 new.json 檔案
+    await fs.writeFile(newFilePath, JSON.stringify(transformedData, null, 2))
+    console.log('new.json has been successfully created!')
   } catch (error) {
     console.error('Error processing files:', error)
   }

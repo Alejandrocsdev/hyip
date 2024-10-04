@@ -1,5 +1,5 @@
 // SVG
-function CrossSvg({ className }) {
+function CrossSvg({ style }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,7 +7,7 @@ function CrossSvg({ className }) {
       height="24px"
       viewBox="0 -960 960 960"
       fill="#5f6368"
-      className={className}
+      className={style}
     >
       <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
     </svg>

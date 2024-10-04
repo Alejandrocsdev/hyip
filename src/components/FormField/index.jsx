@@ -11,7 +11,7 @@ function FormField(props) {
     // default attributes
     id,
     type = 'text',
-    className = '',
+    style = '',
     placeholder = '',
     // controller attributes
     name,
@@ -35,7 +35,7 @@ function FormField(props) {
   const defaultAttributes = {
     id,
     type,
-    className: `${className} ${error ? S.error : ''}`,
+    className: `${style} ${error ? S.error : ''}`,
     placeholder
   }
 

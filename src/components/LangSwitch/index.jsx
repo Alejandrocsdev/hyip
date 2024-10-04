@@ -40,24 +40,24 @@ function LangSwitch({ type, states, currentLang }) {
     <ul className={type === 'mob' ? mobMenuStyle : langDropStyle} onClick={langDropClick}>
       <li>
         <button onClick={() => switchLang('en')}>
-          <LangFlag className={S.langFlag} type="us" />
+          <LangFlag style={S.langFlag} type="us" />
           <span className={currentLang === 'en' ? S.active : ''}>English</span>
         </button>
       </li>
       <li>
         <button onClick={() => switchLang('ru')}>
-          <LangFlag className={S.langFlag} type="ru" />
+          <LangFlag style={S.langFlag} type="ru" />
           <span className={currentLang === 'ru' ? S.active : ''}>Русский</span>
         </button>
       </li>
       <li>
         <button onClick={() => switchLang('et')}>
-          <LangFlag className={S.langFlag} type="ee" />
+          <LangFlag style={S.langFlag} type="ee" />
           <span className={currentLang === 'et' ? S.active : ''}>Eesti</span>
         </button>
       </li>
       {/* 延伸動畫選單三角形圖案 */}
-      {type === 'pc' && <TriangleSvg className={S.triangle} />}
+      {type === 'pc' && <TriangleSvg style={S.triangle} />}
     </ul>
   )
 }

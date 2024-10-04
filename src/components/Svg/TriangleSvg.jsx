@@ -1,5 +1,5 @@
 // SVG
-function TriangleSvg({ className }) {
+function TriangleSvg({ style }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,7 +7,7 @@ function TriangleSvg({ className }) {
       height="8"
       viewBox="0 0 16 8"
       fill="none"
-      className={className}
+      className={style}
     >
       <path
         fillRule="evenodd"

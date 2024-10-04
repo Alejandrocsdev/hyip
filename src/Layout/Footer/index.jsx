@@ -29,13 +29,13 @@ function Footer() {
               <Logo site="origin" color="white" />
               <div className={S.icons}>
                 <Anchor ext="https://www.facebook.com/moneyexpresslv">
-                  <FacebookSvg className={S.icon} />
+                  <FacebookSvg style={S.icon} />
                 </Anchor>
                 <Anchor ext="https://x.com/MONEYEXPRESSLV">
-                  <TwitterSvg className={S.icon} />
+                  <TwitterSvg style={S.icon} />
                 </Anchor>
                 <Anchor ext="https://www.instagram.com/moneyexpress.lv/">
-                  <InstagramSvg className={S.icon} />
+                  <InstagramSvg style={S.icon} />
                 </Anchor>
               </div>
             </div>

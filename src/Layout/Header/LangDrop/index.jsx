@@ -37,7 +37,7 @@ function LangDrop({ onBackdropToggle }) {
         {/* 語言按鈕 */}
         <button className={S.langBtn}>
           <span>{currentLang}</span>
-          <AngleDownSvg className={`${S.angleDown} ${isOpened ? S.arrowRotate : ''}`} />
+          <AngleDownSvg style={`${S.angleDown} ${isOpened ? S.arrowRotate : ''}`} />
         </button>
         {/* 語言列表 */}
         <LangSwitch type="pc" states={states} currentLang={currentLang} />
