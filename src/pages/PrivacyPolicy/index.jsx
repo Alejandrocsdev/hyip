@@ -21,7 +21,7 @@ function PrivacyPolicy() {
                 <div className={S.text}>
                   <ol>
                     <li>
-                      <Trans i18nKey="privacy001"></Trans>
+                      <Trans i18nKey="privacy001" />
                     </li>
                     <li>{t('privacy002')}</li>
                     <li>{t('privacy003')}</li>
@@ -86,7 +86,7 @@ function PrivacyPolicy() {
                           1: <Anchor ext="info@moneyexpresscrypto.ee" email />,
                           3: <Anchor int="/complaints" target="_blank" />
                         }}
-                      ></Trans>
+                      />
                     </li>
                   </ol>
                 </div>
