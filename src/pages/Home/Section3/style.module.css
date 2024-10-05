@@ -73,11 +73,11 @@
 }
 
 .wide .profit>img {
-  width: 100%;
+  width: clamp(0px, 100%, 400px);
 }
 
 .wide .profit .greenBar {
-  width: 100%;
+  width: clamp(0px, 100%, 400px);
   margin-top: 20px;
   padding: 1rem .5rem;
   border-radius: .5rem;
@@ -304,6 +304,7 @@
   }
 
   .wide .profit .greenBar {
+    width: 100%;
     padding: .6875rem .3125rem;
     border-radius: .375rem;
     gap: .375rem;
